@@ -10,7 +10,6 @@ import {
   ChevronRight,
 } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image";
 
 export default function TimelineSection() {
   const [activeSection, setActiveSection] = useState("growth-solutions");
@@ -214,11 +213,9 @@ export default function TimelineSection() {
                       className="flex items-center gap-4 p-4 rounded-lg border bg-primary/10 dark:bg-primary/20 mb-3"
                     >
                       <div className="w-12 h-12 flex-shrink-0 flex items-center justify-center bg-primary/10 dark:bg-primary/20 rounded-lg">
-                        <Image
+                        <img
                           src={item.icon}
                           alt={item.title}
-                          width={40}
-                          height={40}
                           className="w-10 h-10 object-contain dark:invert"
                         />
                       </div>
@@ -289,11 +286,9 @@ export default function TimelineSection() {
                       className="flex items-center gap-4 p-4 rounded-lg border bg-primary/10 dark:bg-primary/20 mb-3"
                     >
                       <div className="w-12 h-12 flex-shrink-0 flex items-center justify-center bg-primary/10 dark:bg-primary/20 rounded-lg">
-                        <Image
+                        <img
                           src={item.icon}
                           alt={item.title}
-                          width={40}
-                          height={40}
                           className="w-10 h-10 object-contain dark:invert"
                         />
                       </div>
@@ -381,11 +376,9 @@ export default function TimelineSection() {
                       className="flex items-center gap-4 p-4 rounded-lg border bg-primary/10 dark:bg-primary/20 mb-3"
                     >
                       <div className="w-12 h-12 flex-shrink-0 flex items-center justify-center bg-primary/10 dark:bg-primary/20 rounded-lg">
-                        <Image
+                        <img
                           src={item.icon}
                           alt={item.title}
-                          width={40}
-                          height={40}
                           className="w-10 h-10 object-contain dark:invert"
                         />
                       </div>
