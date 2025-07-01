@@ -1,11 +1,12 @@
-
+'use client'; 
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Cookie, Settings } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Switch } from '@/components/ui/switch';
+
 import { Label } from '@/components/ui/label';
+import { Switch } from '../header/switch';
 
 const CookieConsent: React.FC = () => {
   const [showBanner, setShowBanner] = useState(true);
@@ -88,7 +89,7 @@ const CookieConsent: React.FC = () => {
                     <h3 className="font-semibold text-foreground mb-2">We use cookies</h3>
                     <p className="text-sm text-muted-foreground mb-4">
                       We use cookies to enhance your browsing experience and analyze our traffic. 
-                      By clicking "Accept All", you consent to our use of cookies.
+                      By clicking &quot;Accept All&quot;, you consent to our use of cookies.
                     </p>
                   </div>
                 </div>

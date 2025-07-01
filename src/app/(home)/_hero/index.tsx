@@ -1,9 +1,10 @@
+'use client';
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Zap, ArrowUpRight } from 'lucide-react';
 import { motion } from 'framer-motion';
-import InteractiveHoverCard from '../ui/interactive-hover-card';
-import { RotatingText } from '../ui/rotating-text';
+import InteractiveHoverCard from '@/components/ui/interactive-hover-card';
+import { RotatingText } from '@/components/ui/rotating-text';
+import Link from 'next/link';
 
 const Hero: React.FC = () => {
   return (
@@ -68,7 +69,7 @@ const Hero: React.FC = () => {
                 transition={{ duration: 0.8, delay: 0.7 }}
                 className="flex flex-col lg:flex-row gap-6 justify-center items-center w-full mt-8"
               >
-                <Link to="/growth-solutions" className="block w-full max-w-lg relative group">
+                <Link href="/growth-solutions" className="block w-full max-w-lg relative group">
                   <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-primary/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl"></div>
                   <div className="relative">
                     <InteractiveHoverCard
@@ -82,7 +83,7 @@ const Hero: React.FC = () => {
                   </div>
                 </Link>
                 
-                <Link to="/strategic-solutions" className="block w-full max-w-lg relative group">
+                  <Link href="/strategic-solutions" className="block w-full max-w-lg relative group">
                   <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-primary/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl"></div>
                   <div className="relative">
                     <InteractiveHoverCard

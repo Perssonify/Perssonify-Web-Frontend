@@ -1,3 +1,4 @@
+'use client';
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Send, Mail, Phone, MapPin } from 'lucide-react';
@@ -46,7 +47,7 @@ const ContactSection: React.FC = () => {
               Ready to Scale with Confidence?
             </h2>
             <p className="text-base sm:text-lg text-foreground max-w-2xl px-2 text-left">
-              Let's talk about how we can solve what's really holding your business back and accelerate your growth.
+              Let&apos;s talk about how we can solve what&apos;s really holding your business back and accelerate your growth.
             </p>
           </motion.div>
 
@@ -141,9 +142,9 @@ const ContactSection: React.FC = () => {
               className="space-y-8"
             >
               <div>
-                <h3 className="text-2xl font-semibold mb-6">Let's Start the Conversation</h3>
+                  <h3 className="text-2xl font-semibold mb-6">Let&apos;s Start the Conversation</h3>
                 <p className="text-foreground/80 mb-8 leading-relaxed">
-                  Ready to solve what's really holding your business back? We specialize in identifying the real problems and designing solutions that fit your reality. Let's discuss how we can accelerate your growth with precision and urgency.
+                  Ready to solve what&apos;s really holding your business back? We specialize in identifying the real problems and designing solutions that fit your reality. Let&apos;s discuss how we can accelerate your growth with precision and urgency.
                 </p>
               </div>
 

@@ -1,13 +1,13 @@
-"use client"
+'use client';
 import { useEffect, useState, useRef } from "react"
-import { Link, useLocation } from "react-router-dom"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { DollarSign, Settings, Shield, Target, ChevronRight } from "lucide-react"
+import Link from "next/link"
 
 export default function TimelineSection() {
   const [activeSection, setActiveSection] = useState("growth-solutions")
-  const [isNavFixed, setIsNavFixed] = useState(true);
+  const [isNavFixed, setIsNavFixed] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
   const strategicRef = useRef<HTMLHeadingElement>(null);
 
@@ -43,7 +43,7 @@ export default function TimelineSection() {
     const handleScroll = () => {
       if (!sectionRef.current) return;
       const rect = sectionRef.current.getBoundingClientRect();
-      // setIsNavFixed(rect.top <= 80 && rect.bottom > 120);
+      setIsNavFixed(rect.top <= 80 && rect.bottom > 120);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -72,8 +72,7 @@ export default function TimelineSection() {
     { id: "strategic-solutions", title: "Strategic Solutions" },
   ]
 
-  const location = useLocation();
-  const showNav = location.pathname === "/";
+  const showNav = true;
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -82,7 +81,7 @@ export default function TimelineSection() {
         <div className="container">
           <h1 className="text-3xl sm:text-4xl md:text-4xl font-bold mb-4 sm:mb-6 text-left text-primary px-2">Our Solutions</h1>
           <p className="text-base sm:text-lg md:text-2xl text-left max-w-4xl px-2">
-            Whether you're launching something new or optimizing what's already working, we deliver what your business
+            Whether you&apos;re launching something new or optimizing what&apos;s already working, we deliver what your business
             needs to grow, adapt, and move faster.
           </p>
         </div>
@@ -181,7 +180,7 @@ export default function TimelineSection() {
                   ].map((item, index) => (
                     <Link
                       key={index}
-                      to={item.link}
+                      href={item.link}
                       className="flex items-center gap-4 p-4 rounded-lg border bg-primary/10 dark:bg-primary/20 mb-3"
                     >
                       <div className="w-12 h-12 flex-shrink-0 flex items-center justify-center bg-primary/10 dark:bg-primary/20 rounded-lg">
@@ -249,7 +248,7 @@ export default function TimelineSection() {
                   ].map((item, index) => (
                     <Link
                       key={index}
-                      to={item.link}
+                      href={item.link}
                       className="flex items-center gap-4 p-4 rounded-lg border bg-primary/10 dark:bg-primary/20 mb-3"
                     >
                       <div className="w-12 h-12 flex-shrink-0 flex items-center justify-center bg-primary/10 dark:bg-primary/20 rounded-lg">
@@ -270,7 +269,7 @@ export default function TimelineSection() {
 
                 <div className="text-center">
                 <Button className="font-semibold text-lg mb-4" size="lg" asChild>
-                    <a href="/contact">Ready to move faster? Let's talk.</a>
+                    <a href="/contact">Ready to move faster? Let&apos;s talk.</a>
                   </Button>
                 </div>
               </section>
@@ -280,7 +279,7 @@ export default function TimelineSection() {
               <section id="strategic-solutions" className="py-0 mb-12 sm:mb-16 mt-0">
                 <p className="mb-6 mt-0 text-muted-foreground leading-relaxed">
                   You need to improve efficiency, automate intelligently, and ensure operations scale without chaos. If
-                  you're navigating operational bottlenecks, automation gaps, or complex scaling challenges, our Strategic
+                      you&apos;re navigating operational bottlenecks, automation gaps, or complex scaling challenges, our Strategic
                   Solutions offer high-ROI tailored strategy and implementations that are built for precision,
                   scalability, and efficiency. From workflow orchestration to platform optimization, we help you execute
                   at the next level with minimal disruption.
@@ -316,7 +315,7 @@ export default function TimelineSection() {
                   ].map((item, index) => (
                     <Link
                       key={index}
-                      to={item.link}
+                      href={item.link}
                       className="flex items-center gap-4 p-4 rounded-lg border bg-primary/10 dark:bg-primary/20 mb-3"
                     >
                       <div className="w-12 h-12 flex-shrink-0 flex items-center justify-center bg-primary/10 dark:bg-primary/20 rounded-lg">
@@ -365,7 +364,7 @@ export default function TimelineSection() {
                   ].map((item, index) => (
                     <Link
                       key={index}
-                      to={item.link}
+                        href={item.link}
                       className="flex items-center gap-4 p-4 rounded-lg border bg-primary/10 dark:bg-primary/20 mb-3"
                     >
                       <div className="w-12 h-12 flex-shrink-0 flex items-center justify-center bg-primary/10 dark:bg-primary/20 rounded-lg">
@@ -382,7 +381,7 @@ export default function TimelineSection() {
 
                 <div className="text-center">
                   <Button className="font-semibold text-lg mb-4" size="lg" asChild>
-                    <a href="/contact">Ready to move faster? Let's talk.</a>
+                        <a href="/contact">Ready to move faster? Let&apos;s talk.</a>
                   </Button>
                 </div>
               </section>
