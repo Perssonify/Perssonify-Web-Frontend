@@ -44,7 +44,7 @@ export default function ClientLayout({ children }: ClientLayoutProps) {
   return (
     <div className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}> 
       <Header isDarkMode={isDarkMode} toggleDarkMode={handleToggleDarkMode} />
-      <main className="flex-1">{children}</main>
+      <main className="w-full">{children}</main>
       <Footer />
       <CookieConsent />
     </div>
