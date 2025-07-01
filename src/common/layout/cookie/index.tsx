@@ -9,7 +9,7 @@ import { Label } from '@/components/ui/label';
 import { Switch } from '../header/switch';
 
 const CookieConsent: React.FC = () => {
-  const [showBanner, setShowBanner] = useState(true);
+  const [showBanner, setShowBanner] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
   const [preferences, setPreferences] = useState({
     necessary: true,

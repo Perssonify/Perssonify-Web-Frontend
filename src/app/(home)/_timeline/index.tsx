@@ -7,7 +7,6 @@ import Link from "next/link"
 
 export default function TimelineSection() {
   const [activeSection, setActiveSection] = useState("growth-solutions")
-  const [isNavFixed, setIsNavFixed] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
   const strategicRef = useRef<HTMLHeadingElement>(null);
 
@@ -43,7 +42,6 @@ export default function TimelineSection() {
     const handleScroll = () => {
       if (!sectionRef.current) return;
       const rect = sectionRef.current.getBoundingClientRect();
-      setIsNavFixed(rect.top <= 80 && rect.bottom > 120);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -77,8 +75,8 @@ export default function TimelineSection() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section at the top */}
-      <div className="bg-background py-12 sm:py-16">
-        <div className="container">
+      <div className="bg-background py-12 sm:py-16 ">
+        <div className="container mx-auto max-w-6xl px-2 sm:px-4">
           <h1 className="text-3xl sm:text-4xl md:text-4xl font-bold mb-4 sm:mb-6 text-left text-primary px-2">Our Solutions</h1>
           <p className="text-base sm:text-lg md:text-2xl text-left max-w-4xl px-2">
             Whether you&apos;re launching something new or optimizing what&apos;s already working, we deliver what your business
@@ -88,7 +86,7 @@ export default function TimelineSection() {
       </div>
 
       {/* LEFT NAVIGATION - STICKY WITHIN THIS SECTION ONLY */}
-      <div ref={sectionRef} className="container py-8 relative">
+      <div ref={sectionRef} className="container mx-auto max-w-6xl px-2 sm:px-4 py-8 relative">
         <div className="flex flex-row items-start pt-4">
           {/* Sticky Left Nav with Both Items - Only sticky within this container */}
           {showNav && (
@@ -98,7 +96,7 @@ export default function TimelineSection() {
                 // isNavFixed ? "fixed top-24 z-50" : 
                 "sticky top-24 z-50"
               )}
-              style={isNavFixed ? { left: '6rem' } : { marginLeft: '4rem' }}
+              // style={isNavFixed ? { left: '6rem' } : { marginLeft: '4rem' }}
             >
               {sections.map((section) => (
                 <button

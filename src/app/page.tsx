@@ -13,7 +13,6 @@ export default function Home() {
       <TimelineSection />
       <AboutSection />
       <ContactSection />
-      <CookieConsent />
     </div>
   )
 }
