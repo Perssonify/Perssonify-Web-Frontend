@@ -1,8 +1,9 @@
 "use client";
 import { useState, useEffect, useCallback } from "react";
-import Header from "@/app/Sections/Header";
-import Footer from "@/app/Sections/Footer";
+import Header from "./header";
+import Footer from "./footer";
 import { Geist, Geist_Mono } from "next/font/google";
+import CookieConsent from "./cookie";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
@@ -45,6 +46,7 @@ export default function ClientLayout({ children }: ClientLayoutProps) {
       <Header isDarkMode={isDarkMode} toggleDarkMode={handleToggleDarkMode} />
       <main className="flex-1">{children}</main>
       <Footer />
+      <CookieConsent />
     </div>
   );
 } 

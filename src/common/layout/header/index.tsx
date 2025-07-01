@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Switch } from '@/app/Dark/Light';
+import { Switch } from './switch';
 import { motion, AnimatePresence } from 'framer-motion';
 import { AnimatedUnderline } from "@/components/ui/animated-underline";
 import Image from 'next/image';
