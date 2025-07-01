@@ -2,6 +2,7 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
 import { LucideProps, Zap } from 'lucide-react';
+import Image from "next/image";
 
 interface InteractiveHoverCardProps {
   heading: string;
@@ -28,7 +29,7 @@ const InteractiveHoverCard: React.FC<InteractiveHoverCardProps> = ({
       {/* Icon or Image */}
       <div className="flex-none flex items-center justify-center h-20 w-20 relative border border-foreground/20 rounded-lg bg-background group-hover:border-primary transition-colors duration-300 overflow-hidden">
         {imageUrl ? (
-          <img src={imageUrl} alt={heading} className="w-full h-full object-cover dark:invert" />
+          <Image src={imageUrl} alt={heading} width={80} height={80} className="w-full h-full object-cover dark:invert" />
         ) : icon ? (
           React.cloneElement(icon, {
             className: 'w-9 h-9 text-foreground group-hover:text-primary transition-colors duration-300',

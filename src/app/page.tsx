@@ -1,4 +1,3 @@
-import CookieConsent from "@/common/layout/cookie";
 import AboutSection from "./(home)/_about";
 import ContactSection from "./(home)/_contact";
 import Hero from "./(home)/_hero";
