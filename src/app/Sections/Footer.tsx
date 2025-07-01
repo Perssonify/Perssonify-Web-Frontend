@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
       await new Promise(resolve => setTimeout(resolve, 1000));
       alert("Thanks for subscribing! We'll be in touch soon.");
       setEmail("");
-    } catch (error) {
+    } catch {
       alert("Something went wrong. Please try again later.");
     } finally {
       setIsSubscribing(false);
