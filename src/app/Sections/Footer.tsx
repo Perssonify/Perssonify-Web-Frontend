@@ -94,6 +94,7 @@ const Footer: React.FC = () => {
                 width={96}
                 height={32}
                 className="h-8 w-auto"
+                style={{ width: 'auto' }}
               />
             </button>
             <p className="text-xs text-muted-foreground leading-relaxed">

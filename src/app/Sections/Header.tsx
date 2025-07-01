@@ -168,6 +168,7 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, toggleDarkMode }) => {
               width={128}
               height={40}
               className="object-contain h-8 w-24 sm:h-10 sm:w-32"
+              style={{ width: 'auto' }}
               priority
             />
           </button>

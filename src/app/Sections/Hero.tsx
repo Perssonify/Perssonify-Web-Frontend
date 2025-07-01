@@ -159,16 +159,16 @@ const CombinedHeroAbout: React.FC = () => {
                 The right solution at the right time can change everything. We make the right solutions happen right now.
               </p>
               <p className="text-sm sm:text-base text-foreground mb-4 sm:mb-6 leading-relaxed">
-                We solve what&apos;s really holding you back—whether it&apos;s growth, operations or both. Born from performance marketing where speed and ROI are non-negotiable, we apply the same relentless focus to optimize entire businesses.
+                We solve what's really holding you back—whether it's growth, operations or both. Born from performance marketing where speed and ROI are non-negotiable, we apply the same relentless focus to optimize entire businesses.
               </p>
               <p className="text-sm sm:text-base text-foreground mb-4 sm:mb-6 leading-relaxed">
                 Our approach: Identify the real problem. Design solutions that fit your reality. Execute with urgency.
               </p>
               <p className="text-sm sm:text-base text-foreground mb-6 sm:mb-8 leading-relaxed">
-                World-class outcomes don&apos;t require world-size teams. We&apos;re lean, expert-driven, and built for speed without compromise.
+                World-class outcomes don't require world-size teams. We're lean, expert-driven, and built for speed without compromise.
               </p>
               <p className="text-base sm:text-lg font-semibold text-primary mb-6 sm:mb-8">
-                Ready to scale with confidence? Let&apos;s talk.
+                Ready to scale with confidence? Let's talk.
               </p>
               <Link href="/about">
                 <Button size="lg" className="group text-white bg-primary hover:bg-primary/90 hover:text-white">
@@ -242,7 +242,7 @@ const CombinedHeroAbout: React.FC = () => {
                 Our Journey <span className="text-primary">So Far</span>
               </h2>
               <p className="text-base sm:text-lg text-foreground mb-4 sm:mb-6 leading-relaxed">
-                It started with a simple observation: the best campaigns weren&apos;t just creative—they were surgical.
+                It started with a simple observation: the best campaigns weren't just creative—they were surgical.
               </p>
               <p className="text-sm sm:text-base text-foreground mb-4 sm:mb-6 leading-relaxed">
                 We began in performance marketing, obsessing over every conversion and ROI point. But as we drove growth for ambitious businesses, we kept hitting the same wall—great campaigns throttled by slow processes and operational bottlenecks.
@@ -251,13 +251,13 @@ const CombinedHeroAbout: React.FC = () => {
                 The breakthrough: the same precision that optimized ad spend could optimize entire operations.
               </p>
               <p className="text-sm sm:text-base text-foreground mb-4 sm:mb-6 leading-relaxed">
-                We didn&apos;t abandon our marketing DNA, we expanded it. The urgency, data-driven decisions and relentless focus on results stayed. Now we solve the problems that were limiting success in the first place.
+                We didn't abandon our marketing DNA, we expanded it. The urgency, data-driven decisions and relentless focus on results stayed. Now we solve the problems that were limiting success in the first place.
               </p>
               <p className="text-sm sm:text-base text-foreground mb-4 sm:mb-6 leading-relaxed">
-                Today, we&apos;re the partner businesses call when speed matters, stakes are high, and "good enough" isn&apos;t enough.
+                Today, we're the partner businesses call when speed matters, stakes are high, and "good enough" isn't enough.
               </p>
               <p className="text-base sm:text-lg font-semibold text-primary mb-6 sm:mb-8">
-                The lesson: breakthrough results don&apos;t come from doing more—they come from solving what&apos;s really in the way.
+                The lesson: breakthrough results don't come from doing more—they come from solving what's really in the way.
               </p>
               <Link href="/about/solvepath-framework">
                 <Button size="lg" className="group text-white bg-primary hover:bg-primary/90 hover:text-white">
