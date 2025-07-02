@@ -85,11 +85,11 @@ export default function TimelineSection() {
     <div className="flex flex-col min-h-screen">
       {/* Hero Section at the top */}
       <div className="bg-background py-12 sm:py-16 ">
-        <div className="container mx-auto max-w-6xl px-2 sm:px-4">
-          <h1 className="text-3xl sm:text-4xl md:text-4xl font-bold mb-4 sm:mb-6 text-left text-primary px-2">
+        <div className="container mx-auto max-w-6xl">
+          <h1 className="text-3xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 tcpcext-left text-primary">
             Our Solutions
           </h1>
-          <p className="text-base sm:text-lg md:text-2xl text-left max-w-4xl px-2">
+          <p className="text-base sm:text-lg md:text-2xl text-left max-w-4xl">
             Whether you&apos;re launching something new or optimizing
             what&apos;s already working, we deliver what your business needs to
             grow, adapt, and move faster.
@@ -100,7 +100,7 @@ export default function TimelineSection() {
       {/* LEFT NAVIGATION - STICKY WITHIN THIS SECTION ONLY */}
       <div
         ref={sectionRef}
-        className="container mx-auto max-w-6xl px-2 sm:px-4 py-8 relative"
+        className="container mx-auto max-w-6xl py-8 relative"
       >
         <div className="flex flex-row items-start gap-8 pt-4">
           {/* Sticky Left Nav with Both Items - Only sticky within this container */}
@@ -164,44 +164,44 @@ export default function TimelineSection() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-6">
                   {[
                     {
-                      link: "/growth-solutions/performance-marketing",
+                      link: "/performance-marketing",
                       icon: "/Growth Solutions Icons/PerformanceMarketing&PaidMedia.png",
                       title: "Performance Marketing & Paid Media",
                       desc: "High-ROI ads that convert.",
                     },
                     {
-                      link: "/growth-solutions/social-media-marketing",
+                      link: "/social-media-marketing",
                       icon: "/Growth Solutions Icons/Social Media Marketing & Brand Engagement.png",
                       title: "Social Media Marketing & Brand Engagement",
                       desc: "Build audience, spark action.",
                     },
                     {
-                      link: "/growth-solutions/email-marketing",
+                      link: "/email-marketing",
                       icon: "/Growth Solutions Icons/Email Marketing & Marketing Automation.png",
                       title: "Email Marketing & Marketing Automation",
                       desc: "Automate nurture, drive loyalty.",
                     },
                     {
-                      link: "/growth-solutions/creative-solutions",
+                      link: "/creative-solutions",
                       icon: "/Growth Solutions Icons/Creative Solutions.png",
                       title: "Creative Solutions",
                       desc: "Visuals that get results.",
                     },
                     {
-                      link: "/growth-solutions/conversion-optimization",
+                      link: "/conversion-optimization",
                       icon: "/Growth Solutions Icons/Conversion Rate Optimization.png",
                       title: "Conversion Rate Optimization (CRO)",
                       desc: "Test. Refine. Convert more.",
                     },
                     {
-                      link: "/growth-solutions/seo-website-growth",
+                      link: "/seo-website-growth",
                       icon: "/Growth Solutions Icons/Search Engine Optimization (SEO) & Website Growth.png",
                       title:
                         "Search Engine Optimization (SEO) & Website Growth",
                       desc: "Rank higher. Grow faster.",
                     },
                     {
-                      link: "/growth-solutions/website-solutions",
+                      link: "/website-solutions",
                       icon: "/Growth Solutions Icons/Website Solutions.png",
                       title: "Website Solutions",
                       desc: "Seamless, scalable, conversion-ready.",
@@ -238,43 +238,43 @@ export default function TimelineSection() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-8">
                   {[
                     {
-                      link: "/specialized-growth-solutions/audit-insights",
+                      link: "/audit-insights",
                       icon: "/Specialized Growth Solutions Icons/Deep Dive Audit & Strategic Insights.png",
                       title: "Deep Dive Audit & Strategic Insights",
                       desc: "Clarity through expert analysis.",
                     },
                     {
-                      link: "/specialized-growth-solutions/analytics-tracking",
+                      link: "/analytics-tracking",
                       icon: "/Specialized Growth Solutions Icons/Analytics and Event Tracking Setup.png",
                       title: "Analytics and Event Tracking Setup",
                       desc: "Track what matters, measure what works.",
                     },
                     {
-                      link: "/specialized-growth-solutions/lead-generation",
+                      link: "/lead-generation",
                       icon: "/Specialized Growth Solutions Icons/Lead Generation & Funnel Strategy.png",
                       title: "Lead Generation & Funnel Strategy",
                       desc: "Build funnels that convert.",
                     },
                     {
-                      link: "/specialized-growth-solutions/brand-architecture",
+                      link: "/brand-architecture",
                       icon: "/Specialized Growth Solutions Icons/Brand Architecture & Strategy.png",
                       title: "Brand Architecture & Strategy",
                       desc: "Define, differentiate, scale.",
                     },
                     {
-                      link: "/specialized-growth-solutions/content-strategy",
+                      link: "/content-strategy",
                       icon: "/Specialized Growth Solutions Icons/Content Strategy & Planning.png",
                       title: "Content Strategy & Marketing",
                       desc: "Create content that drives action.",
                     },
                     {
-                      link: "/specialized-growth-solutions/ai-content",
+                      link: "/ai-content",
                       icon: "/Specialized Growth Solutions Icons/AI-Accelerated Content Production Pipelines.png",
                       title: "AI-Accelerated Content Production Pipelines",
                       desc: "Scale content with AI precision.",
                     },
                     {
-                      link: "/specialized-growth-solutions/executive-branding",
+                      link: "/executive-branding",
                       icon: "/Specialized Growth Solutions Icons/Executive Personal Branding & LinkedIn Marketing.png",
                       title: "Executive Personal Branding & LinkedIn Marketing",
                       desc: "Elevate presence, grow influence.",
@@ -346,25 +346,25 @@ export default function TimelineSection() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-6">
                   {[
                     {
-                      link: "/strategic-solutions/process-automation",
+                      link: "/process-automation",
                       icon: "/Strategic Solutions Icons/Process & Workflow Automation.png",
                       title: "Process & Workflow Automation",
                       desc: "Automate execution. Eliminate friction.",
                     },
                     {
-                      link: "/strategic-solutions/digital-systems-enablement",
+                      link: "/digital-systems-enablement",
                       icon: "/Strategic Solutions Icons/Digital Systems Enablement.png",
                       title: "Digital Systems Enablement",
                       desc: "Optimize platforms. Empower teams.",
                     },
                     {
-                      link: "/strategic-solutions/custom-solution-engineering",
+                      link: "/custom-solution-engineering",
                       icon: "/Strategic Solutions Icons/Custom Solution Engineering.png",
                       title: "Custom Solution Engineering",
                       desc: "Solve complex. Deliver fast.",
                     },
                     {
-                      link: "/strategic-solutions/enterprise-evolution-strategic-transformation",
+                      link: "/enterprise-evolution-strategic-transformation",
                       icon: "/Strategic Solutions Icons/Enterprise Evolution & Strategic Transformation.png",
                       title: "Enterprise Evolution & Strategic Transformation",
                       desc: "Reshape. Scale. Future-proof.",
@@ -404,25 +404,25 @@ export default function TimelineSection() {
                       title: "Finance",
                       desc: "Automate reporting. Accelerate reconciliation.",
                       icon: DollarSign,
-                      link: "/strategic-solutions/finance-operations",
+                      link: "/finance-operations",
                     },
                     {
                       title: "Operations",
                       desc: "Unblock execution. Speed up critical workflows.",
                       icon: Settings,
-                      link: "/strategic-solutions/operations",
+                      link: "/operations",
                     },
                     {
                       title: "Compliance & Governance",
                       desc: "Reduce risk. Ensure audit-ready control.",
                       icon: Shield,
-                      link: "/strategic-solutions/compliance-governance",
+                      link: "/compliance-governance",
                     },
                     {
                       title: "Cross-Functional Leadership",
                       desc: "Align departments. Orchestrate complex delivery.",
                       icon: Target,
-                      link: "/strategic-solutions/cross-functional-leadership",
+                      link: "/cross-functional-leadership",
                     },
                   ].map((item, index) => (
                     <Link

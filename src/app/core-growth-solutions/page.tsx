@@ -1,7 +1,8 @@
 "use client";
 
+
 import React from 'react';
-import { motion } from 'motion/react';
+import Link from 'next/link';
 import { 
   TrendingUp, 
   Users, 
@@ -14,8 +15,8 @@ import {
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import Link from 'next/link';
 import ThemeBreadcrumb from '@/components/ui/theme-breadcrumb';
+import { motion } from 'motion/react';
 
 const CoreGrowthSolutions: React.FC = () => {
   const solutions = [
@@ -154,4 +155,4 @@ const CoreGrowthSolutions: React.FC = () => {
   );
 };
 
-export default CoreGrowthSolutions; 
+export default CoreGrowthSolutions;

@@ -1,33 +1,36 @@
-'use client'; 
-import React from 'react';
-import { Users, Target, Zap, Lightbulb, ArrowRight } from 'lucide-react';
-import { motion } from 'framer-motion';
-import { Card, CardContent } from '@/components/ui/card';
-import Link from 'next/link';
-import { Button } from '@/components/ui/button';
+"use client";
+import React from "react";
+import { Users, Target, Zap, Lightbulb, ArrowRight } from "lucide-react";
+import { motion } from "framer-motion";
+import { Card, CardContent } from "@/components/ui/card";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 const AboutSection: React.FC = () => {
   const features = [
     {
       icon: Target,
-      title: 'Strategic Focus',
-      description: 'We align every action with your business goals for maximum impact.'
+      title: "Strategic Focus",
+      description:
+        "We align every action with your business goals for maximum impact.",
     },
     {
       icon: Zap,
-      title: 'Rapid Execution',
-      description: 'Fast implementation without compromising on quality or results.'
+      title: "Rapid Execution",
+      description:
+        "Fast implementation without compromising on quality or results.",
     },
     {
       icon: Users,
-      title: 'Expert Team',
-      description: 'Dedicated professionals with proven track records in growth.'
-    }
+      title: "Expert Team",
+      description:
+        "Dedicated professionals with proven track records in growth.",
+    },
   ];
 
   return (
     <section className="section-padding-lg bg-background">
-      <div className="max-w-6xl mx-auto px-2 sm:px-4">
+      <div className="max-w-6xl mx-auto">
         {/* About Us Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center mb-16 sm:mb-24 lg:justify-between gap-y-8">
           {/* Content */}
@@ -38,20 +41,26 @@ const AboutSection: React.FC = () => {
             viewport={{ once: true }}
             className="lg:ml-0 text-left"
           >
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 sm:mb-6 text-left text-primary px-2">
-              About <span className="text-primary">Us</span>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-left text-primary">
+              About<span className="text-primary">Us</span>
             </h2>
-            <p className="text-base sm:text-lg text-foreground mb-4 sm:mb-6 leading-relaxed px-2">
+            <p className="text-base sm:text-lg text-foreground mb-4 sm:mb-6 leading-relaxed">
               The right solution at the right time can change everything. We make the right solutions happen right now.
             </p>
             <p className="text-sm sm:text-base text-foreground mb-4 sm:mb-6 leading-relaxed">
-              We solve what&apos;s really holding you back—whether it&apos;s growth, operations or both. Born from performance marketing where speed and ROI are non-negotiable, we apply the same relentless focus to optimize entire businesses.
+              We solve what&apos;s really holding you back—whether it&apos;s
+              growth, operations or both. Born from performance marketing where
+              speed and ROI are non-negotiable, we apply the same relentless
+              focus to optimize entire businesses.
             </p>
             <p className="text-sm sm:text-base text-foreground mb-4 sm:mb-6 leading-relaxed">
-              Our approach: Identify the real problem. Design solutions that fit your reality. Execute with urgency.
+              Our approach: Identify the real problem. Design solutions that fit
+              your reality. Execute with urgency.
             </p>
             <p className="text-sm sm:text-base text-foreground mb-6 sm:mb-8 leading-relaxed">
-              World-class outcomes don&apos;t require world-size teams. We&apos;re lean, expert-driven, and built for speed without compromise.
+              World-class outcomes don&apos;t require world-size teams.
+              We&apos;re lean, expert-driven, and built for speed without
+              compromise.
             </p>
             <p className="text-base sm:text-lg font-semibold text-primary mb-6 sm:mb-8">
               Ready to scale with confidence? Let&apos;s talk.
@@ -87,8 +96,12 @@ const AboutSection: React.FC = () => {
                         <feature.icon className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                       </div>
                       <div>
-                        <h3 className="font-semibold text-foreground mb-1 sm:mb-2 text-sm sm:text-base">{feature.title}</h3>
-                        <p className="text-muted-foreground text-xs sm:text-sm">{feature.description}</p>
+                        <h3 className="font-semibold text-foreground mb-1 sm:mb-2 text-sm sm:text-base">
+                          {feature.title}
+                        </h3>
+                        <p className="text-muted-foreground text-xs sm:text-sm">
+                          {feature.description}
+                        </p>
                       </div>
                     </div>
                   </CardContent>
@@ -108,28 +121,38 @@ const AboutSection: React.FC = () => {
             viewport={{ once: true }}
             className="lg:ml-0 text-left"
           >
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 sm:mb-6 text-left text-primary">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-left text-primary">
               Our Journey <span className="text-primary">So Far</span>
             </h2>
             <p className="text-base sm:text-lg text-foreground mb-4 sm:mb-6 leading-relaxed">
-              It started with a simple observation: the best campaigns weren&apos;t just creative—they were surgical.
+              It started with a simple observation: the best campaigns
+              weren&apos;t just creative—they were surgical.
             </p>
             <p className="text-sm sm:text-base text-foreground mb-4 sm:mb-6 leading-relaxed">
-              We began in performance marketing, obsessing over every conversion and ROI point. But as we drove growth for ambitious businesses, we kept hitting the same wall—great campaigns throttled by slow processes and operational bottlenecks.
+              We began in performance marketing, obsessing over every conversion
+              and ROI point. But as we drove growth for ambitious businesses, we
+              kept hitting the same wall—great campaigns throttled by slow
+              processes and operational bottlenecks.
             </p>
             <p className="text-sm sm:text-base text-foreground mb-4 sm:mb-6 leading-relaxed">
-              The breakthrough: the same precision that optimized ad spend could optimize entire operations.
+              The breakthrough: the same precision that optimized ad spend could
+              optimize entire operations.
             </p>
             <p className="text-sm sm:text-base text-foreground mb-4 sm:mb-6 leading-relaxed">
-                We didn&apos;t abandon our marketing DNA, we expanded it. The urgency, data-driven decisions and relentless focus on results stayed. Now we solve the problems that were limiting success in the first place.
+              We didn&apos;t abandon our marketing DNA, we expanded it. The
+              urgency, data-driven decisions and relentless focus on results
+              stayed. Now we solve the problems that were limiting success in
+              the first place.
             </p>
             <p className="text-sm sm:text-base text-foreground mb-4 sm:mb-6 leading-relaxed">
-              Today, we&apos;re the partner businesses call when speed matters, stakes are high, and &quot;good enough&quot; isn&apos;t enough.
+              Today, we&apos;re the partner businesses call when speed matters,
+              stakes are high, and &quot;good enough&quot; isn&apos;t enough.
             </p>
             <p className="text-base sm:text-lg font-semibold text-primary mb-6 sm:mb-8">
-              The lesson: breakthrough results don&apos;t come from doing more—they come from solving what&apos;s really in the way.
+              The lesson: breakthrough results don&apos;t come from doing
+              more—they come from solving what&apos;s really in the way.
             </p>
-            
+
             <Button asChild size="lg" className="group">
               <Link href="/solvepath-framework">
                 Learn More About SolvePath Framework
@@ -157,7 +180,9 @@ const AboutSection: React.FC = () => {
                   From Campaigns to Complete Solutions
                 </h3>
                 <p className="text-center text-muted-foreground text-sm sm:text-base">
-                  We evolved from performance marketing specialists to comprehensive business accelerators, maintaining our core DNA of speed, precision, and results.
+                  We evolved from performance marketing specialists to
+                  comprehensive business accelerators, maintaining our core DNA
+                  of speed, precision, and results.
                 </p>
               </CardContent>
             </Card>

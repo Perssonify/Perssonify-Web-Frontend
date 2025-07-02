@@ -12,7 +12,7 @@ import OrbitingCirclesDemo from '@/common/layout/OrbitingCircles';
 const Hero: React.FC = () => {
   return (
     <section className="relative overflow-hidden bg-background">
-      <div className="max-w-6xl mx-auto px-4 sm:px-2">
+      <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-6 items-center pt-20 h-auto md:h-screen">
           {/* Left: Content */}
           <div className="flex flex-col items-start text-left gap-6 py-12">
@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-bold text-foreground mb-4 leading-tight"
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-bold text-foreground mb-4 leading-tight text-left "
             >
               We bring{' '}
               <span className="text-primary relative inline-block">Growth</span>
@@ -44,7 +44,7 @@ const Hero: React.FC = () => {
               className="text-base sm:text-lg md:text-xl text-foreground/90 dark:text-foreground/80 leading-relaxed"
             >
               <div className="mb-2">We help businesses grow fast and scale smart.</div>
-              <div className="inline-flex items-center px-2 py-0.5 rounded-lg bg-primary border border-primary min-w-[180px] max-w-[220px] justify-center text-center">
+              <div className="inline-flex items-center  py-0.5 rounded-lg bg-primary border border-primary min-w-[180px] max-w-[220px] justify-center text-center">
                 <RotatingText
                   texts={["The right solution.", "The right time.", "Delivered."]}
                   rotationInterval={2000}
