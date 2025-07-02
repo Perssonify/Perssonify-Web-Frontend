@@ -5,18 +5,17 @@ import React from 'react';
 import { Zap, ArrowUpRight } from 'lucide-react';
 import { motion } from 'motion/react';
 import { RotatingText } from '@/components/ui/rotating-text'; 
-
 import InteractiveHoverCard from '@/components/ui/interactive-hover-card';
 import Link from 'next/link';
-import OrbitingCirclesDemo from '@/common/OrbitingCirclesDemo';
+import OrbitingCirclesDemo from '@/common/layout/OrbitingCircles';
 
 const Hero: React.FC = () => {
   return (
     <section className="relative overflow-hidden bg-background">
       <div className="max-w-6xl mx-auto px-2 sm:px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center  h-screen">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center h-screen">
           {/* Left: Content */}
-          <div className="flex flex-col items-start text-left gap-6">
+          <div className="flex flex-col items-start text-left gap-6 justify-center">
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -60,40 +59,40 @@ const Hero: React.FC = () => {
             <OrbitingCirclesDemo />
           </div>
         </div>
-         {/* Interactive Hover Cards */}
-         <motion.div
-           initial={{ opacity: 0, y: 20 }}
-           animate={{ opacity: 1, y: 0 }}
-           transition={{ duration: 0.8, delay: 0.7 }}
-           className="flex flex-col lg:flex-row gap-6 justify-center items-center w-full mt-8"
-         >
-           <Link href="/growth-solutions" className="block w-full max-w-lg relative group">
-             <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-primary/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl"></div>
-             <div className="relative">
-               <InteractiveHoverCard
-                 imageUrl="/Icons/Growth Solutions.png"
-                 heading="Growth Solutions"
-                 text="High-performance marketing strategy and execution that amplifies brand value and accelerates customer acquisition."
-               />
-               <div className="absolute top-4 right-4 transition-opacity duration-300">
-                 <ArrowUpRight className="w-5 h-5 text-primary" />
-               </div>
-             </div>
-           </Link>
-           <Link href="/strategic-solutions" className="block w-full max-w-lg relative group">
-             <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-primary/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl"></div>
-             <div className="relative">
-               <InteractiveHoverCard
-                 imageUrl="/Icons/Strategic Solutions.png"
-                 heading="Strategic Solutions"
-                 text="Tailored strategy and implementations built for precision, scalability, and operational efficiency."
-               />
-               <div className="absolute top-4 right-4 transition-opacity duration-300">
-                 <ArrowUpRight className="w-5 h-5 text-primary" />
-               </div>
-             </div>
-           </Link>
-         </motion.div>
+        {/* Interactive Hover Cards */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.7 }}
+          className="flex flex-col lg:flex-row gap-6 justify-center items-center w-full mt-4"
+        >
+          <Link href="/growth-solutions" className="block w-full max-w-lg relative group">
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-primary/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl"></div>
+            <div className="relative">
+              <InteractiveHoverCard
+                imageUrl="/Icons/Growth Solutions.png"
+                heading="Growth Solutions"
+                text="High-performance marketing strategy and execution that amplifies brand value and accelerates customer acquisition."
+              />
+              <div className="absolute top-4 right-4 transition-opacity duration-300">
+                <ArrowUpRight className="w-5 h-5 text-primary" />
+              </div>
+            </div>
+          </Link>
+          <Link href="/strategic-solutions" className="block w-full max-w-lg relative group">
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-primary/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl"></div>
+            <div className="relative">
+              <InteractiveHoverCard
+                imageUrl="/Icons/Strategic Solutions.png"
+                heading="Strategic Solutions"
+                text="Tailored strategy and implementations built for precision, scalability, and operational efficiency."
+              />
+              <div className="absolute top-4 right-4 transition-opacity duration-300">
+                <ArrowUpRight className="w-5 h-5 text-primary" />
+              </div>
+            </div>
+          </Link>
+        </motion.div>
       </div>
     </section>
   );
