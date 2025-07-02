@@ -216,8 +216,8 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, toggleDarkMode }) => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-[500] bg-background/95 backdrop-blur-sm border-b border-border transition-all duration-300">
-      <div className="container mx-auto px-2">
-        <div className="flex items-center justify-between h-14 sm:h-16 relative px-2 w-full max-w-6xl mx-auto">
+      <div className="container mx-auto ">
+        <div className="flex items-center justify-between h-14 sm:h-16 relative  w-full max-w-6xl mx-auto">
           {/* Left: Logo */}
           <Link
             href="/"
@@ -381,7 +381,7 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, toggleDarkMode }) => {
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.3 }}
-              className="lg:hidden fixed top-[56px] left-1/2 -translate-x-1/2 w-full max-w-sm border border-border bg-background max-h-[70vh] overflow-y-auto rounded-b-xl shadow-2xl z-[100] flex flex-col px-2"
+              className="lg:hidden fixed top-[56px] left-1/2 -translate-x-1/2 w-full max-w-sm border border-border bg-background max-h-[70vh] overflow-y-auto rounded-b-xl shadow-2xl z-[100] flex flex-col "
             >
               <div className="py-4 space-y-3 flex flex-col">
                 {navigation.map((item) => (
