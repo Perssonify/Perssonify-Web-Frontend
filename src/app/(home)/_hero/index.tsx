@@ -10,11 +10,12 @@ import Link from 'next/link';
 
 // Demo icon paths from public/Icons/
 const iconPaths = [
-  '/Icons/Growth Solutions.png',
-  '/Icons/Strategic Solutions.png',
-  '/Growth Solutions Icons/PerformanceMarketing&PaidMedia.png',
-  '/Growth Solutions Icons/Social Media Marketing & Brand Engagement.png',
-  '/Growth Solutions Icons/Email Marketing & Marketing Automation.png',
+  '/Icons/robot.svg',
+  '/Icons/technical-support.svg',
+  '/Icons/user.svg',
+  '/Icons/web-development.svg',
+  '/Icons/analytic-report.svg',
+  '/Icons/market-analysis.svg',
 ];
 
 function OrbitingCirclesDemo() {
@@ -23,7 +24,7 @@ function OrbitingCirclesDemo() {
       {/* Center fixed icon */}
       <div className="absolute z-10 flex items-center justify-center">
         <Image
-          src={iconPaths[0]}
+          src={'/Icons/globe.svg'}
           alt="Center Icon"
           width={80}
           height={80}
@@ -40,19 +41,19 @@ function OrbitingCirclesDemo() {
             alt={`Orbit Icon ${i + 1}`}
             width={48}
             height={48}
-            className="rounded-full bg-white dark:bg-black p-1 object-contain shadow"
+            className="rounded-full bg-white dark:bg-black p-1.5 object-contain shadow"
           />
         ))}
       </OrbitingCircles>
       <OrbitingCircles iconSize={32} radius={100} reverse speed={2} color="var(--color-primary)">
-        {iconPaths.slice(0, 4).map((src, i) => (
+        {iconPaths.slice(1, 5).map((src, i) => (
           <Image
             key={src + '-small'}
             src={src}
             alt={`Orbit Icon Small ${i + 1}`}
             width={32}
             height={32}
-            className="rounded-full bg-white dark:bg-black p-0.5 object-contain shadow"
+            className="rounded-full bg-white dark:bg-black p-1 object-contain shadow"
           />
         ))}
       </OrbitingCircles>
