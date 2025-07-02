@@ -58,11 +58,11 @@ const ContactSection: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
         >
-            <Card className="shadow-lg rounded-xl p-4">
-              <CardHeader>
+            <Card className="shadow-md rounded-xl p-4 py-8">
+              <CardHeader className="px-4 sm:px-6">
                 <CardTitle className="text-2xl">Get in Touch</CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="px-4 sm:px-6">
                 <form onSubmit={handleSubmit} className="space-y-5">
                   <div className="grid grid-cols-1 gap-4">
                     <div>
