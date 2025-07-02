@@ -65,7 +65,7 @@ const Hero: React.FC = () => {
   return (
     <section className="relative overflow-hidden bg-background">
       <div className="max-w-6xl mx-auto px-2 sm:px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center pt-32 pb-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center  h-screen">
           {/* Left: Content */}
           <div className="flex flex-col items-start text-left gap-6">
             <motion.div
