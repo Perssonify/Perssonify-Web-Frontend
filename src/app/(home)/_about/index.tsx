@@ -42,7 +42,7 @@ const AboutSection: React.FC = () => {
             className="lg:ml-0 text-left"
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-left text-primary">
-              About<span className="text-primary">Us</span>
+              About <span className="text-primary">Us</span>
             </h2>
             <p className="text-base sm:text-lg text-foreground mb-4 sm:mb-6 leading-relaxed">
               The right solution at the right time can change everything. We make the right solutions happen right now.
