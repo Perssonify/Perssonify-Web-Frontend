@@ -36,31 +36,31 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, toggleDarkMode }) => {
           items: [
             {
               name: "Performance Marketing & Paid Media",
-              href: "/growth-solutions/performance-marketing",
+              href: "/performance-marketing",
             },
             {
               name: "Social Media Marketing & Brand Engagement",
-              href: "/growth-solutions/social-media-marketing",
+              href: "/social-media-marketing",
             },
             {
               name: "Email Marketing & Marketing Automation",
-              href: "/growth-solutions/email-marketing",
+              href: "/email-marketing",
             },
             {
               name: "Creative Solutions",
-              href: "/growth-solutions/creative-solutions",
+              href: "/creative-solutions",
             },
             {
               name: "Conversion Rate Optimization (CRO)",
-              href: "/growth-solutions/conversion-optimization",
+              href: "/conversion-optimization",
             },
             {
               name: "Search Engine Optimization (SEO) & Website Growth",
-              href: "/growth-solutions/seo-website-growth",
+              href: "/seo-website-growth",
             },
             {
               name: "Website Solutions",
-              href: "/growth-solutions/website-solutions",
+              href: "/website-solutions",
             },
           ],
         },
@@ -70,31 +70,31 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, toggleDarkMode }) => {
           items: [
             {
               name: "Deep Dive Audit & Strategic Insights",
-              href: "/specialized-growth-solutions/audit-insights",
+              href: "/audit-insights",
             },
             {
               name: "Analytics and Event Tracking Setup",
-              href: "/specialized-growth-solutions/analytics-tracking",
+              href: "/analytics-tracking",
             },
             {
               name: "Lead Generation & Funnel Strategy",
-              href: "/specialized-growth-solutions/lead-generation",
+              href: "/lead-generation",
             },
             {
               name: "Brand Architecture & Strategy",
-              href: "/specialized-growth-solutions/brand-strategy",
+              href: "/brand-strategy",
             },
             {
               name: "Content Strategy & Planning",
-              href: "/specialized-growth-solutions/content-strategy",
+              href: "/content-strategy",
             },
             {
               name: "AI-Accelerated Content Production Pipelines",
-              href: "/specialized-growth-solutions/ai-content",
+              href: "/ai-content",
             },
             {
               name: "Executive Personal Branding & LinkedIn Marketing",
-              href: "/specialized-growth-solutions/executive-branding",
+              href: "/executive-branding",
             },
           ],
         },
@@ -111,19 +111,19 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, toggleDarkMode }) => {
           items: [
             {
               name: "Process & Workflow Automation",
-              href: "/strategic-solutions/process-automation",
+              href: "/process-automation",
             },
             {
               name: "Digital Systems Enablement",
-              href: "/strategic-solutions/digital-systems-enablement",
+              href: "/digital-systems-enablement",
             },
             {
               name: "Custom Solution Engineering",
-              href: "/strategic-solutions/custom-solution-engineering",
+              href: "/custom-solution-engineering",
             },
             {
               name: "Enterprise Evolution & Strategic Transformation",
-              href: "/strategic-solutions/enterprise-evolution-strategic-transformation",
+              href: "/enterprise-evolution-strategic-transformation",
             },
           ],
         },
@@ -133,20 +133,20 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, toggleDarkMode }) => {
           items: [
             {
               name: "Finance",
-              href: "/strategic-solutions/finance-operations",
+              href: "/finance-operations",
             },
             {
               name: "Human Resources",
-              href: "/strategic-solutions/human-resources",
+              href: "/human-resources",
             },
-            { name: "Operations", href: "/strategic-solutions/operations" },
+            { name: "Operations", href: "/operations" },
             {
               name: "Compliance & Governance",
-              href: "/strategic-solutions/compliance-governance",
+              href: "/compliance-governance",
             },
             {
               name: "Cross-Functional Leadership",
-              href: "/strategic-solutions/cross-functional-leadership",
+              href: "/cross-functional-leadership",
             },
           ],
         },
@@ -158,13 +158,6 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, toggleDarkMode }) => {
 
   const isActive = (path: string) =>
     pathname === path || pathname.startsWith(path + "/");
-
-  const handleLogoClick = (e: React.MouseEvent) => {
-    e.preventDefault();
-    setTimeout(() => {
-      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-    }, 100);
-  };
 
   // Clear timeout helper
   const clearDropdownTimeout = () => {
@@ -226,8 +219,8 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, toggleDarkMode }) => {
       <div className="container mx-auto px-2 sm:px-4">
         <div className="flex items-center justify-between h-14 sm:h-16 relative px-2 w-full max-w-6xl mx-auto">
           {/* Left: Logo */}
-          <button
-            onClick={handleLogoClick}
+          <Link
+            href="/"
             className="flex items-center cursor-pointer hover:opacity-80 transition-opacity flex-shrink-0"
             aria-label="Navigate to home page"
           >
@@ -235,10 +228,10 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, toggleDarkMode }) => {
             <img
               src="/Logo-Teal.png"
               alt="Perssonify Logo"
-              className="object-contain h-8 w-24 sm:h-10 sm:w-32"
+              className="object-contain h-6 w-16 sm:h-8 sm:w-24"
               style={{ width: "auto" }}
             />
-          </button>
+          </Link>
 
           {/* Center: Navigation (desktop only) */}
           <nav

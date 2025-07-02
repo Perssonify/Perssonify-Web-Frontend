@@ -1,8 +1,10 @@
 'use client'; 
 import React from 'react';
-import { Users, Target, Zap, Lightbulb } from 'lucide-react';
+import { Users, Target, Zap, Lightbulb, ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Card, CardContent } from '@/components/ui/card';
+import Link from 'next/link';
+import { Button } from '@/components/ui/button';
 
 const AboutSection: React.FC = () => {
   const features = [
@@ -54,12 +56,12 @@ const AboutSection: React.FC = () => {
             <p className="text-base sm:text-lg font-semibold text-primary mb-6 sm:mb-8">
               Ready to scale with confidence? Let&apos;s talk.
             </p>
-            {/* <Link href="/about"> */}  
-              {/* <Button size="lg" className="group">
+            <Button asChild size="lg" className="group">
+              <Link href="/about">
                 Learn More About Us
                 <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-              </Button>
-            </Link> */}
+              </Link>
+            </Button>
           </motion.div>
 
           {/* Features Grid */}
@@ -127,12 +129,13 @@ const AboutSection: React.FC = () => {
             <p className="text-base sm:text-lg font-semibold text-primary mb-6 sm:mb-8">
               The lesson: breakthrough results don&apos;t come from doing more—they come from solving what&apos;s really in the way.
             </p>
-            {/* <Link href="/about/solvepath-framework"> */}
-              {/*<Button size="lg" className="group">
+            
+            <Button asChild size="lg" className="group">
+              <Link href="/solvepath-framework">
                 Learn More About SolvePath Framework
                 <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-              </Button>
-            </Link> */}
+              </Link>
+            </Button>
           </motion.div>
 
           {/* Journey Visual */}
