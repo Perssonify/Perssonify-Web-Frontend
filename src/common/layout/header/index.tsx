@@ -217,7 +217,7 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, toggleDarkMode }) => {
   return (
     <header className="fixed top-0 left-0 right-0 z-[500] bg-background/95 backdrop-blur-sm border-b border-border transition-all duration-300">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-14 sm:h-16 relative px-4 w-full max-w-6xl mx-auto">
+        <div className="flex items-center justify-between h-14 sm:h-16 relative px-0 sm:px-4 w-full max-w-6xl mx-auto">
           {/* Left: Logo */}
           <Link
             href="/"
@@ -356,20 +356,18 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, toggleDarkMode }) => {
           </div>
 
           {/* Hamburger menu button on mobile */}
-          <div className="flex items-center lg:hidden ml-auto">
+          <div className="flex items-center lg:hidden gap-2">
             <Switch checked={isDarkMode} setChecked={toggleDarkMode} />
-            <Button
-              variant="ghost"
-              size="sm"
+            <div
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="w-8 h-8 p-0 ml-1"
+              className="p-1 ml-1 pr-0"
             >
               {isMenuOpen ? (
-                <X className="w-4 h-4" />
+                <X className="w-4 h-4 text-primary" />
               ) : (
-                <Menu className="w-4 h-4" />
+                <Menu className="w-4 h-4 text-primary" />
               )}
-            </Button>
+              </div>
           </div>
         </div>
 
