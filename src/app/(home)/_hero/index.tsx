@@ -32,7 +32,7 @@ function OrbitingCirclesDemo() {
         />
       </div>
       {/* Orbiting icons */}
-      <OrbitingCircles iconSize={48}>
+      <OrbitingCircles iconSize={48} color="var(--color-primary)">
         {iconPaths.map((src, i) => (
           <Image
             key={src}
@@ -44,7 +44,7 @@ function OrbitingCirclesDemo() {
           />
         ))}
       </OrbitingCircles>
-      <OrbitingCircles iconSize={32} radius={100} reverse speed={2}>
+      <OrbitingCircles iconSize={32} radius={100} reverse speed={2} color="var(--color-primary)">
         {iconPaths.slice(0, 4).map((src, i) => (
           <Image
             key={src + '-small'}

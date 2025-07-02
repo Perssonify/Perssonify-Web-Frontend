@@ -12,6 +12,7 @@ export interface OrbitingCirclesProps
   path?: boolean;
   iconSize?: number;
   speed?: number;
+  color?: string;
 }
 
 export function OrbitingCircles({
@@ -23,6 +24,7 @@ export function OrbitingCircles({
   path = true,
   iconSize = 30,
   speed = 1,
+  color = 'var(--color-primary)',
   ...props
 }: OrbitingCirclesProps) {
   const calculatedDuration = duration / speed;
@@ -35,7 +37,8 @@ export function OrbitingCircles({
           className="pointer-events-none absolute inset-0 size-full"
         >
           <circle
-            className="stroke-black/10 stroke-1 dark:stroke-white/10"
+            style={{ stroke: color, opacity: 0.25 }}
+            className="stroke-1"
             cx="50%"
             cy="50%"
             r={radius}
@@ -53,6 +56,7 @@ export function OrbitingCircles({
                 "--radius": radius,
                 "--angle": angle,
                 "--icon-size": `${iconSize}px`,
+                boxShadow: `0 0 0 2px ${color}`,
               } as React.CSSProperties
             }
             className={cn(
