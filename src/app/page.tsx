@@ -1,7 +1,7 @@
 import AboutSection from "./(home)/_about";
 import ContactSection from "./(home)/_contact";
 import Hero from "./(home)/_hero";
-import TimelineSection from "./(home)/_timeline";
+import OurSolutions from "./(home)/_oursolutions";
 
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div>
       <Hero />
-      <TimelineSection />
+      <OurSolutions />
       <AboutSection />
       <ContactSection />
     </div>

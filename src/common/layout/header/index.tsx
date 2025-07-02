@@ -6,9 +6,8 @@ import { usePathname } from "next/navigation";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Switch } from "./switch";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "motion/react";
 import { AnimatedUnderline } from "@/components/ui/animated-underline";
-import Image from "next/image";
 
 interface HeaderProps {
   isDarkMode: boolean;
@@ -232,14 +231,12 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, toggleDarkMode }) => {
             className="flex items-center cursor-pointer hover:opacity-80 transition-opacity flex-shrink-0"
             aria-label="Navigate to home page"
           >
-            <Image
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
               src="/Logo-Teal.png"
               alt="Perssonify Logo"
-              width={128}
-              height={40}
               className="object-contain h-8 w-24 sm:h-10 sm:w-32"
               style={{ width: "auto" }}
-              priority
             />
           </button>
 
