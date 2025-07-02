@@ -12,10 +12,10 @@ import OrbitingCirclesDemo from '@/common/layout/OrbitingCircles';
 const Hero: React.FC = () => {
   return (
     <section className="relative overflow-hidden bg-background">
-      <div className="max-w-6xl mx-auto px-2 sm:px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center h-screen">
+      <div className="max-w-6xl mx-auto px-4 sm:px-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-6 items-center pt-20 h-auto md:h-screen">
           {/* Left: Content */}
-          <div className="flex flex-col items-start text-left gap-6 justify-center">
+          <div className="flex flex-col items-start text-left gap-6 py-12">
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -55,7 +55,7 @@ const Hero: React.FC = () => {
             </motion.div>
           </div>
           {/* Right: Orbiting Circles Demo */}
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center mb-12">
             <OrbitingCirclesDemo />
           </div>
         </div>
