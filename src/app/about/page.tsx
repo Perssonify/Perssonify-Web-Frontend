@@ -1,5 +1,5 @@
 import React from 'react';
-import { TrendingUp, Target, Users, Zap, ArrowRight, CheckCircle, Lightbulb, Search, Layers, Flag, Wrench, Cog, BarChart3, Eye, Repeat, Sparkles, Dribbble, Github, Linkedin } from 'lucide-react';
+import { TrendingUp, Target, Users, Zap, ArrowRight, CheckCircle, Lightbulb, Search, Layers, Flag, Wrench, Cog, Eye, Dribbble, Github, Linkedin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
@@ -149,19 +149,19 @@ const About: React.FC = () => {
             </h2>
             <div className="prose prose-lg max-w-none text-muted-foreground space-y-6 dark:prose-invert">
               <p>
-                We started in performance marketing and branding, where speed, efficiency, and ROI are non-negotiable—they're expected. As we worked with ambitious businesses to drive growth, we saw a deeper pattern: challenges beyond growth and marketing—like process gaps, operational slowdowns, and disconnected systems—were limiting performance.
+                We started in performance marketing and branding, where speed, efficiency, and ROI are non-negotiable—they&apos;re expected. As we worked with ambitious businesses to drive growth, we saw a deeper pattern: challenges beyond growth and marketing—like process gaps, operational slowdowns, and disconnected systems—were limiting performance.
               </p>
               <p>
                 By solving what slowed growth, we unlocked new value, accelerated results, and expanded what growth achieved. The insight was simple but powerful: the same thinking that optimized campaigns could optimize companies.
               </p>
               <p>
-                That shift didn't change who we are—it sharpened it. We still move with urgency. We still focus relentlessly on ROI. We still bring the same bias for action, comfort with high-stakes decisions, and clarity in fast-moving environments. And we still thrive where the pressure's high and the expectations even higher.
+                That shift didn&apos;t change who we are—it sharpened it. We still move with urgency. We still focus relentlessly on ROI. We still bring the same bias for action, comfort with high-stakes decisions, and clarity in fast-moving environments. And we still thrive where the pressure&apos;s high and the expectations even higher.
               </p>
               <p className="text-xl font-semibold ">
                 What changed is how far we can go.
               </p>
               <p>
-                We apply the same logic, structure, and high standards to solving both growth and operational challenges—independently or in tandem—so businesses can scale with confidence and adapt without friction. Whether we're streamlining how work gets done or accelerating how demand is created, we help businesses move faster and scale with confidence.
+                We apply the same logic, structure, and high standards to solving both growth and operational challenges—independently or in tandem—so businesses can scale with confidence and adapt without friction. Whether we&apos;re streamlining how work gets done or accelerating how demand is created, we help businesses move faster and scale with confidence.
               </p>
             </div>
           </div>
@@ -176,7 +176,7 @@ const About: React.FC = () => {
               How We Solve
             </h2>
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8">
-              At the heart of how we work, the SolvePath Framework ensures we're always solving the right things, the right way. The SolvePath Framework lets us turn problems and opportunities into actionable, measurable high-yield solutions that drive performance, at speed and at scale.
+              At the heart of how we work, the SolvePath Framework ensures we&apos;re always solving the right things, the right way. The SolvePath Framework lets us turn problems and opportunities into actionable, measurable high-yield solutions that drive performance, at speed and at scale.
             </p>
           </div>
 
@@ -214,7 +214,7 @@ const About: React.FC = () => {
               Perssonify Execution Model
             </h2>
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8">
-              But strategy only matters if it moves. So we built the Perssonify Execution model around it. This model turns insight into delivery, and delivery into improvement. It's a continuous loop that's built to move fast without breaking what matters.
+                  But strategy only matters if it moves. So we built the Perssonify Execution model around it. This model turns insight into delivery, and delivery into improvement. It&apos;s a continuous loop that&apos;s built to move fast without breaking what matters.
             </p>
           </div>
 
@@ -235,7 +235,7 @@ const About: React.FC = () => {
                 ))}
               </div>
               <p className="text-center text-muted-foreground mt-6">
-                Whether it's a campaign, a transformation, or an ecosystem rollout, this model ensures everything we implement works in context, adapts in real time, and gets better over time.
+                Whether it&apos;s a campaign, a transformation, or an ecosystem rollout, this model ensures everything we implement works in context, adapts in real time, and gets better over time.
               </p>
             </Card>
           </div>
@@ -283,7 +283,7 @@ const About: React.FC = () => {
               Two Solution Families Under One Roof
             </h2>
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
-            Our <span className="text-primary">two solution</span> families are part of the same system, <span className="text-primary">two complementary engines</span> that help businesses scale what works and fix what doesn't. That integrated approach lets us expand and evolve our offerings across both tracks without losing speed, clarity, or control.
+            Our <span className="text-primary">two solution</span> families are part of the same system, <span className="text-primary">two complementary engines</span> that help businesses scale what works and fix what doesn&apos;t. That integrated approach lets us expand and evolve our offerings across both tracks without losing speed, clarity, or control.
             As the needs of our clients have evolved, so have we. Our ability to <span className="text-primary">think strategically, execute efficiently,</span> and <span className="text-primary">adapt intelligently</span> is what keeps us relevant and makes us invaluable.
             </p>
           </div>
@@ -403,7 +403,7 @@ const About: React.FC = () => {
               Meet the Team
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              The team you'll be working with
+                The team you&apos;ll be working with.
             </p>
           </div>
           <div className="grid gap-y-12 gap-x-8 sm:grid-cols-2 lg:grid-cols-4">
