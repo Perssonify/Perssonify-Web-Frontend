@@ -58,7 +58,7 @@ const ContactSection: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
         >
-            <Card className="max-w-md w-full mx-auto shadow-lg rounded-xl p-4">
+            <Card className="shadow-lg rounded-xl p-4">
               <CardHeader>
                 <CardTitle className="text-2xl">Get in Touch</CardTitle>
               </CardHeader>
