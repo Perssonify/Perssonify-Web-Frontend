@@ -153,11 +153,11 @@ const StrategicSolutions: React.FC = () => {
                         {service.title}
                       </CardTitle>
                     </CardHeader>
-                    <CardContent>
+                    <CardContent className="flex flex-col h-full justify-between">
                       <p className="text-muted-foreground leading-relaxed text-sm sm:text-base mb-4 sm:mb-6">
                         {service.description}
                       </p>
-                      <Button asChild className="w-full">
+                      <Button asChild className="w-full mt-auto">
                         <Link href={service.link}>
                           Learn More
                         </Link>
@@ -206,11 +206,11 @@ const StrategicSolutions: React.FC = () => {
                         {solution.title}
                       </CardTitle>
                     </CardHeader>
-                    <CardContent>
+                    <CardContent className="flex flex-col h-full justify-between">
                       <p className="text-muted-foreground leading-relaxed text-sm sm:text-base mb-4 sm:mb-6">
                         {solution.description}
                       </p>
-                      <Button asChild className="w-full">
+                      <Button asChild className="w-full mt-auto">
                         <Link href={solution.link}>
                           Learn More
                         </Link>
