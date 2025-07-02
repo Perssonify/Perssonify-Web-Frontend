@@ -378,7 +378,7 @@ const About: React.FC = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {values.map((value, index) => (
+            {values.map((value) => (
               <Card key={value.title} className="text-center h-full">
                 <CardHeader>
                   <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
@@ -423,7 +423,7 @@ const About: React.FC = () => {
                   {person.role}
                 </p>
                 <p className="text-sm text-muted-foreground text-center mb-3">
-                  {person.description}
+                  {person.description.replace("'", "&apos;")}
                 </p>
                 <div className="mt-auto flex gap-4 justify-center">
                   <a href={person.github} aria-label="Github" target="_blank" rel="noopener noreferrer"><Github className="size-5 text-muted-foreground hover:text-primary transition-colors" /></a>
@@ -444,7 +444,7 @@ const About: React.FC = () => {
               Ready to Transform Your Business?
             </h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-4xl mx-auto">
-              If you're looking for a partner that's just as focused on results as you are—one that works fast, thinks strategically, and makes complex things executable—Perssonify is built for that.
+              If you&apos;re looking for a partner that&apos;s just as focused on results as you are—one that works fast, thinks strategically, and makes complex things executable—Perssonify is built for that.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" asChild>
