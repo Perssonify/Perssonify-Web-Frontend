@@ -181,7 +181,7 @@ const About: React.FC = () => {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mb-12">
-            {solvepathSteps.map((step, index) => (
+            {solvepathSteps.map((step) => (
               <Card key={step.title} className="text-center bg-gradient-to-br from-primary/10 to-primary/5 border-0 custom-shadow">
                 <CardHeader className="pb-4">
                   <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
@@ -223,12 +223,12 @@ const About: React.FC = () => {
               <div className="flex items-center justify-center mb-8">
               </div>
               <div className="flex flex-wrap justify-center items-center gap-4">
-                {executionSteps.map((step, index) => (
+                {executionSteps.map((step) => (
                   <React.Fragment key={step}>
                     <div className="flex items-center justify-center px-4 py-2 bg-primary/10 rounded-full">
                       <span className="text-primary font-semibold">{step}</span>
                     </div>
-                    {index < executionSteps.length - 1 && (
+                    {step !== executionSteps[executionSteps.length - 1] && (
                       <ArrowRight className="w-4 h-4 text-muted-foreground hidden sm:block" />
                     )}
                   </React.Fragment>
@@ -348,7 +348,7 @@ const About: React.FC = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {deliverables.map((item, index) => (
+            {deliverables.map((item) => (
               <Card key={item.title} className="text-center h-full">
                 <CardHeader>
                   <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
