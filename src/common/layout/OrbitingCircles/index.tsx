@@ -29,14 +29,16 @@ const OrbitingCirclesDemo: React.FC = () => {
       {/* Orbiting icons */}
       <OrbitingCircles iconSize={48} color="var(--color-primary)">
         {iconPaths.map((src, i) => (
-          <Image
-            key={src}
-            src={src}
-            alt={`Orbit Icon ${i + 1}`}
-            width={48}
-            height={48}
-            className="rounded-full bg-white dark:bg-black p-1.5 object-contain shadow"
-          />
+          <div className='rounded-full bg-white dark:bg-black p-2 shadow' key={i}>
+            <Image
+              key={src}
+              src={src}
+              alt={`Orbit Icon ${i + 1}`}
+              width={48}
+              height={48}
+              className="object-contain"
+            />
+          </div>
         ))}
       </OrbitingCircles>
       <OrbitingCircles iconSize={32} radius={100} reverse speed={2} color="var(--color-primary)">
