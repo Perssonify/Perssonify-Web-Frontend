@@ -20,11 +20,11 @@ const { blogPosts } = params;
 const Blog: React.FC = () => {
   // Show blog listing
   return (
-    <div className="bg-background min-h-screen">
+    <div className="bg-background min-h-screen w-full px-4 max-w-6xl mx-auto">
       {/* Premium Hero Section */}
       <section className="relative py-32 bg-gradient-to-br from-primary/5 via-background to-accent/5 overflow-hidden">
         <div className="absolute inset-0 bg-grid-pattern opacity-[0.02]" />
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="container mx-auto relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -52,7 +52,7 @@ const Blog: React.FC = () => {
 
       {/* Featured Article */}
       <section className="py-24 border-b border-border">
-        <div className="container mx-auto px-4">
+        <div className="container">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -119,7 +119,7 @@ const Blog: React.FC = () => {
 
       {/* Blog Grid */}
       <section className="py-24">
-        <div className="container mx-auto px-4">
+        <div className="container">
           <div className="max-w-6xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -189,8 +189,8 @@ const Blog: React.FC = () => {
       </section>
 
       {/* Newsletter CTA */}
-      <section className="py-24 bg-gradient-to-br from-primary/5 to-accent/5">
-        <div className="container mx-auto px-4">
+      <section className="py-24 px-4 sm:px-6 lg:px-8 dark:bg-muted/40 bg-muted/70 mb-20 rounded-2xl">
+        <div className="container">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
