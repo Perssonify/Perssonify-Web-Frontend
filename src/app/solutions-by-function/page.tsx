@@ -14,35 +14,35 @@ const SolutionsByFunction: React.FC = () => {
       title: 'Finance',
       description: 'For teams drowning in manual reporting, reconciliation, and expense processing.',
       useCases: 'Invoice ingestion and coding, monthly reconciliation workflows, automated expense approvals, real-time reporting rollups, financial data validation.',
-      link: '/strategic-solutions/finance-operations'
+      link: '/finance-operations'
     },
     {
       icon: Users,
       title: 'Human Resources',
       description: 'For teams spending too much time on onboarding, offboarding, and compliance workflows.',
       useCases: 'New hire provisioning, offboarding checklists with access revocation, digital policy acknowledgments, compliance reporting automation, internal HR request portals.',
-      link: '/strategic-solutions/human-resources'
+      link: '/human-resources'
     },
     {
       icon: Settings,
       title: 'Operations',
       description: 'For approvals, tasks, and dependencies that drag on for weeks instead of days.',
       useCases: 'Multi-step task routing with escalations, operational SLA tracking, automated handoffs between teams, real-time process dashboards, audit-ready activity logs.',
-      link: '/strategic-solutions/operations'
+      link: '/operations'
     },
     {
       icon: Shield,
       title: 'Compliance & Governance',
       description: 'For teams burdened by high-stakes regulatory controls and documentation.',
       useCases: 'Control tracking and evidence capture, automated policy enforcement checks, sample gathering and packaging for audits, compliance workflows with digital traceability.',
-      link: '/strategic-solutions/compliance-governance'
+      link: '/compliance-governance'
     },
     {
       icon: Target,
       title: 'Cross-Functional Leadership',
       description: 'For teams that need tailored solutions beyond a single department.',
       useCases: 'Org-wide initiative execution, post-merger integration, process reengineering across silos, unified reporting across departments, centralized workflow orchestration.',
-      link: '/strategic-solutions/cross-functional-leadership'
+      link: '/cross-functional-leadership'
     }
   ];
 
@@ -79,7 +79,7 @@ const SolutionsByFunction: React.FC = () => {
                 </Link>
               </Button>
               <Button variant="outline" size="lg" asChild>
-                <Link href="/strategic-solutions" className="flex items-center">
+                <Link href="" className="flex items-center">
                   View All Strategic Solutions
                   <ArrowRight className="ml-2 w-4 h-4" />
                 </Link>
