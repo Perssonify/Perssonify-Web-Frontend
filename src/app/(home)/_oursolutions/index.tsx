@@ -306,15 +306,15 @@ export default function TimelineSection() {
                 </div>
 
                 <div className="text-center">
-                  <Button
-                    className="font-semibold text-lg mb-4"
-                    size="lg"
-                    asChild
-                  >
-                    <a href="/contact">
+                  <Link href="/contact">
+                    <Button
+                      className="font-semibold text-lg mb-4"
+                      size="lg"
+                      asChild
+                    >
                       Ready to move faster? Let&apos;s talk.
-                    </a>
-                  </Button>
+                    </Button>
+                  </Link>
                 </div>
               </section>
 
@@ -447,15 +447,15 @@ export default function TimelineSection() {
                 </div>
 
                 <div className="text-center">
-                  <Button
-                    className="font-semibold text-lg mb-4"
-                    size="lg"
-                    asChild
-                  >
-                    <a href="/contact">
+                  <Link href="/contact">
+                    <Button
+                      className="font-semibold text-lg mb-4"
+                      size="lg"
+                      asChild
+                    >
                       Ready to move faster? Let&apos;s talk.
-                    </a>
-                  </Button>
+                    </Button>
+                  </Link>
                 </div>
               </section>
             </main>
