@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import SolutionTemplate from "@/common/layout/SolutionTemplate";
+import SolutionTemplate from "@/common/SolutionTemplate";
 import { Cog, Settings, Users, Target, Zap } from "lucide-react";
 
 const services = [

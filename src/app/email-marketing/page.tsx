@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import { Mail, Target, Users, BarChart } from 'lucide-react';
-import SolutionTemplate from '@/common/layout/SolutionTemplate';
+import SolutionTemplate from '@/common/SolutionTemplate';
 
 const EmailMarketing: React.FC = () => {
   const services = [

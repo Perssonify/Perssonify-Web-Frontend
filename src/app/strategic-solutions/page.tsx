@@ -22,7 +22,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { WavyBackground } from "@/components/ui/wavy-background";
-import StartGrowingForm from "@/common/layout/StartGrowingForm";
+import StartGrowingForm from "@/common/StartGrowingForm";
 import { motion } from "framer-motion";
 
 const StrategicSolutions: React.FC = () => {

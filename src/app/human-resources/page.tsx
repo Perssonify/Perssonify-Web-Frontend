@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import SolutionTemplate from '@/common/layout/SolutionTemplate';
+import SolutionTemplate from '@/common/SolutionTemplate';
 import { Users, UserPlus, ShieldCheck, BookOpen, BarChart3 } from 'lucide-react';
 
 const HumanResources: React.FC = () => {

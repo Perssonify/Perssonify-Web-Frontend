@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import SolutionTemplate from '@/common/layout/SolutionTemplate';
+import SolutionTemplate from '@/common/SolutionTemplate';
 import { FileText, Calendar, Target, TrendingUp, Users } from 'lucide-react';
 
 const ContentStrategy: React.FC = () => {

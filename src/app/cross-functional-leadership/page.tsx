@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import SolutionTemplate from '@/common/layout/SolutionTemplate';
+import SolutionTemplate from '@/common/SolutionTemplate';
 import { Users, Target, BarChart3, Shuffle, Settings } from 'lucide-react';
 
 const CrossFunctionalLeadership: React.FC = () => {

@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import SolutionTemplate from '@/common/layout/SolutionTemplate';
+import SolutionTemplate from '@/common/SolutionTemplate';
 import { Palette, Camera, Video, Brush, Sparkles } from 'lucide-react';
 
 const CreativeSolutions: React.FC = () => {

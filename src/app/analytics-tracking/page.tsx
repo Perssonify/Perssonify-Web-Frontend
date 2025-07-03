@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import SolutionTemplate from '@/common/layout/SolutionTemplate';
+import SolutionTemplate from '@/common/SolutionTemplate';
 import { BarChart3, Target, Zap, Database, TrendingUp } from 'lucide-react';
 
 const AnalyticsTracking: React.FC = () => {

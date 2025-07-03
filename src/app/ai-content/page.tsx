@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import { Cpu, Zap, Settings, TrendingUp, FileText } from 'lucide-react';
-import SolutionTemplate from '@/common/layout/SolutionTemplate';
+import SolutionTemplate from '@/common/SolutionTemplate';
 
 const AIContent: React.FC = () => {
   const services = [

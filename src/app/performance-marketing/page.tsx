@@ -1,6 +1,6 @@
 'use client'; 
 import React from 'react';
-import SolutionTemplate from '@/common/layout/SolutionTemplate';
+import SolutionTemplate from '@/common/SolutionTemplate';
 import { TrendingUp, Target, BarChart3, Zap, Users } from 'lucide-react';
 
 const PerformanceMarketing: React.FC = () => {
