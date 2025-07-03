@@ -7,7 +7,7 @@ import { motion } from 'motion/react';
 import { RotatingText } from '@/components/ui/rotating-text'; 
 import InteractiveHoverCard from '@/components/ui/interactive-hover-card';
 import Link from 'next/link';
-import OrbitingCirclesDemo from '@/common/layout/OrbitingCircles';
+import OrbitingCirclesDemo from '@/common/OrbitingCircles';
 
 const Hero: React.FC = () => {
   return (

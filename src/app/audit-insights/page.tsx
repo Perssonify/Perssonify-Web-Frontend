@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import SolutionTemplate from '@/common/layout/SolutionTemplate';
+import SolutionTemplate from '@/common/SolutionTemplate';
 import { SearchCheck, FileText, TrendingUp, Target } from 'lucide-react';
 
 const AuditInsights: React.FC = () => {

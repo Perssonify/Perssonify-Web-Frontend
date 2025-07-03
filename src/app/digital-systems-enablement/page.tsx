@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import SolutionTemplate from '@/common/layout/SolutionTemplate';
+import SolutionTemplate from '@/common/SolutionTemplate';
 import { Database, BarChart, Users, Zap, Settings } from 'lucide-react';
 
 const DigitalSystemsEnablement: React.FC = () => {

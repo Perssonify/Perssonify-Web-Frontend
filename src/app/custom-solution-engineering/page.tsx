@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import SolutionTemplate from '@/common/layout/SolutionTemplate';
+import SolutionTemplate from '@/common/SolutionTemplate';
 import { Cog, Target, Settings, Users, Zap } from 'lucide-react';
 
 const CustomSolutionEngineering: React.FC = () => {

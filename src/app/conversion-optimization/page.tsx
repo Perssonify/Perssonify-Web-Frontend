@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import SolutionTemplate from '@/common/layout/SolutionTemplate';
+import SolutionTemplate from '@/common/SolutionTemplate';
 import { Target, BarChart3, Zap, TestTube, TrendingUp } from 'lucide-react';
 
 const ConversionOptimization: React.FC = () => {

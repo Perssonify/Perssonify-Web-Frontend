@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import SolutionTemplate from '@/common/layout/SolutionTemplate';
+import SolutionTemplate from '@/common/SolutionTemplate';
 import { Settings, Shuffle, Timer, Users, BarChart3 } from 'lucide-react';
 
 const Operations: React.FC = () => {

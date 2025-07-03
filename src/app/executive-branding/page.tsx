@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import SolutionTemplate from '@/common/layout/SolutionTemplate';
+import SolutionTemplate from '@/common/SolutionTemplate';
 import { UserCheck, Users, TrendingUp, MessageCircle, Target } from 'lucide-react';
 
 const ExecutiveBranding: React.FC = () => {

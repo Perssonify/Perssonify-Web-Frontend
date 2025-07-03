@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import SolutionTemplate from '@/common/layout/SolutionTemplate';
+import SolutionTemplate from '@/common/SolutionTemplate';
 import { Users, MessageCircle, Camera, TrendingUp, Heart } from 'lucide-react';
 
 const SocialMedia: React.FC = () => {

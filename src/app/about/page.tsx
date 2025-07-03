@@ -149,44 +149,35 @@ const About: React.FC = () => {
 
   return (
     <div className="bg-background ">
-      {" "}
       {/* Page background color (light/dark mode) */}
       {/* Hero Section with Wavy Background */}
       <WavyBackground className="py-28 sm:py-28 md:py-28 mt-16 md:mt-20">
-        {" "}
         {/* Vertical padding for hero, margin-top for spacing from header */}
         <div className="container max-w-6xl mx-auto px-4 ">
-          {" "}
           {/* Centered, max width, horizontal padding for mobile/desktop */}
           <div className="text-center">
-            {" "}
             {/* Center all hero content */}
             <h1 className="text-5xl md:text-6xl lg:text-6xl font-bold font-playfair text-black dark:text-white mb-6 lg:mb-8">
-              {" "}
               {/* Responsive heading size, bold, custom font, color, margin-bottom */}
               We bring{" "}
               <span className="text-primary dark:text-primary">
-                {" "}
                 {/* Brand color for emphasis */}
                 Growth
               </span>{" "}
               and{" "}
               <span className="text-primary dark:text-primary">
-                {" "}
                 {/* Brand color for emphasis */}
                 Scale
               </span>{" "}
               to life
             </h1>
             <p className="text-xl md:text-2xl text-black/80 dark:text-white mb-8 lg:mb-10 leading-relaxed max-w-3xl mx-auto">
-              {" "}
               {/* Responsive text size, color, relaxed line height, max width, centered */}
               Perssonify was built around one simple idea: The right solution at
               the right time can change everything. We make the right solutions
               happen right now.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              {" "}
               {/* Stack buttons on mobile, row on small+, gap between, center */}
               <Link href="/contact">
                 <Button size="lg">
@@ -229,7 +220,6 @@ const About: React.FC = () => {
               Our Story
             </h2>
             <div className="prose prose-lg max-w-none text-muted-foreground space-y-6 dark:prose-invert">
-              {" "}
               {/* Typography, color, spacing between paragraphs, dark mode */}
               <p>
                 We started in performance marketing and branding, where speed,
@@ -269,10 +259,8 @@ const About: React.FC = () => {
         </section>
         {/* SolvePath Framework Section */}
         <section className="py-16 md:py-24 bg-background">
-          {" "}
           {/* Section spacing, background */}
           <div className="text-center mb-4 sm:mb-6 md:mb-8">
-            {" "}
             {/* Centered heading, responsive margin-bottom */}
             <h2 className="text-4xl md:text-5xl font-bold  mb-6  text-primary">
               How We Solve
@@ -286,7 +274,6 @@ const About: React.FC = () => {
             </p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 md:gap-8 mb-8 md:mb-12">
-            {" "}
             {/* Responsive grid: 2 cols mobile, 3 small, 6 large; responsive gap; margin-bottom */}
             {solvepathSteps.map((step) => (
               <Card
@@ -308,7 +295,6 @@ const About: React.FC = () => {
             ))}
           </div>
           <div className="text-center">
-            {" "}
             {/* Center button */}
             <Link href="/about/solvepath-framework">
               <Button variant="outline" size="lg">
@@ -320,10 +306,8 @@ const About: React.FC = () => {
         </section>
         {/* Execution Model Section */}
         <section className="py-16 md:py-24 bg-background">
-          {" "}
           {/* Section spacing, background */}
           <div className="text-center mb-4 sm:mb-6 md:mb-8">
-            {" "}
             {/* Centered heading, responsive margin-bottom */}
             <h2 className="text-4xl md:text-5xl font-bold  mb-6  text-primary">
               Perssonify Execution Model
@@ -336,7 +320,6 @@ const About: React.FC = () => {
             </p>
           </div>
           <div className="max-w-4xl mx-auto mb-8 md:mb-12">
-            {" "}
             {/* Center card, limit width, margin-bottom */}
             <Card className="p-4 sm:p-6 md:p-8 bg-gradient-to-br from-primary/10 to-primary/5 border-0">
               <div className="flex items-center justify-center mb-8"></div>
@@ -360,7 +343,6 @@ const About: React.FC = () => {
             </Card>
           </div>
           <div className="text-center mt-8">
-            {" "}
             {/* Center button, margin-top */}
             <Link href="/about#execution">
               <Button variant="outline" size="lg">
@@ -370,7 +352,6 @@ const About: React.FC = () => {
             </Link>
           </div>
           <div className="text-center mt-8 md:mt-12 max-w-3xl mx-auto">
-            {" "}
             {/* Center, responsive margin-top, limit width */}
             <p className="text-lg text-muted-foreground">
               Together, the SolvePath Framework and our Execution Model are two
@@ -406,10 +387,8 @@ const About: React.FC = () => {
         </section>
         {/* Two Solution Families Section */}
         <section className="py-16 md:py-24 bg-background">
-          {" "}
           {/* Section spacing, background */}
           <div className="text-center mb-4 sm:mb-6 md:mb-8">
-            {" "}
             {/* Centered heading, responsive margin-bottom */}
             <h2 className="text-4xl md:text-5xl font-bold  mb-6  text-primary">
               Two Solution Families Under One Roof
@@ -430,7 +409,6 @@ const About: React.FC = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10">
-            {" "}
             {/* Responsive grid: 1 col mobile, 2 large; responsive gap */}
             <Card className="bg-primary/10 border-0 p-4 sm:p-6 md:p-8">
               <CardHeader>
@@ -490,10 +468,8 @@ const About: React.FC = () => {
         </section>
         {/* What We Deliver Section */}
         <section className="py-16 md:py-24 bg-background">
-          {" "}
           {/* Section spacing, background */}
           <div className="text-center mb-4 sm:mb-6 md:mb-8">
-            {" "}
             {/* Centered heading, responsive margin-bottom */}
             <h2 className="text-4xl md:text-5xl font-bold  mb-6  text-primary">
               What We Deliver
@@ -505,7 +481,6 @@ const About: React.FC = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 md:gap-10">
-            {" "}
             {/* Responsive grid: 1 col mobile, 3 medium+; responsive gap */}
             {deliverables.map((item) => (
               <Card
@@ -529,10 +504,8 @@ const About: React.FC = () => {
         </section>
         {/* Our Values Section */}
         <section className="py-16 md:py-24 bg-background">
-          {" "}
           {/* Section spacing, background */}
           <div className="text-center mb-4 sm:mb-6 md:mb-8">
-            {" "}
             {/* Centered heading, responsive margin-bottom */}
             <h2 className="text-4xl md:text-5xl font-bold  mb-6  text-primary">
               How We Work
@@ -545,7 +518,6 @@ const About: React.FC = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10">
-            {" "}
             {/* Responsive grid: 1 col mobile, 2 medium, 4 large; responsive gap */}
             {values.map((value) => (
               <Card
@@ -569,10 +541,8 @@ const About: React.FC = () => {
         </section>
         {/* Meet the Team Section */}
         <section className="py-16 md:py-24 bg-background">
-          {" "}
           {/* Section spacing, background */}
           <div className="text-center mb-4 sm:mb-6 md:mb-8">
-            {" "}
             {/* Centered heading, responsive margin-bottom */}
             <h2 className="text-4xl md:text-5xl font-bold mb-6  text-primary">
               Meet the Team
@@ -582,7 +552,6 @@ const About: React.FC = () => {
             </p>
           </div>
           <div className="grid gap-y-8 gap-x-6 sm:gap-y-12 sm:gap-x-8 sm:grid-cols-2 lg:grid-cols-4">
-            {" "}
             {/* Responsive grid: 1 col mobile, 2 small, 4 large; responsive gap-y and gap-x */}
             {people.map((person) => (
               <Card

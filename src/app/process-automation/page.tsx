@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import SolutionTemplate from '@/common/layout/SolutionTemplate';
+import SolutionTemplate from '@/common/SolutionTemplate';
 import { Zap, Target, Settings, CheckCircle } from 'lucide-react';
 
 const ProcessAutomation: React.FC = () => {

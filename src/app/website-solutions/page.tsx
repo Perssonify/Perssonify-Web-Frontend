@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import SolutionTemplate from '@/common/layout/SolutionTemplate';
+import SolutionTemplate from '@/common/SolutionTemplate';
 import { Globe, Code, Smartphone, Zap, Shield } from 'lucide-react';
 
 const WebsiteSolutions: React.FC = () => {
