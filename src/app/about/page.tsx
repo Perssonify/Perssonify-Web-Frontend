@@ -188,28 +188,31 @@ const About: React.FC = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               {" "}
               {/* Stack buttons on mobile, row on small+, gap between, center */}
-              <Button size="lg" asChild>
-                <a href="/contact">
+              <Link href="/contact">
+                <Button size="lg">
                   Start Your Journey
                   <ArrowRight className="ml-2 w-4 h-4" />
-                </a>
-              </Button>
-              <Button
-                className="text-primary dark:text-primary"
-                variant="outline"
-                size="lg"
-                asChild
-              >
-                <a href="/growth-solutions">Explore Solutions</a>
-              </Button>
-              <Button
-                className="text-primary dark:text-primary"
-                variant="outline"
-                size="lg"
-                asChild
-              >
-                <a href="/blog">Read Our Blog</a>
-              </Button>
+                </Button>
+              </Link>
+              <Link href="/growth-solutions">
+                <Button
+                  className="text-primary dark:text-primary"
+                  variant="outline"
+                  size="lg"
+                >
+                  Explore Solutions
+                </Button>
+              </Link>
+              <Link href="/blog">
+                <Button
+                  className="text-primary dark:text-primary"
+                  variant="outline"
+                  size="lg"
+                  asChild
+                >
+                  Read Our Blog
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -307,12 +310,12 @@ const About: React.FC = () => {
           <div className="text-center">
             {" "}
             {/* Center button */}
-            <Button variant="outline" size="lg" asChild>
-              <a href="/about/solvepath-framework">
+            <Link href="/about/solvepath-framework">
+              <Button variant="outline" size="lg">
                 Learn More About SolvePath Framework
                 <ArrowRight className="ml-2 w-4 h-4" />
-              </a>
-            </Button>
+              </Button>
+            </Link>
           </div>
         </section>
         {/* Execution Model Section */}
@@ -359,12 +362,12 @@ const About: React.FC = () => {
           <div className="text-center mt-8">
             {" "}
             {/* Center button, margin-top */}
-            <Button variant="outline" size="lg" asChild>
-              <a href="/about#execution">
+            <Link href="/about#execution">
+              <Button variant="outline" size="lg">
                 Learn More About Our Execution Model
                 <ArrowRight className="ml-2 w-4 h-4" />
-              </a>
-            </Button>
+              </Button>
+            </Link>
           </div>
           <div className="text-center mt-8 md:mt-12 max-w-3xl mx-auto">
             {" "}
@@ -448,15 +451,12 @@ const About: React.FC = () => {
                   priority is to attract the right audience, convert
                   consistently, and expand your market reach.
                 </p>
-                <Button
-                  className="w-full flex items-center justify-center whitespace-nowrap"
-                  asChild
-                >
-                  <a href="/growth-solutions">
+                <Link href="/growth-solutions">
+                  <Button className="w-full flex items-center justify-center whitespace-nowrap">
                     Learn More
                     <ArrowRight className="ml-2 w-4 h-4" />
-                  </a>
-                </Button>
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
             <Card className="bg-primary/10 border-0 p-4 sm:p-6 md:p-8">
@@ -478,15 +478,12 @@ const About: React.FC = () => {
                   precision. We help you improve efficiency and ensure
                   operations scale without chaos.
                 </p>
-                <Button
-                  className="w-full flex items-center justify-center whitespace-nowrap"
-                  asChild
-                >
-                  <a href="/strategic-solutions">
+                <Link href="/strategic-solutions">
+                  <Button className="w-full flex items-center justify-center whitespace-nowrap">
                     Learn More
                     <ArrowRight className="ml-2 w-4 h-4" />
-                  </a>
-                </Button>
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
           </div>
@@ -606,30 +603,30 @@ const About: React.FC = () => {
                   {person.description.replace("'", "&apos;")}
                 </p>
                 <div className="mt-auto flex gap-4 justify-center">
-                  <a
+                  <Link
                     href={person.github}
                     aria-label="Github"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <Github className="size-5 text-muted-foreground hover:text-primary transition-colors" />
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href={person.linkedin}
                     aria-label="Linkedin"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <Linkedin className="size-5 text-muted-foreground hover:text-primary transition-colors" />
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href={person.dribbble}
                     aria-label="Dribbble"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <Dribbble className="size-5 text-muted-foreground hover:text-primary transition-colors" />
-                  </a>
+                  </Link>
                 </div>
               </Card>
             ))}

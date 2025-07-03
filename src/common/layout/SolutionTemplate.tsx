@@ -38,8 +38,8 @@ const SolutionTemplate: React.FC<SolutionTemplateProps> = ({
   backLinkText
 }) => {
   return (
-    <div className="min-h-screen bg-background pt-20">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+    <div className="min-h-screen bg-background pt-20 w-full px-4 max-w-6xl mx-auto">
+      <div className="container">
         <ThemeBreadcrumb />
         
         {/* Hero Section */}
@@ -91,10 +91,10 @@ const SolutionTemplate: React.FC<SolutionTemplateProps> = ({
             transition={{ duration: 0.8 }}
             className="text-center mb-12 sm:mb-16"
           >
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 sm:mb-6 px-2">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 sm:mb-6">
               Our Services
             </h2>
-            <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
+            <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
               Comprehensive solutions designed to deliver measurable results.
             </p>
           </motion.div>
@@ -107,9 +107,9 @@ const SolutionTemplate: React.FC<SolutionTemplateProps> = ({
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="px-2"
+                // className="px-2"
               >
-                <Card className="h-full border-0 bg-card custom-shadow hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <Card className="h-full border-0 bg-card custom-shadow transition-all duration-300 ">
                   <CardHeader className="pb-4">
                     <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
                       <service.icon className="w-6 h-6 text-primary" />
