@@ -8,7 +8,7 @@ import WhychooseUs from "./(home)/_whychooseus";
 export default function Home() {
 
   return (
-    <div>
+    <div className="w-full px-4 max-w-6xl mx-auto">
       <Hero />
       <OurSolutions />
       <AboutSection />
