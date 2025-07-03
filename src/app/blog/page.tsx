@@ -1,8 +1,7 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import { useParams } from "next/navigation";
-import { ArrowLeft, Calendar, Clock, User, ArrowRight } from "lucide-react";
+import { Calendar, Clock, User, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -13,7 +12,6 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
-import Head from "next/head";
 import params from "@/lib/params";
 
 // Extract blog posts from params

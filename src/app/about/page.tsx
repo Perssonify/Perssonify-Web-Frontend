@@ -424,7 +424,7 @@ const About: React.FC = () => {
               <Card>
                 <CardHeader>
                   <div className="w-16 h-16 rounded-xl bg-accent/10 flex items-center justify-center mb-4">
-                    <Target className="w-8 h-8 text-accent" />
+                    <Target className="w-8 h-8 text-primary" />
                   </div>
                   <CardTitle className="text-2xl font-playfair">
                     Strategic Solutions
