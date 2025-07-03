@@ -24,49 +24,49 @@ const CoreGrowthSolutions: React.FC = () => {
       title: "Performance Marketing & Paid Media",
       description: "High-ROI ads that convert. Strategic campaign management across platforms to maximize your advertising spend and drive measurable results.",
       icon: TrendingUp,
-      link: "/growth-solutions/performance-marketing"
+      link: "/performance-marketing"
     },
     {
       title: "Social Media Marketing & Brand Engagement",
       description: "Build audience, spark action. Comprehensive social media strategies that create meaningful connections and drive engagement across all platforms.",
       icon: Users,
-      link: "/growth-solutions/social-media"
+      link: "/social-media"
     },
     {
       title: "Email Marketing & Marketing Automation",
       description: "Automate nurture, drive loyalty. Sophisticated email campaigns and automation workflows that convert prospects into loyal customers.",
       icon: Mail,
-      link: "/growth-solutions/email-marketing"
+      link: "/email-marketing"
     },
     {
       title: "Creative Solutions",
       description: "Visuals that get results. Eye-catching designs and compelling creative assets that capture attention and drive conversions.",
       icon: Palette,
-      link: "/growth-solutions/creative-solutions"
+      link: "/creative-solutions"
     },
     {
       title: "Conversion Rate Optimization (CRO)",
       description: "Test. Refine. Convert more. Data-driven optimization strategies that turn more visitors into customers through systematic testing and improvement.",
       icon: Target,
-      link: "/growth-solutions/conversion-optimization"
+      link: "/conversion-optimization"
     },
     {
       title: "Search Engine Optimization (SEO) & Website Growth",
       description: "Rank higher. Grow faster. Comprehensive SEO strategies that improve your search visibility and drive organic traffic growth.",
       icon: Search,
-      link: "/growth-solutions/seo"
+      link: "/seo"
     },
     {
       title: "Website Solutions",
       description: "Seamless, scalable, conversion-ready. Professional websites built for performance, user experience, and business growth.",
       icon: Globe,
-      link: "/growth-solutions/website-solutions"
+      link: "/website-solutions"
     }
   ];
 
   return (
     <div className="min-h-screen bg-background">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+      <div className="container mx-auto px-4  lg:px-8 max-w-6xl">
         <ThemeBreadcrumb />
       </div>
 
@@ -91,7 +91,7 @@ const CoreGrowthSolutions: React.FC = () => {
       </section>
 
       {/* Solutions Grid */}
-      <section className="pb-20 px-4 sm:px-6 lg:px-8">
+      <section className="pb-20 px-4  lg:px-8">
         <div className="container mx-auto max-w-6xl">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {solutions.map((solution, index) => (
@@ -129,7 +129,7 @@ const CoreGrowthSolutions: React.FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
+      <section className="py-20 px-4  lg:px-8 bg-muted/30">
         <div className="container mx-auto max-w-4xl text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}

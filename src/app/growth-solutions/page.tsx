@@ -1,182 +1,302 @@
 "use client";
 
-import React from 'react';
-import { motion } from 'framer-motion';
-import { 
-  TrendingUp, 
-  Users, 
-  Mail, 
-  Palette, 
-  Target, 
-  Search, 
-  Globe, 
-  SquareArrowOutUpRight 
-} from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import Link from 'next/link';
-import ThemeBreadcrumb from '@/components/ui/theme-breadcrumb';
+import React from "react";
+import Link from "next/link";
+import {
+  Users,
+  Mail,
+  Palette,
+  Target,
+  Search,
+  Globe,
+  Zap,
+  CheckCircle,
+} from "lucide-react";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { WavyBackground } from "@/components/ui/wavy-background";
+import ThemeBreadcrumb from "@/components/ui/theme-breadcrumb";
+import { motion } from "framer-motion";
 
-// Animation variants
-const fadeInUp = {
-  initial: { opacity: 0, y: 30 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.8, ease: 'easeOut' },
-};
-const staggerContainer = {
-  animate: { transition: { staggerChildren: 0.1 } },
-};
-const scaleIn = {
-  initial: { opacity: 0, scale: 0.96 },
-  animate: { opacity: 1, scale: 1 },
-  transition: { duration: 0.5, ease: 'easeOut' },
-};
+const GrowthSolutions: React.FC = () => {
+  const coreServices = [
+    {
+      icon: Users,
+      title: "Performance Marketing & Paid Media",
+      description:
+        "High-ROI ads that convert. Strategic campaign management across platforms to maximize your advertising spend and drive measurable results.",
+      link: "/performance-marketing",
+    },
+    {
+      icon: Users,
+      title: "Social Media Marketing & Brand Engagement",
+      description:
+        "Build audience, spark action. Comprehensive social media strategies that create meaningful connections and drive engagement across all platforms.",
+      link: "/social-media",
+    },
+    {
+      icon: Mail,
+      title: "Email Marketing & Marketing Automation",
+      description:
+        "Automate nurture, drive loyalty. Sophisticated email campaigns and automation workflows that convert prospects into loyal customers.",
+      link: "/email-marketing",
+    },
+    {
+      icon: Palette,
+      title: "Creative Solutions",
+      description:
+        "Visuals that get results. Eye-catching designs and compelling creative assets that capture attention and drive conversions.",
+      link: "/creative-solutions",
+    },
+    {
+      icon: Target,
+      title: "Conversion Rate Optimization (CRO)",
+      description:
+        "Test. Refine. Convert more. Data-driven optimization strategies that turn more visitors into customers through systematic testing and improvement.",
+      link: "/conversion-optimization",
+    },
+    {
+      icon: Search,
+      title: "SEO & Website Growth",
+      description:
+        "Rank higher. Grow faster. Comprehensive SEO strategies that improve your search visibility and drive organic traffic growth.",
+      link: "/seo",
+    },
+    {
+      icon: Globe,
+      title: "Website Solutions",
+      description:
+        "Seamless, scalable, conversion-ready. Professional websites built for performance, user experience, and business growth.",
+      link: "/website-solutions",
+    },
+  ];
 
-const solutions = [
-  {
-    title: 'Performance Marketing & Paid Media',
-    description:
-      'High-ROI ads that convert. Strategic campaign management across platforms to maximize your advertising spend and drive measurable results.',
-    icon: TrendingUp,
-    link: '/growth-solutions/performance-marketing',
-  },
-  {
-    title: 'Social Media Marketing & Brand Engagement',
-    description:
-      'Build audience, spark action. Comprehensive social media strategies that create meaningful connections and drive engagement across all platforms.',
-    icon: Users,
-    link: '/growth-solutions/social-media',
-  },
-  {
-    title: 'Email Marketing & Marketing Automation',
-    description:
-      'Automate nurture, drive loyalty. Sophisticated email campaigns and automation workflows that convert prospects into loyal customers.',
-    icon: Mail,
-    link: '/growth-solutions/email-marketing',
-  },
-  {
-    title: 'Creative Solutions',
-    description:
-      'Visuals that get results. Eye-catching designs and compelling creative assets that capture attention and drive conversions.',
-    icon: Palette,
-    link: '/growth-solutions/creative-solutions',
-  },
-  {
-    title: 'Conversion Rate Optimization (CRO)',
-    description:
-      'Test. Refine. Convert more. Data-driven optimization strategies that turn more visitors into customers through systematic testing and improvement.',
-    icon: Target,
-    link: '/growth-solutions/conversion-optimization',
-  },
-  {
-    title: 'Search Engine Optimization (SEO) & Website Growth',
-    description:
-      'Rank higher. Grow faster. Comprehensive SEO strategies that improve your search visibility and drive organic traffic growth.',
-    icon: Search,
-    link: '/growth-solutions/seo',
-  },
-  {
-    title: 'Website Solutions',
-    description:
-      'Seamless, scalable, conversion-ready. Professional websites built for performance, user experience, and business growth.',
-    icon: Globe,
-    link: '/growth-solutions/website-solutions',
-  },
-];
+  const benefits = [
+    "Measurable ROI on every campaign",
+    "Data-driven decision making",
+    "Scalable growth strategies",
+    "Multi-channel integration",
+    "Continuous optimization",
+    "Transparent reporting",
+  ];
 
-const CoreGrowthSolutions: React.FC = () => {
   return (
-    <div className="min-h-screen bg-background flex flex-col">
-      {/* Breadcrumb */}
-      <section className="pt-20 pb-8">
-        <div className="container mx-auto max-w-6xl px-4">
-          <ThemeBreadcrumb />
-        </div>
-      </section>
-
+    <div className="bg-background text-foreground">
+      <div className="container mx-auto px-4  lg:px-8 max-w-6xl">
+        <ThemeBreadcrumb />
+      </div>
       {/* Hero Section */}
-      <section className="py-12 md:py-20">
-        <div className="container mx-auto max-w-6xl px-4">
+      <WavyBackground className="py-20 sm:py-28 md:py-36 mt-16 md:mt-20">
+        <div className="container mx-auto px-4  lg:px-8 max-w-6xl">
           <motion.div
+            initial={{
+              opacity: 0,
+              y: 30,
+            }}
+            animate={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              duration: 0.7,
+            }}
             className="text-center"
-            initial="initial"
-            animate="animate"
-            variants={fadeInUp}
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6">
-              Core Growth Solutions
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-black dark:text-white mb-4 sm:mb-6 px-2">
+              Growth Solutions
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-              High-performance marketing strategy and execution that engineers demand, amplifies brand value, and accelerates customer acquisition.
+            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-black/80 dark:text-white/80 mb-6 sm:mb-8 leading-relaxed max-w-4xl mx-auto px-4">
+              High-performance marketing strategy and execution that engineers
+              demand, amplifies brand value, and accelerates customer
+              acquisition.
             </p>
           </motion.div>
         </div>
-      </section>
+      </WavyBackground>
 
-      {/* Solutions Grid */}
-      <section className="py-12 md:py-20 bg-background">
-        <div className="container mx-auto max-w-6xl px-4">
+      {/* Core Services */}
+      <section className="py-16 sm:py-20 md:py-24 bg-background">
+        <div className="max-w-6xl mx-auto px-2 ">
           <motion.div
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch"
-            initial="initial"
-            animate="animate"
-            variants={staggerContainer}
+            initial={{
+              opacity: 0,
+              y: 30,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              duration: 0.8,
+            }}
+            className="text-center mb-12 sm:mb-16"
           >
-            {solutions.map((solution) => (
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 sm:mb-6 text-primary px-2">
+              Our Core Growth Services
+            </h2>
+            <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto px-2">
+              Comprehensive marketing solutions designed to drive measurable
+              growth
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 gap-y-8">
+            {coreServices.map((service, index) => (
               <motion.div
-                key={solution.title}
-                variants={scaleIn}
-                whileHover={{ scale: 1.025, y: -6, transition: { duration: 0.25 } }}
-                className="flex h-full"
+                key={service.title}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: index * 0.1 }}
+                className="px-2"
               >
-                <Link href={solution.link} className="flex flex-1 h-full">
-                  <Card className="flex flex-col h-full w-full group cursor-pointer transition-shadow hover:shadow-xl">
-                    <CardHeader>
-                      <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                        <solution.icon className="w-8 h-8 text-primary" />
+                <Link href={service.link}>
+                  <Card className="h-full flex flex-col group cursor-pointer relative">
+                    <CardHeader className="pb-4">
+                      <div className="w-12 h-12 sm:w-16 sm:h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">
+                        <service.icon className="w-6 h-6 sm:w-8 sm:h-8 text-primary" />
                       </div>
-                      <CardTitle className="text-xl font-bold text-foreground group-hover:text-primary transition-colors duration-300">
-                        {solution.title}
+                      <CardTitle className="text-lg sm:text-xl font-bold text-foreground group-hover:text-primary transition-colors">
+                        {service.title}
                       </CardTitle>
                     </CardHeader>
-                    <CardContent className="flex flex-col flex-1">
-                      <p className="text-muted-foreground leading-relaxed mb-6 flex-1">
-                        {solution.description}
-                      </p>
-                      <Button className="w-full mt-auto" tabIndex={-1} aria-hidden>
-                        <span className="flex items-center justify-center w-full">
-                          Learn More
-                          <SquareArrowOutUpRight className="w-4 h-4 ml-2" />
-                        </span>
+                    <CardContent className="flex flex-col flex-1 justify-between">
+                      <div>
+                        <p className="text-muted-foreground leading-relaxed text-sm sm:text-base mb-4 sm:mb-6">
+                          {service.description}
+                        </p>
+                      </div>
+                      <Button asChild className="w-full mt-4">
+                        <Link href={service.link}>Learn More</Link>
                       </Button>
                     </CardContent>
                   </Card>
                 </Link>
               </motion.div>
             ))}
-          </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Benefits Section */}
+      <section className="py-16 sm:py-20 md:py-24 bg-muted/30">
+        <div className="container mx-auto px-4  lg:px-8 max-w-6xl">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
+            <motion.div
+              initial={{
+                opacity: 0,
+                x: -30,
+              }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+              }}
+              transition={{
+                duration: 0.8,
+              }}
+              className="px-2"
+            >
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 sm:mb-6">
+                Why Choose Our Growth Solutions?
+              </h2>
+              <p className="text-base sm:text-lg text-muted-foreground mb-6 sm:mb-8 leading-relaxed">
+                We don&apos;t just create campaigns—we engineer growth systems
+                that scale with your business. Every strategy is built on data,
+                optimized for results, and designed to deliver sustainable
+                growth.
+              </p>
+              <div className="space-y-3 sm:space-y-4">
+                {benefits.map((benefit, index) => (
+                  <div key={index} className="flex items-center">
+                    <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-primary mr-2 sm:mr-3 flex-shrink-0" />
+                    <span className="text-foreground text-sm sm:text-base">
+                      {benefit}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{
+                opacity: 0,
+                x: 30,
+              }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+              }}
+              transition={{
+                duration: 0.8,
+                delay: 0.2,
+              }}
+              className="px-2"
+            >
+              <Card>
+                <CardHeader className="text-center">
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                    <Zap className="w-6 h-6 sm:w-8 sm:h-8 text-primary" />
+                  </div>
+                  <CardTitle className="text-xl sm:text-2xl font-bold text-foreground">
+                    Ready to Scale?
+                  </CardTitle>
+                  <CardDescription className="text-base sm:text-lg">
+                    Let&apos;s build your growth engine together
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="text-center">
+                  <p className="text-muted-foreground mb-4 sm:mb-6 text-sm sm:text-base">
+                    Schedule a consultation to discuss your specific growth
+                    goals and challenges. We&apos;ll create a custom strategy
+                    that fits your business perfectly.
+                  </p>
+                </CardContent>
+              </Card>
+            </motion.div>
+          </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-24 bg-muted/30">
-        <div className="container mx-auto max-w-4xl px-4">
+      <section className="py-16 sm:py-20 md:py-24 bg-background">
+        <div className="container mx-auto px-4  lg:px-8 max-w-6xl text-center">
           <motion.div
-            className="text-center"
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true, margin: '-100px' }}
-            variants={fadeInUp}
+            initial={{
+              opacity: 0,
+              y: 30,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              duration: 0.8,
+            }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Ready to grow faster?
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 sm:mb-6 px-2">
+              Ready to Transform Your Growth?
             </h2>
-            <p className="text-lg md:text-xl text-muted-foreground mb-8">
-              Let&apos;s discuss how our core growth solutions can transform your business.
+            <p className="text-lg sm:text-xl text-muted-foreground mb-6 sm:mb-8 max-w-3xl mx-auto px-4">
+              Let&apos;s build a growth strategy that delivers measurable
+              results and scales with your ambitions.
             </p>
-            <Button size="lg" className="btn-primary" asChild>
-              <Link href="/contact">Let&apos;s talk</Link>
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
+              <Button
+                variant="outline"
+                size="lg"
+                asChild
+                className="w-full sm:w-auto"
+              >
+                <Link href="/strategic-solutions">
+                  Explore Strategic Solutions
+                </Link>
+              </Button>
+            </div>
           </motion.div>
         </div>
       </section>
@@ -184,4 +304,4 @@ const CoreGrowthSolutions: React.FC = () => {
   );
 };
 
-export default CoreGrowthSolutions;
+export default GrowthSolutions;

@@ -89,6 +89,7 @@ export const WavyBackground = ({
   const render = () => {
     const isDarkMode = document.documentElement.classList.contains('dark');
     ctx.fillStyle = backgroundFill || (isDarkMode ? "black" : "white");
+    ctx.fillStyle = backgroundFill || (isDarkMode ? "black" : "white");
     ctx.globalAlpha = waveOpacity || 0.5;
     ctx.fillRect(0, 0, w, h);
     drawWave(5);
