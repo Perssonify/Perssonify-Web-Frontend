@@ -66,7 +66,7 @@ const Blog: React.FC = () => {
               <div className="w-20 h-1 bg-primary rounded-full" />
             </div>
 
-            <Card className="overflow-hidden">
+            <Card className="overflow-hidden p-0">
               <div className="grid grid-cols-1 lg:grid-cols-2">
                 <div className="relative overflow-hidden">
                   <img
@@ -142,7 +142,7 @@ const Blog: React.FC = () => {
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   viewport={{ once: true }}
                 >
-                  <Card className="h-full group overflow-hidden">
+                  <Card className="h-full group overflow-hidden p-0">
                     <div className="relative overflow-hidden">
                       <img
                         src={post.image}
@@ -154,12 +154,12 @@ const Blog: React.FC = () => {
                         {post.category}
                       </Badge>
                     </div>
-                    <CardHeader className="pb-2">
+                    <CardHeader className="pb-2 px-6">
                       <CardTitle className="text-xl group-hover:text-primary transition-colors duration-300 line-clamp-2">
                         <Link href={`/blog/${post.slug}`}>{post.title}</Link>
                       </CardTitle>
                     </CardHeader>
-                    <CardContent className="pt-0">
+                    <CardContent className="pt-0 pb-6 px-6">
                       <CardDescription className="line-clamp-3 mb-4 text-base">
                         {post.excerpt}
                       </CardDescription>
@@ -174,10 +174,7 @@ const Blog: React.FC = () => {
                         </div>
                       </div>
                       <Link href={`/blog/${post.slug}`}>
-                        <Button
-                          variant="ghost"
-                          className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors"
-                        >
+                        <Button variant="outline" className="w-full ">
                           Read More
                           <ArrowRight className="w-4 h-4 ml-2" />
                         </Button>
