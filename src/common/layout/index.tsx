@@ -6,7 +6,10 @@ import { Geist, Geist_Mono } from "next/font/google";
 import CookieConsent from "./cookie";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
-const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
 
 interface ClientLayoutProps {
   children: React.ReactNode;
@@ -18,11 +21,17 @@ export default function ClientLayout({ children }: ClientLayoutProps) {
   // Set initial mode based on system preference
   useEffect(() => {
     if (typeof window === "undefined") return;
-    const mq = window.matchMedia("(prefers-color-scheme: dark)");
-    setIsDarkMode(mq.matches);
-    const handler = (e: MediaQueryListEvent) => setIsDarkMode(e.matches);
-    mq.addEventListener("change", handler);
-    return () => mq.removeEventListener("change", handler);
+    // Check for saved theme preference in localStorage
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+      setIsDarkMode(savedTheme === "dark");
+    } else {
+      // Default to system preference
+      const systemPrefersDark = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+      setIsDarkMode(systemPrefersDark);
+    }
   }, []);
 
   // Toggle 'dark' class on html element
@@ -39,14 +48,18 @@ export default function ClientLayout({ children }: ClientLayoutProps) {
   // Memoized toggle for Header
   const handleToggleDarkMode = useCallback((checked: boolean) => {
     setIsDarkMode(checked);
+    const theme = checked ? "dark" : "light";
+    localStorage.setItem("theme", theme);
   }, []);
 
   return (
-    <div className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}> 
+    <div
+      className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
+    >
       <Header isDarkMode={isDarkMode} toggleDarkMode={handleToggleDarkMode} />
       <main>{children}</main>
       <Footer />
       <CookieConsent />
     </div>
   );
-} 
+}
