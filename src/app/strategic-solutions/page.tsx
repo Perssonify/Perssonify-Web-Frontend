@@ -32,42 +32,42 @@ const StrategicSolutions: React.FC = () => {
       title: "Process & Workflow Automation",
       description:
         "Streamline operations with intelligent automation that reduces manual work and increases efficiency across your organization.",
-      link: "/strategic-solutions/process-automation",
+      link: "/process-automation",
     },
     {
       icon: Database,
       title: "Digital Systems Enablement",
       description:
         "Integrate and optimize your digital infrastructure to create seamless workflows and better data visibility.",
-      link: "/strategic-solutions/digital-systems-enablement",
+      link: "/digital-systems-enablement",
     },
     {
       icon: Settings,
       title: "Custom Solution Engineering",
       description:
         "Tailored technology solutions built specifically for your unique business requirements and challenges.",
-      link: "/strategic-solutions/custom-solution-engineering",
+      link: "/custom-solution-engineering",
     },
     {
       icon: Target,
       title: "Enterprise Evolution & Strategic Transformation",
       description:
         "Guide your organization through strategic changes with comprehensive transformation planning and execution.",
-      link: "/strategic-solutions/enterprise-evolution-strategic-transformation",
+      link: "/enterprise-evolution-strategic-transformation",
     },
     {
       icon: Users,
       title: "Solutions By Function",
       description:
         "Business function focused solutions that meet the needs of specific business units.",
-      link: "/strategic-solutions/solutions-by-function",
+      link: "/solutions-by-function",
     },
     {
       icon: Shield,
       title: "Cross-Functional Solutions",
       description:
         "Bridge gaps between departments with integrated solutions that improve collaboration and efficiency.",
-      link: "/strategic-solutions/cross-functional-leadership",
+      link: "/cross-functional-leadership",
     },
   ];
 
@@ -77,28 +77,28 @@ const StrategicSolutions: React.FC = () => {
       title: "Finance Operations",
       description:
         "Unlocking efficiency in financial processes through automation, integration, and strategic optimization.",
-      link: "/strategic-solutions/finance-operations",
+      link: "/finance-operations",
     },
     {
       icon: Users,
       title: "Human Resources",
       description:
         "Streamlining HR processes to reduce friction, improve compliance, and elevate the employee experience.",
-      link: "/strategic-solutions/human-resources",
+      link: "/human-resources",
     },
     {
       icon: Settings,
       title: "Operations",
       description:
         "Eliminating delays, inefficiencies, and handoff gaps in operational execution.",
-      link: "/strategic-solutions/operations",
+      link: "/operations",
     },
     {
       icon: Shield,
       title: "Compliance & Governance",
       description:
         "Reducing regulatory burden and risk exposure with streamlined, traceable processes.",
-      link: "/strategic-solutions/compliance-governance",
+      link: "/compliance-governance",
     },
   ];
 
