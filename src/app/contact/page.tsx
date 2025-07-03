@@ -44,8 +44,8 @@ export default function ContactSection() {
   ];
 
   return (
-    <div className="min-h-screen bg-background flex flex-col justify-start pt-32 pb-20">
-      <div className="container mx-auto px-4 lg:px-8 max-w-6xl">
+    <div className="min-h-screen bg-background flex flex-col justify-start pt-32 pb-20 w-full px-4 max-w-6xl mx-auto">
+      <div className="container">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -53,7 +53,7 @@ export default function ContactSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-20 py-8"
         >
-          <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold mb-8 bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
+          <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold mb-8 text-primary">
             Let&apos;s Build Something Amazing Together
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
@@ -80,7 +80,7 @@ export default function ContactSection() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-1 gap-6">
               {contactInfo.map((info, index) => (
                 <motion.div
                   key={index}
