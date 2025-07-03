@@ -129,7 +129,7 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, toggleDarkMode }) => {
         },
         {
           title: "Solutions By Function",
-          href: "/strategic-solutions/solutions-by-function",
+          href: "/solutions-by-function",
           items: [
             {
               name: "Finance",

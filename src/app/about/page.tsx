@@ -296,7 +296,7 @@ const About: React.FC = () => {
           </div>
           <div className="text-center">
             {/* Center button */}
-            <Link href="/about/solvepath-framework">
+            <Link href="/solvepath-framework">
               <Button variant="outline" size="lg">
                 Learn More About SolvePath Framework
                 <ArrowRight className="ml-2 w-4 h-4" />
@@ -344,7 +344,7 @@ const About: React.FC = () => {
           </div>
           <div className="text-center mt-8">
             {/* Center button, margin-top */}
-            <Link href="/about#execution">
+            <Link href="/about-execution">
               <Button variant="outline" size="lg">
                 Learn More About Our Execution Model
                 <ArrowRight className="ml-2 w-4 h-4" />

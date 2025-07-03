@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import Link from 'next/link';
 
-const Insights: React.FC = () => {
+const AboutExecution: React.FC = () => {
   // Move all data arrays inside the component
   const stages = [
     {
@@ -961,4 +961,4 @@ const Insights: React.FC = () => {
   );
 };
 
-export default Insights;
+export default AboutExecution;
