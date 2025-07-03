@@ -27,6 +27,7 @@ import {
 } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { WavyBackground } from "@/components/ui/wavy-background";
+import Link from "next/link";
 
 const About: React.FC = () => {
   const values = [
@@ -147,58 +148,91 @@ const About: React.FC = () => {
   ];
 
   return (
-    <div className="bg-background "> {/* Page background color (light/dark mode) */}
+    <div className="bg-background ">
+      {" "}
+      {/* Page background color (light/dark mode) */}
       {/* Hero Section with Wavy Background */}
-      <WavyBackground className="py-28 sm:py-28 md:py-28 mt-16 md:mt-20"> {/* Vertical padding for hero, margin-top for spacing from header */}
-        <div className="container max-w-6xl mx-auto px-4 "> {/* Centered, max width, horizontal padding for mobile/desktop */}
-          <div className="text-center"> {/* Center all hero content */}
-            <h1 className="text-5xl md:text-6xl lg:text-6xl font-bold font-playfair text-black dark:text-white mb-6 lg:mb-8"> {/* Responsive heading size, bold, custom font, color, margin-bottom */}
+      <WavyBackground className="py-28 sm:py-28 md:py-28 mt-16 md:mt-20">
+        {" "}
+        {/* Vertical padding for hero, margin-top for spacing from header */}
+        <div className="container max-w-6xl mx-auto px-4 ">
+          {" "}
+          {/* Centered, max width, horizontal padding for mobile/desktop */}
+          <div className="text-center">
+            {" "}
+            {/* Center all hero content */}
+            <h1 className="text-5xl md:text-6xl lg:text-6xl font-bold font-playfair text-black dark:text-white mb-6 lg:mb-8">
+              {" "}
+              {/* Responsive heading size, bold, custom font, color, margin-bottom */}
               We bring{" "}
-              <span className="text-primary dark:text-primary"> {/* Brand color for emphasis */}
+              <span className="text-primary dark:text-primary">
+                {" "}
+                {/* Brand color for emphasis */}
                 Growth
               </span>{" "}
               and{" "}
-              <span className="text-primary dark:text-primary"> {/* Brand color for emphasis */}
+              <span className="text-primary dark:text-primary">
+                {" "}
+                {/* Brand color for emphasis */}
                 Scale
               </span>{" "}
               to life
             </h1>
-            <p className="text-xl md:text-2xl text-black/80 dark:text-white mb-8 lg:mb-10 leading-relaxed max-w-3xl mx-auto"> {/* Responsive text size, color, relaxed line height, max width, centered */}
+            <p className="text-xl md:text-2xl text-black/80 dark:text-white mb-8 lg:mb-10 leading-relaxed max-w-3xl mx-auto">
+              {" "}
+              {/* Responsive text size, color, relaxed line height, max width, centered */}
               Perssonify was built around one simple idea: The right solution at
               the right time can change everything. We make the right solutions
               happen right now.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center"> {/* Stack buttons on mobile, row on small+, gap between, center */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              {" "}
+              {/* Stack buttons on mobile, row on small+, gap between, center */}
               <Button size="lg" asChild>
                 <a href="/contact">
                   Start Your Journey
                   <ArrowRight className="ml-2 w-4 h-4" />
                 </a>
               </Button>
-              <Button className="text-primary dark:text-primary" variant="outline" size="lg" asChild>
+              <Button
+                className="text-primary dark:text-primary"
+                variant="outline"
+                size="lg"
+                asChild
+              >
                 <a href="/growth-solutions">Explore Solutions</a>
               </Button>
-              <Button className="text-primary dark:text-primary" variant="outline" size="lg" asChild>
+              <Button
+                className="text-primary dark:text-primary"
+                variant="outline"
+                size="lg"
+                asChild
+              >
                 <a href="/blog">Read Our Blog</a>
               </Button>
             </div>
           </div>
         </div>
       </WavyBackground>
-
-      <div className="max-w-6xl mx-auto px-4 "> {/* Main content container: aligns all sections with header/logo and submit button */}
+      <div className="max-w-6xl mx-auto px-4">
+        {/* Main content container: aligns all sections with header/logo and submit button */}
         {/* Our Story Section */}
-        <section className="py-16 md:py-24 bg-background "> {/* Consistent vertical padding, background color */}
-          <div className="max-w-4xl mx-auto"> {/* Center content, limit width for readability */}
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 sm:mb-6 md:mb-8 text-center text-primary"> {/* Responsive heading, bold, color, margin-bottom */}
+        <section className="py-10 md:py-16 bg-background">
+          {/* Consistent vertical padding, background color */}
+          <div className="text-center">
+            {/* Center content, limit width for readability */}
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 sm:mb-6 md:mb-8 text-center text-primary">
+              {/* Responsive heading, bold, color, margin-bottom */}
               Our Story
             </h2>
-            <div className="prose prose-lg max-w-none text-muted-foreground space-y-6 dark:prose-invert"> {/* Typography, color, spacing between paragraphs, dark mode */}
+            <div className="prose prose-lg max-w-none text-muted-foreground space-y-6 dark:prose-invert">
+              {" "}
+              {/* Typography, color, spacing between paragraphs, dark mode */}
               <p>
                 We started in performance marketing and branding, where speed,
-                efficiency, and ROI are non-negotiable—they&apos;re expected.
-                As we worked with ambitious businesses to drive growth, we saw
-                a deeper pattern: challenges beyond growth and marketing—like
+                efficiency, and ROI are non-negotiable—they&apos;re expected. As
+                we worked with ambitious businesses to drive growth, we saw a
+                deeper pattern: challenges beyond growth and marketing—like
                 process gaps, operational slowdowns, and disconnected
                 systems—were limiting performance.
               </p>
@@ -210,30 +244,33 @@ const About: React.FC = () => {
               </p>
               <p>
                 That shift didn&apos;t change who we are—it sharpened it. We
-                still move with urgency. We still focus relentlessly on ROI.
-                We still bring the same bias for action, comfort with
-                high-stakes decisions, and clarity in fast-moving
-                environments. And we still thrive where the pressure&apos;s
-                high and the expectations even higher.
+                still move with urgency. We still focus relentlessly on ROI. We
+                still bring the same bias for action, comfort with high-stakes
+                decisions, and clarity in fast-moving environments. And we still
+                thrive where the pressure&apos;s high and the expectations even
+                higher.
               </p>
               <p className="text-xl text-center font-semibold text-primary">
                 What changed is how far we can go.
               </p>
               <p>
                 We apply the same logic, structure, and high standards to
-                solving both growth and operational challenges—independently
-                or in tandem—so businesses can scale with confidence and adapt
-                without friction. Whether we&apos;re streamlining how work
-                gets done or accelerating how demand is created, we help
-                businesses move faster and scale with confidence.
+                solving both growth and operational challenges—independently or
+                in tandem—so businesses can scale with confidence and adapt
+                without friction. Whether we&apos;re streamlining how work gets
+                done or accelerating how demand is created, we help businesses
+                move faster and scale with confidence.
               </p>
             </div>
           </div>
         </section>
-
         {/* SolvePath Framework Section */}
-        <section className="py-16 md:py-24 bg-background"> {/* Section spacing, background */}
-          <div className="text-center mb-4 sm:mb-6 md:mb-8"> {/* Centered heading, responsive margin-bottom */}
+        <section className="py-16 md:py-24 bg-background">
+          {" "}
+          {/* Section spacing, background */}
+          <div className="text-center mb-4 sm:mb-6 md:mb-8">
+            {" "}
+            {/* Centered heading, responsive margin-bottom */}
             <h2 className="text-4xl md:text-5xl font-bold  mb-6  text-primary">
               How We Solve
             </h2>
@@ -245,8 +282,9 @@ const About: React.FC = () => {
               performance, at speed and at scale.
             </p>
           </div>
-
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 md:gap-8 mb-8 md:mb-12"> {/* Responsive grid: 2 cols mobile, 3 small, 6 large; responsive gap; margin-bottom */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 md:gap-8 mb-8 md:mb-12">
+            {" "}
+            {/* Responsive grid: 2 cols mobile, 3 small, 6 large; responsive gap; margin-bottom */}
             {solvepathSteps.map((step) => (
               <Card
                 key={step.title}
@@ -266,8 +304,9 @@ const About: React.FC = () => {
               </Card>
             ))}
           </div>
-
-          <div className="text-center"> {/* Center button */}
+          <div className="text-center">
+            {" "}
+            {/* Center button */}
             <Button variant="outline" size="lg" asChild>
               <a href="/about/solvepath-framework">
                 Learn More About SolvePath Framework
@@ -276,32 +315,33 @@ const About: React.FC = () => {
             </Button>
           </div>
         </section>
-
         {/* Execution Model Section */}
-        <section className="py-16 md:py-24 bg-background"> {/* Section spacing, background */}
-          <div className="text-center mb-4 sm:mb-6 md:mb-8"> {/* Centered heading, responsive margin-bottom */}
+        <section className="py-16 md:py-24 bg-background">
+          {" "}
+          {/* Section spacing, background */}
+          <div className="text-center mb-4 sm:mb-6 md:mb-8">
+            {" "}
+            {/* Centered heading, responsive margin-bottom */}
             <h2 className="text-4xl md:text-5xl font-bold  mb-6  text-primary">
               Perssonify Execution Model
             </h2>
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8">
-              But strategy only matters if it moves. So we built the
-              Perssonify Execution model around it. This model turns insight
-              into delivery, and delivery into improvement. It&apos;s a
-              continuous loop that&apos;s built to move fast without breaking
-              what matters.
+              But strategy only matters if it moves. So we built the Perssonify
+              Execution model around it. This model turns insight into delivery,
+              and delivery into improvement. It&apos;s a continuous loop
+              that&apos;s built to move fast without breaking what matters.
             </p>
           </div>
-
-          <div className="max-w-4xl mx-auto mb-8 md:mb-12"> {/* Center card, limit width, margin-bottom */}
+          <div className="max-w-4xl mx-auto mb-8 md:mb-12">
+            {" "}
+            {/* Center card, limit width, margin-bottom */}
             <Card className="p-4 sm:p-6 md:p-8 bg-gradient-to-br from-primary/10 to-primary/5 border-0">
               <div className="flex items-center justify-center mb-8"></div>
               <div className="flex flex-wrap justify-center items-center gap-4">
                 {executionSteps.map((step) => (
                   <React.Fragment key={step}>
                     <div className="flex items-center justify-center px-4 py-2 bg-primary/10 rounded-full">
-                      <span className="text-primary font-semibold">
-                        {step}
-                      </span>
+                      <span className="text-primary font-semibold">{step}</span>
                     </div>
                     {step !== executionSteps[executionSteps.length - 1] && (
                       <ArrowRight className="w-4 h-4 text-muted-foreground hidden sm:block" />
@@ -310,15 +350,15 @@ const About: React.FC = () => {
                 ))}
               </div>
               <p className="text-center text-muted-foreground mt-6">
-                Whether it&apos;s a campaign, a transformation, or an
-                ecosystem rollout, this model ensures everything we implement
-                works in context, adapts in real time, and gets better over
-                time.
+                Whether it&apos;s a campaign, a transformation, or an ecosystem
+                rollout, this model ensures everything we implement works in
+                context, adapts in real time, and gets better over time.
               </p>
             </Card>
           </div>
-
-          <div className="text-center mt-8"> {/* Center button, margin-top */}
+          <div className="text-center mt-8">
+            {" "}
+            {/* Center button, margin-top */}
             <Button variant="outline" size="lg" asChild>
               <a href="/about#execution">
                 Learn More About Our Execution Model
@@ -326,11 +366,12 @@ const About: React.FC = () => {
               </a>
             </Button>
           </div>
-
-          <div className="text-center mt-8 md:mt-12 max-w-3xl mx-auto"> {/* Center, responsive margin-top, limit width */}
+          <div className="text-center mt-8 md:mt-12 max-w-3xl mx-auto">
+            {" "}
+            {/* Center, responsive margin-top, limit width */}
             <p className="text-lg text-muted-foreground">
-              Together, the SolvePath Framework and our Execution Model are
-              two sides of the same system:
+              Together, the SolvePath Framework and our Execution Model are two
+              sides of the same system:
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-10 mt-6 md:mt-8">
               <Card className="text-center bg-gradient-to-br from-primary/10 to-primary/5 border-0 p-4 sm:p-6 md:p-8">
@@ -360,10 +401,13 @@ const About: React.FC = () => {
             </p>
           </div>
         </section>
-
         {/* Two Solution Families Section */}
-        <section className="py-16 md:py-24 bg-background"> {/* Section spacing, background */}
-          <div className="text-center mb-4 sm:mb-6 md:mb-8"> {/* Centered heading, responsive margin-bottom */}
+        <section className="py-16 md:py-24 bg-background">
+          {" "}
+          {/* Section spacing, background */}
+          <div className="text-center mb-4 sm:mb-6 md:mb-8">
+            {" "}
+            {/* Centered heading, responsive margin-bottom */}
             <h2 className="text-4xl md:text-5xl font-bold  mb-6  text-primary">
               Two Solution Families Under One Roof
             </h2>
@@ -374,8 +418,7 @@ const About: React.FC = () => {
               that help businesses scale what works and fix what doesn&apos;t.
               That integrated approach lets us expand and evolve our offerings
               across both tracks without losing speed, clarity, or control. As
-              the needs of our clients have evolved, so have we. Our ability
-              to{" "}
+              the needs of our clients have evolved, so have we. Our ability to{" "}
               <span className="text-primary">
                 think strategically, execute efficiently,
               </span>{" "}
@@ -383,8 +426,9 @@ const About: React.FC = () => {
               what keeps us relevant and makes us invaluable.
             </p>
           </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10"> {/* Responsive grid: 1 col mobile, 2 large; responsive gap */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10">
+            {" "}
+            {/* Responsive grid: 1 col mobile, 2 large; responsive gap */}
             <Card className="bg-primary/10 border-0 p-4 sm:p-6 md:p-8">
               <CardHeader>
                 <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
@@ -404,7 +448,10 @@ const About: React.FC = () => {
                   priority is to attract the right audience, convert
                   consistently, and expand your market reach.
                 </p>
-                <Button className="w-full flex items-center justify-center whitespace-nowrap" asChild>
+                <Button
+                  className="w-full flex items-center justify-center whitespace-nowrap"
+                  asChild
+                >
                   <a href="/growth-solutions">
                     Learn More
                     <ArrowRight className="ml-2 w-4 h-4" />
@@ -412,7 +459,6 @@ const About: React.FC = () => {
                 </Button>
               </CardContent>
             </Card>
-
             <Card className="bg-primary/10 border-0 p-4 sm:p-6 md:p-8">
               <CardHeader>
                 <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
@@ -432,7 +478,10 @@ const About: React.FC = () => {
                   precision. We help you improve efficiency and ensure
                   operations scale without chaos.
                 </p>
-                <Button className="w-full flex items-center justify-center whitespace-nowrap" asChild>
+                <Button
+                  className="w-full flex items-center justify-center whitespace-nowrap"
+                  asChild
+                >
                   <a href="/strategic-solutions">
                     Learn More
                     <ArrowRight className="ml-2 w-4 h-4" />
@@ -442,10 +491,13 @@ const About: React.FC = () => {
             </Card>
           </div>
         </section>
-
         {/* What We Deliver Section */}
-        <section className="py-16 md:py-24 bg-background"> {/* Section spacing, background */}
-          <div className="text-center mb-4 sm:mb-6 md:mb-8"> {/* Centered heading, responsive margin-bottom */}
+        <section className="py-16 md:py-24 bg-background">
+          {" "}
+          {/* Section spacing, background */}
+          <div className="text-center mb-4 sm:mb-6 md:mb-8">
+            {" "}
+            {/* Centered heading, responsive margin-bottom */}
             <h2 className="text-4xl md:text-5xl font-bold  mb-6  text-primary">
               What We Deliver
             </h2>
@@ -455,8 +507,9 @@ const About: React.FC = () => {
               adapts to context, and ends in execution.
             </p>
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 md:gap-10"> {/* Responsive grid: 1 col mobile, 3 medium+; responsive gap */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 md:gap-10">
+            {" "}
+            {/* Responsive grid: 1 col mobile, 3 medium+; responsive gap */}
             {deliverables.map((item) => (
               <Card
                 key={item.title}
@@ -477,23 +530,26 @@ const About: React.FC = () => {
             ))}
           </div>
         </section>
-
         {/* Our Values Section */}
-        <section className="py-16 md:py-24 bg-background"> {/* Section spacing, background */}
-          <div className="text-center mb-4 sm:mb-6 md:mb-8"> {/* Centered heading, responsive margin-bottom */}
+        <section className="py-16 md:py-24 bg-background">
+          {" "}
+          {/* Section spacing, background */}
+          <div className="text-center mb-4 sm:mb-6 md:mb-8">
+            {" "}
+            {/* Centered heading, responsive margin-bottom */}
             <h2 className="text-4xl md:text-5xl font-bold  mb-6  text-primary">
               How We Work
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Our approach is built on partnership, precision, and proven
-              results. As the needs of our clients have evolved, so have we.
-              Our ability to think strategically, execute efficiently, and
-              adapt intelligently is what keeps us relevant and makes us
-              invaluable.
+              results. As the needs of our clients have evolved, so have we. Our
+              ability to think strategically, execute efficiently, and adapt
+              intelligently is what keeps us relevant and makes us invaluable.
             </p>
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10"> {/* Responsive grid: 1 col mobile, 2 medium, 4 large; responsive gap */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10">
+            {" "}
+            {/* Responsive grid: 1 col mobile, 2 medium, 4 large; responsive gap */}
             {values.map((value) => (
               <Card
                 key={value.title}
@@ -514,10 +570,13 @@ const About: React.FC = () => {
             ))}
           </div>
         </section>
-
         {/* Meet the Team Section */}
-        <section className="py-16 md:py-24 bg-background"> {/* Section spacing, background */}
-          <div className="text-center mb-4 sm:mb-6 md:mb-8"> {/* Centered heading, responsive margin-bottom */}
+        <section className="py-16 md:py-24 bg-background">
+          {" "}
+          {/* Section spacing, background */}
+          <div className="text-center mb-4 sm:mb-6 md:mb-8">
+            {" "}
+            {/* Centered heading, responsive margin-bottom */}
             <h2 className="text-4xl md:text-5xl font-bold mb-6  text-primary">
               Meet the Team
             </h2>
@@ -525,7 +584,9 @@ const About: React.FC = () => {
               The team you&apos;ll be working with.
             </p>
           </div>
-          <div className="grid gap-y-8 gap-x-6 sm:gap-y-12 sm:gap-x-8 sm:grid-cols-2 lg:grid-cols-4"> {/* Responsive grid: 1 col mobile, 2 small, 4 large; responsive gap-y and gap-x */}
+          <div className="grid gap-y-8 gap-x-6 sm:gap-y-12 sm:gap-x-8 sm:grid-cols-2 lg:grid-cols-4">
+            {" "}
+            {/* Responsive grid: 1 col mobile, 2 small, 4 large; responsive gap-y and gap-x */}
             {people.map((person) => (
               <Card
                 key={person.id}
@@ -574,29 +635,30 @@ const About: React.FC = () => {
             ))}
           </div>
         </section>
-
         {/* CTA Section - clean, centered, no colored box */}
-        <section className="pt-16 md:pt-24 pb-24 md:pb-36 bg-background"> {/* Section spacing, background */}
-          <div className="text-center"> {/* Center CTA content */}
-            <h2 className="text-4xl md:text-5xl font-bold mb-6  text-primary">
-              Ready to Transform Your Business?
-            </h2>
-            <p className="text-xl text-muted-foreground mb-8 max-w-4xl mx-auto">
-              If you&apos;re looking for a partner that&apos;s just as focused
-              on results as you are—one that works fast, thinks strategically,
-              and makes complex things executable—Perssonify is built for
-              that.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" asChild>
-                <a href="/contact">
-                  Get Started Today
-                  <ArrowRight className="ml-2 w-4 h-4" />
-                </a>
-              </Button>
-              <Button variant="outline" size="lg" asChild>
-                <a href="/growth-solutions">View Our Solutions</a>
-              </Button>
+        <section className="py-20 px-4 sm:px-6 lg:px-8 dark:bg-muted/40 bg-muted/70 mb-20 rounded-2xl">
+          <div className="container mx-auto max-w-4xl">
+            <div className="text-center">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6  text-primary">
+                Ready to Transform Your Business?
+              </h2>
+              <p className="text-xl text-muted-foreground mb-8 max-w-4xl mx-auto">
+                If you&apos;re looking for a partner that&apos;s just as focused
+                on results as you are—one that works fast, thinks strategically,
+                and makes complex things executable—Perssonify is built for
+                that.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button size="lg" asChild>
+                  <Link href="/contact">
+                    Get Started Today
+                    <ArrowRight className="ml-2 w-4 h-4" />
+                  </Link>
+                </Button>
+                <Button variant="outline" size="lg" asChild>
+                  <Link href="/growth-solutions">View Our Solutions</Link>
+                </Button>
+              </div>
             </div>
           </div>
         </section>
