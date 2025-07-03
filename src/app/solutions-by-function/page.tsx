@@ -47,8 +47,8 @@ const SolutionsByFunction: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background pt-20">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+    <div className="min-h-screen bg-background pt-20 w-full px-4 max-w-6xl mx-auto">
+      <div className="container">
         <ThemeBreadcrumb />
         
         {/* Hero Section */}
@@ -100,15 +100,15 @@ const SolutionsByFunction: React.FC = () => {
                 viewport={{ once: true }}
               >
                 <Link href={func.link}>
-                  <Card className="h-full hover:shadow-xl transition-all duration-300 hover:-translate-y-2 bg-gradient-to-br from-accent/10 to-accent/5 border-0 custom-shadow group cursor-pointer">
+                  <Card className="h-full hover:shadow-xl transition-all duration-300 hover:-translate-y-2 hover:bg-primary/10 cursor-pointer">
                     <CardHeader>
                       <div className="flex items-center justify-between mb-4">
-                        <div className="w-16 h-16 bg-accent/10 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                          <func.icon className="w-8 h-8 text-accent" />
+                        <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                          <func.icon className="w-8 h-8 text-primary" />
                         </div>
-                        <SquareArrowOutUpRight className="w-5 h-5 text-muted-foreground group-hover:text-accent transition-colors" />
+                        <SquareArrowOutUpRight className="w-5 h-5 text-muted-foreground" />
                       </div>
-                      <CardTitle className="text-xl font-bold text-foreground group-hover:text-accent transition-colors">
+                      <CardTitle className="text-xl font-bold text-foreground">
                         {func.title}
                       </CardTitle>
                       <CardDescription className="text-muted-foreground">
@@ -132,7 +132,7 @@ const SolutionsByFunction: React.FC = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="py-16 text-center bg-muted/30 rounded-2xl"
+          className="py-16 text-center dark:bg-muted/40 bg-muted/70 rounded-2xl mb-20"
         >
           <div className="max-w-4xl mx-auto px-8">
             <h2 className="text-3xl font-bold text-foreground mb-6">

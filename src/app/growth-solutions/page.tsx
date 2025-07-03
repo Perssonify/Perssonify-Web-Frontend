@@ -86,17 +86,17 @@ const solutions = [
 
 const CoreGrowthSolutions: React.FC = () => {
   return (
-    <div className="min-h-screen bg-background flex flex-col">
+    <div className="min-h-screen bg-background flex flex-col w-full px-4 max-w-6xl mx-auto">
       {/* Breadcrumb */}
       <section className="pt-20 pb-8">
-        <div className="container mx-auto max-w-6xl px-4">
+        <div className="container mx-auto max-w-6xl">
           <ThemeBreadcrumb />
         </div>
       </section>
 
       {/* Hero Section */}
       <section className="py-12 md:py-20">
-        <div className="container mx-auto max-w-6xl px-4">
+        <div className="container mx-auto max-w-6xl">
           <motion.div
             className="text-center"
             initial="initial"
@@ -115,7 +115,7 @@ const CoreGrowthSolutions: React.FC = () => {
 
       {/* Solutions Grid */}
       <section className="py-12 md:py-20 bg-background">
-        <div className="container mx-auto max-w-6xl px-4">
+        <div className="container mx-auto max-w-6xl">
           <motion.div
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch"
             initial="initial"
@@ -159,8 +159,8 @@ const CoreGrowthSolutions: React.FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-24 bg-muted/30">
-        <div className="container mx-auto max-w-4xl px-4">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 dark:bg-muted/40 bg-muted/70 mb-20 rounded-2xl">
+        <div className="container mx-auto max-w-4xl">
           <motion.div
             className="text-center"
             initial="initial"

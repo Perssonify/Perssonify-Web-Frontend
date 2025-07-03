@@ -65,8 +65,8 @@ const CoreGrowthSolutions: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+    <div className="min-h-screen bg-background w-full px-4 max-w-6xl mx-auto">
+      <div className="container mx-auto max-w-6xl">
         <ThemeBreadcrumb />
       </div>
 
@@ -91,7 +91,7 @@ const CoreGrowthSolutions: React.FC = () => {
       </section>
 
       {/* Solutions Grid */}
-      <section className="pb-20 px-4 sm:px-6 lg:px-8">
+      <section className="pb-20">
         <div className="container mx-auto max-w-6xl">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {solutions.map((solution, index) => (
@@ -129,7 +129,7 @@ const CoreGrowthSolutions: React.FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 dark:bg-muted/40 bg-muted/70 mb-20 rounded-2xl">
         <div className="container mx-auto max-w-4xl text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
