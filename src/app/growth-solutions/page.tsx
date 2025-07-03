@@ -21,7 +21,6 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { WavyBackground } from "@/components/ui/wavy-background";
-import ThemeBreadcrumb from "@/components/ui/theme-breadcrumb";
 import { motion } from "framer-motion";
 import StartGrowingForm from "@/common/StartGrowingForm";
 

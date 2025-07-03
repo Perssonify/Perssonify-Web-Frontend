@@ -11,26 +11,33 @@ interface HeaderProps {
     href: string;
     items?: { name: string; href: string }[];
   };
+  handleMenuClose: () => void;
 }
 
-export const SubDropdown: React.FC<HeaderProps> = ({ section }) => {
+export const SubDropdown: React.FC<HeaderProps> = ({
+  section,
+  handleMenuClose,
+}) => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   return (
     <div key={section.title} className="space-y-1 mt-1">
-      <Link
-        href={section.href}
-        onClick={() => {
-          setIsMenuOpen((open) => !open);
-        }}
-        className="px-3 py-2 text-xs font-medium text-foreground/80 hover:text-primary transition-colors border-l-2 border-primary/20 flex items-center justify-between"
-      >
-        {section.title}
+      <div className="flex items-center justify-between">
+        <Link
+          href={section.href}
+          onClick={handleMenuClose}
+          className="px-3 py-2 text-xs font-medium text-foreground/80 hover:text-primary transition-colors border-l-2 border-primary/20 "
+        >
+          {section.title}
+        </Link>
         <ChevronDown
           className="w-4 h-4 text-primary transition-transform duration-200"
+          onClick={() => {
+            setIsMenuOpen((open) => !open);
+          }}
           style={{ transform: isMenuOpen ? "rotate(180deg)" : "rotate(0deg)" }}
         />
-      </Link>
+      </div>
       <AnimatePresence initial={false}>
         {isMenuOpen && (
           <motion.div
@@ -45,6 +52,7 @@ export const SubDropdown: React.FC<HeaderProps> = ({ section }) => {
               <Link
                 key={subItem.name}
                 href={subItem.href}
+                onClick={handleMenuClose}
                 className="block px-4 py-1.5 text-xs text-muted-foreground hover:text-primary transition-colors hover:bg-muted/30 rounded"
               >
                 {subItem.name}

@@ -9,13 +9,21 @@ import { MainDropdown } from "./mainDropdown";
 
 interface HeaderProps {
   setIsMenuOpen: (isOpen: boolean) => void;
-  navigation: any[];
+  navigation: {
+    name: string;
+    href: string;
+    hasDropdown?: boolean;
+  }[];
 }
 
 export const MobileMenu: React.FC<HeaderProps> = ({
   setIsMenuOpen,
   navigation,
 }) => {
+  const handleMenuClose = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0, height: 0 }}
@@ -43,21 +51,23 @@ export const MobileMenu: React.FC<HeaderProps> = ({
         </div>
       </div>
       <div className="py-4 space-y-3 flex flex-col mt-16">
-        {navigation.map((item: any) => (
-          <div key={item.name} className="flex flex-col">
-            {item.hasDropdown ? (
-              <MainDropdown item={item} />
-            ) : (
-              <Link
-                href={item.href}
-                onClick={() => setIsMenuOpen(false)}
-                className="block px-4 py-3 text-sm font-medium transition-colors hover:text-primary text-foreground/80 hover:bg-muted/30 rounded-lg mx-2"
-              >
-                {item.name}
-              </Link>
-            )}
-          </div>
-        ))}
+        {navigation.map(
+          (item: { name: string; href: string; hasDropdown?: boolean }) => (
+            <div key={item.name} className="flex flex-col">
+              {item.hasDropdown ? (
+                <MainDropdown item={item} handleMenuClose={handleMenuClose} />
+              ) : (
+                <Link
+                  href={item.href}
+                  onClick={handleMenuClose}
+                  className="block px-4 py-3 text-sm font-medium transition-colors hover:text-primary text-foreground/80 hover:bg-muted/30 rounded-lg mx-2"
+                >
+                  {item.name}
+                </Link>
+              )}
+            </div>
+          )
+        )}
         <div className="px-4 py-3 border-t border-border/30 mt-4">
           <Button asChild className="w-full">
             <Link href="/contact" onClick={() => setIsMenuOpen(false)}>

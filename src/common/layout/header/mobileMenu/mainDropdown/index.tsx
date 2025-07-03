@@ -16,27 +16,30 @@ interface HeaderProps {
       items?: { name: string; href: string }[];
     }[];
   };
+  handleMenuClose: () => void;
 }
 
-export const MainDropdown: React.FC<HeaderProps> = ({ item }) => {
+export const MainDropdown: React.FC<HeaderProps> = ({
+  item,
+  handleMenuClose,
+}) => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   return (
     <div className="space-y-2 px-4 py-3 text-sm font-semibold transition-colors hover:text-primary text-foreground bg-muted/30 rounded-lg mx-2">
-      <Link
-        href={item.href}
-        onClick={(e) => {
-          e.preventDefault();
-          setIsMenuOpen((open) => !open);
-        }}
-        className=" flex items-center justify-between"
-      >
-        {item.name}
+      <div className="flex items-center justify-between">
+        <Link href={item.href} onClick={handleMenuClose}>
+          {item.name}
+        </Link>
         <ChevronDown
           className="w-4 h-4 text-primary transition-transform duration-200"
           style={{ transform: isMenuOpen ? "rotate(180deg)" : "rotate(0deg)" }}
+          onClick={(e) => {
+            e.preventDefault();
+            setIsMenuOpen((open) => !open);
+          }}
         />
-      </Link>
+      </div>
       <AnimatePresence initial={false}>
         {isMenuOpen && (
           <motion.div
@@ -47,9 +50,19 @@ export const MainDropdown: React.FC<HeaderProps> = ({ item }) => {
             transition={{ duration: 0.25, ease: "easeInOut" }}
             style={{ overflow: "hidden" }}
           >
-            {item.sections?.map((section: any) => (
-              <SubDropdown key={section.title} section={section} />
-            ))}
+            {item.sections?.map(
+              (section: {
+                title: string;
+                href: string;
+                items?: { name: string; href: string }[];
+              }) => (
+                <SubDropdown
+                  key={section.title}
+                  section={section}
+                  handleMenuClose={handleMenuClose}
+                />
+              )
+            )}
           </motion.div>
         )}
       </AnimatePresence>
