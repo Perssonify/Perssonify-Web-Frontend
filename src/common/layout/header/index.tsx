@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Switch } from "./switch";
 import { motion, AnimatePresence } from "motion/react";
 import { AnimatedUnderline } from "@/components/ui/animated-underline";
+import { MobileMenu } from "./mobileMenu";
 
 interface HeaderProps {
   isDarkMode: boolean;
@@ -367,78 +368,14 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, toggleDarkMode }) => {
               ) : (
                 <Menu className="w-4 h-4 text-primary" />
               )}
-              </div>
+            </div>
           </div>
         </div>
 
         {/* Mobile menu */}
         <AnimatePresence>
           {isMenuOpen && (
-            <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: "auto" }}
-              exit={{ opacity: 0, height: 0 }}
-              transition={{ duration: 0.3 }}
-              className="lg:hidden fixed top-[56px] left-1/2 -translate-x-1/2 w-full max-w-sm border border-border bg-background max-h-[70vh] overflow-y-auto rounded-b-xl shadow-2xl z-[100] flex flex-col px-4"
-            >
-              <div className="py-4 space-y-3 flex flex-col">
-                {navigation.map((item) => (
-                  <div key={item.name} className="flex flex-col">
-                    {item.hasDropdown ? (
-                      <div className="space-y-2">
-                        <Link
-                          href={item.href}
-                          onClick={() => setIsMenuOpen(false)}
-                          className="block px-4 py-3 text-sm font-semibold transition-colors hover:text-primary text-foreground bg-muted/30 rounded-lg mx-2"
-                        >
-                          {item.name}
-                        </Link>
-                        <div className="border-l-2 border-primary/10 ml-2 pl-2">
-                          {item.sections?.map((section) => (
-                            <div key={section.title} className="space-y-1 mt-1">
-                              <Link
-                                href={section.href}
-                                onClick={() => setIsMenuOpen(false)}
-                                className="block px-3 py-2 text-xs font-medium text-foreground/80 hover:text-primary transition-colors border-l-2 border-primary/20"
-                              >
-                                {section.title}
-                              </Link>
-                              <div className="flex flex-col ml-2">
-                                {section.items?.map((subItem) => (
-                                  <Link
-                                    key={subItem.name}
-                                    href={subItem.href}
-                                    onClick={() => setIsMenuOpen(false)}
-                                    className="block px-5 py-1.5 text-xs text-muted-foreground hover:text-primary transition-colors hover:bg-muted/30 rounded"
-                                  >
-                                    {subItem.name}
-                                  </Link>
-                                ))}
-                              </div>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    ) : (
-                      <Link
-                        href={item.href}
-                        onClick={() => setIsMenuOpen(false)}
-                        className="block px-4 py-3 text-sm font-medium transition-colors hover:text-primary text-foreground/80 hover:bg-muted/30 rounded-lg mx-2"
-                      >
-                        {item.name}
-                      </Link>
-                    )}
-                  </div>
-                ))}
-                <div className="px-4 py-3 border-t border-border/30 mt-4">
-                  <Button asChild className="w-full">
-                    <Link href="/contact" onClick={() => setIsMenuOpen(false)}>
-                      Get Started
-                    </Link>
-                  </Button>
-                </div>
-              </div>
-            </motion.div>
+            <MobileMenu setIsMenuOpen={setIsMenuOpen} navigation={navigation} />
           )}
         </AnimatePresence>
       </div>
