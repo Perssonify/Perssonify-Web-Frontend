@@ -87,13 +87,18 @@ const GrowthSolutions: React.FC = () => {
   ];
 
   return (
-    <div className="bg-background text-foreground">
-      <div className="container mx-auto px-4  lg:px-8 max-w-6xl">
-        <ThemeBreadcrumb />
-      </div>
+    <div className="min-h-screen bg-background flex flex-col w-full px-4 max-w-6xl mx-auto">
+      {/* Breadcrumb */}
+      <section className="pt-20 pb-8">
+        <div className="container mx-auto max-w-6xl">
+          <ThemeBreadcrumb />
+        </div>
+      </section>
       {/* Hero Section */}
       <WavyBackground className="py-20 sm:py-28 md:py-36 mt-16 md:mt-20">
         <div className="container mx-auto px-4  lg:px-8 max-w-6xl">
+    
+
           <motion.div
             initial={{
               opacity: 0,
@@ -120,9 +125,9 @@ const GrowthSolutions: React.FC = () => {
         </div>
       </WavyBackground>
 
-      {/* Core Services */}
-      <section className="py-16 sm:py-20 md:py-24 bg-background">
-        <div className="max-w-6xl mx-auto px-2 ">
+      {/* Solutions Grid */}
+      <section className="py-12 md:py-20 bg-background">
+        <div className="container mx-auto max-w-6xl">
           <motion.div
             initial={{
               opacity: 0,
@@ -263,8 +268,8 @@ const GrowthSolutions: React.FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 sm:py-20 md:py-24 bg-background">
-        <div className="container mx-auto px-4  lg:px-8 max-w-6xl text-center">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 dark:bg-muted/40 bg-muted/70 mb-20 rounded-2xl">
+        <div className="container mx-auto max-w-4xl">
           <motion.div
             initial={{
               opacity: 0,

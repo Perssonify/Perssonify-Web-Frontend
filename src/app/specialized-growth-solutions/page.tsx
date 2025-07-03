@@ -61,9 +61,9 @@ const SpecializedGrowthSolutions: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background w-full px-4 max-w-6xl mx-auto">
       {/* Hero Section */}
-      <section className="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+      <section className="pt-40 pb-16">
         <div className="container mx-auto max-w-6xl">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -83,7 +83,7 @@ const SpecializedGrowthSolutions: React.FC = () => {
       </section>
 
       {/* Solutions Grid */}
-      <section className="pb-20 px-4 sm:px-6 lg:px-8">
+      <section className="pb-20">
         <div className="container mx-auto max-w-6xl">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {solutions.map((solution, index) => (
@@ -120,7 +120,7 @@ const SpecializedGrowthSolutions: React.FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 dark:bg-muted/40 bg-muted/70 rounded-2xl mb-20">
         <div className="container mx-auto max-w-4xl text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}

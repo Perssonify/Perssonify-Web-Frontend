@@ -109,8 +109,8 @@ const SolvePathFramework: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background pt-20">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+    <div className="min-h-screen bg-background pt-20 w-full px-4 max-w-6xl mx-auto">
+      <div className="container">
         {/* Back Link */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}
@@ -132,9 +132,9 @@ const SolvePathFramework: React.FC = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center mb-16 py-16"
         >
-          <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
+          <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6">
             The Solution Design Framework
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8">
@@ -156,7 +156,7 @@ const SolvePathFramework: React.FC = () => {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="bg-muted/50 rounded-2xl p-8"
+            className="bg-muted/50 rounded-2xl py-8 px-12"
           >
             <h2 className="text-3xl font-bold text-foreground mb-6">The Solution Design Framework is used to:</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -203,8 +203,8 @@ const SolvePathFramework: React.FC = () => {
                 transition={{ duration: 0.8, delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
-                <Card className="border-0 bg-card">
-                  <CardHeader>
+                <Card className="border-0 bg-card py-6">
+                  <CardHeader className='px-2'>
                     <div className="flex items-start gap-4">
                       <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
                         <stage.icon className="w-6 h-6 text-primary" />
@@ -215,7 +215,7 @@ const SolvePathFramework: React.FC = () => {
                       </div>
                     </div>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className='px-2 pt-0 pb-4'>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div>
                         <h4 className="font-semibold text-foreground mb-2">Key Questions:</h4>
@@ -846,7 +846,7 @@ const SolvePathFramework: React.FC = () => {
             <div className="space-y-4 mb-8">
               {solutionTypes.map((solution, index) => (
                 <Card key={index}>
-                  <CardContent className="p-6">
+                  <CardContent>
                     <div className="flex justify-between items-start">
                       <div className="flex-1">
                         <h4 className="font-semibold text-foreground mb-2">{solution.type}</h4>
