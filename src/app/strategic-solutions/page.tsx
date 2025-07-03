@@ -122,10 +122,10 @@ const StrategicSolutions: React.FC = () => {
             transition={{ duration: 0.8 }}
             className="text-center"
           >
-            <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-black dark:text-white sm:mb-6 px-2">
+            <h1 className="text-5xl md:text-6xl lg:text-6xl font-bold font-playfair text-black dark:text-white mb-6 lg:mb-8">
               Strategic Solutions
             </h1>
-            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-black/80 dark:text-white/80 mb-6 sm:mb-8 leading-relaxed max-w-4xl mx-auto px-4">
+            <p className="text-xl md:text-2xl text-black/80 dark:text-white mb-8 lg:mb-10 leading-relaxed max-w-3xl mx-auto">
               Technology-enhanced operational scaling that streamlines
               processes, automates intelligently, and ensures your operations
               scale without chaos.
