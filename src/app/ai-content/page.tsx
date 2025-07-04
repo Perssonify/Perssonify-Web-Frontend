@@ -42,6 +42,8 @@ const AIContent: React.FC = () => {
         ctaDescription="Let&apos;s implement AI systems that accelerate your content production without compromising quality or brand integrity."
       backLink="/specialized-growth-solutions"
       backLinkText="View All Specialized Growth Solutions"
+      parentLabel="Growth Solutions"
+      parentHref="/growth-solutions"
     />
   );
 };

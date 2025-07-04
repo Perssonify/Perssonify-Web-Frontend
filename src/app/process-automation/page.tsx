@@ -42,6 +42,8 @@ const ProcessAutomation: React.FC = () => {
       ctaDescription="Let&apos;s streamline your operations with intelligent automation solutions."
       backLink="/strategic-solutions"
       backLinkText="View All Strategic Solutions"
+      parentLabel="Strategic Solutions"
+      parentHref="/strategic-solutions"
     />
   );
 };

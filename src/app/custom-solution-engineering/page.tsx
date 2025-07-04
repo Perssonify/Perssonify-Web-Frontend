@@ -42,6 +42,8 @@ const CustomSolutionEngineering: React.FC = () => {
       ctaDescription="Let&apos;s engineer precision-built solutions for your unique challenges."
       backLink="/strategic-solutions"
       backLinkText="View All Strategic Solutions"
+      parentLabel="Strategic Solutions"
+      parentHref="/strategic-solutions"
     />
   );
 };

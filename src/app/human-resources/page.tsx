@@ -42,6 +42,8 @@ const HumanResources: React.FC = () => {
       ctaDescription="Let&apos;s streamline your human resources processes and improve employee experience."
       backLink="/strategic-solutions"
       backLinkText="View All Strategic Solutions"
+      parentLabel="Strategic Solutions"
+      parentHref="/strategic-solutions"
     />
   );
 };

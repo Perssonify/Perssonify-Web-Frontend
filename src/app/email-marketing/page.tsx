@@ -42,6 +42,8 @@ const EmailMarketing: React.FC = () => {
       ctaDescription="Let&apos;s create email campaigns that your audience actually wants to read and engage with."
       backLink="/growth-solutions"
       backLinkText="View All Growth Solutions"
+      parentLabel="Growth Solutions"
+      parentHref="/growth-solutions"
     />
   );
 };

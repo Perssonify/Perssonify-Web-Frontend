@@ -6,6 +6,8 @@ import { ArrowRight, DollarSign, Users, Settings, Shield, Target, SquareArrowOut
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import ThemeBreadcrumb from '@/components/ui/theme-breadcrumb';
+import SolutionTemplate from '@/common/SolutionTemplate';
+
 
 const SolutionsByFunction: React.FC = () => {
   const functions = [
@@ -152,6 +154,20 @@ const SolutionsByFunction: React.FC = () => {
             </Button>
           </div>
         </motion.section>
+
+        <SolutionTemplate
+          category="Strategic Solutions"
+          title="Solutions By Function"
+          description="Business function focused solutions that meet the needs of specific business units."
+          categoryIcon={Target}
+          services={[]}
+          ctaTitle="Ready to turn high-effort functions into high-impact ones?"
+          ctaDescription="Let's make it happen. Not everything fits neatly into a box. If the work matters and the process is heavy, we'll help you streamline it."
+          backLink="/strategic-solutions"
+          backLinkText="View All Strategic Solutions"
+          parentLabel="Strategic Solutions"
+          parentHref="/strategic-solutions"
+        />
       </div>
     </div>
   );

@@ -42,6 +42,8 @@ const ConversionOptimization: React.FC = () => {
       ctaDescription="Let&apos;s optimize your conversion funnel to turn more visitors into customers and maximize your marketing ROI."
       backLink="/core-growth-solutions"
       backLinkText="View All Core Growth Solutions"
+      parentLabel="Growth Solutions"
+      parentHref="/growth-solutions"
     />
   );
 };

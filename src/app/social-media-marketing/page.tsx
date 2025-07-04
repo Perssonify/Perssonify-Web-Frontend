@@ -42,6 +42,8 @@ const SocialMedia: React.FC = () => {
       ctaDescription="Let&apos;s create a social media presence that engages your audience and drives meaningful business results."
       backLink="/core-growth-solutions"
       backLinkText="View All Core Growth Solutions"
+      parentLabel="Growth Solutions"
+      parentHref="/growth-solutions"
     />
   );
 };

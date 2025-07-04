@@ -54,6 +54,8 @@ export default function EnterpriseEvolutionStrategicTransformation() {
         ctaDescription="Perssonify helps reduce the risk of transformation by combining big-picture thinking with execution-focused support. We ensure organizations don't just plan to change—they actually move forward with confidence and clarity."
         backLink="/strategic-solutions"
         backLinkText="View All Strategic Solutions"
+        parentLabel="Strategic Solutions"
+        parentHref="/strategic-solutions"
       />
       <div className="w-full px-4 max-w-6xl mx-auto">
         <div className="py-20 px-4 sm:px-6 lg:px-8 dark:bg-muted/40 bg-muted/70 mb-20 rounded-2xl">

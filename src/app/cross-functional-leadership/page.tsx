@@ -42,6 +42,8 @@ const CrossFunctionalLeadership: React.FC = () => {
       ctaDescription="Let&apos;s bridge silos and drive execution across your teams and strategic initiatives."
       backLink="/strategic-solutions"
       backLinkText="View All Strategic Solutions"
+      parentLabel="Strategic Solutions"
+      parentHref="/strategic-solutions"
     />
   );
 };

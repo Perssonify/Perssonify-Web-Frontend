@@ -42,6 +42,8 @@ const FinanceOperations: React.FC = () => {
       ctaDescription="Let&apos;s streamline your financial processes and unlock efficiency."
       backLink="/strategic-solutions"
       backLinkText="View All Strategic Solutions"
+      parentLabel="Strategic Solutions"
+      parentHref="/strategic-solutions"
     />
   );
 };

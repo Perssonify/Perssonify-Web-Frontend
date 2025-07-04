@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
@@ -24,6 +23,8 @@ interface SolutionTemplateProps {
   ctaDescription: string;
   backLink: string;
   backLinkText: string;
+  parentLabel?: string;
+  parentHref?: string;
 }
 
 const SolutionTemplate: React.FC<SolutionTemplateProps> = ({
@@ -35,12 +36,14 @@ const SolutionTemplate: React.FC<SolutionTemplateProps> = ({
   ctaTitle,
   ctaDescription,
   backLink,
-  backLinkText
+  backLinkText,
+  parentLabel,
+  parentHref
 }) => {
   return (
     <div className="min-h-screen bg-background pt-20 w-full px-4 max-w-6xl mx-auto">
       <div className="container">
-        <ThemeBreadcrumb />
+        <ThemeBreadcrumb parentLabel={parentLabel} parentHref={parentHref} />
         
         {/* Hero Section */}
         <motion.section 

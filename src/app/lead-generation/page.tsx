@@ -42,6 +42,8 @@ const LeadGeneration: React.FC = () => {
       ctaDescription="Let&apos;s build lead generation systems that consistently deliver qualified prospects for your sales team."
       backLink="/specialized-growth-solutions"
       backLinkText="View All Specialized Growth Solutions"
+      parentLabel="Growth Solutions"
+      parentHref="/growth-solutions"
     />
   );
 };

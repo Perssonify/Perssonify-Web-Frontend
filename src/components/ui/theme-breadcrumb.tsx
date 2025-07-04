@@ -5,7 +5,11 @@ import { usePathname } from 'next/navigation';
 import { Home, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from '@/components/ui/breadcrumb';
-const ThemeBreadcrumb: React.FC = () => {
+
+const ThemeBreadcrumb: React.FC<{
+  parentLabel?: string;
+  parentHref?: string;
+}> = ({ parentLabel, parentHref }) => {
   const pathname = usePathname();
   const pathSegments = pathname.split('/').filter(Boolean);
 
@@ -20,6 +24,10 @@ const ThemeBreadcrumb: React.FC = () => {
     return '/' + pathSegments.slice(0, index + 1).join('/');
   };
 
+  const segments = [...pathSegments];
+  // Do NOT remove the first segment when parentLabel is provided; always show Home / Parent / Current Page
+  // This ensures three segments are always shown on solution subpages.
+
   return (
     <Breadcrumb className="mb-6">
       <BreadcrumbList>
@@ -31,22 +39,34 @@ const ThemeBreadcrumb: React.FC = () => {
             </Link>
           </BreadcrumbLink>
         </BreadcrumbItem>
-        
-
-        {pathSegments.map((segment, index) => (
+        {parentLabel && parentHref && (
+          <>
+            <BreadcrumbSeparator>
+              <ChevronRight className="w-4 h-4" />
+            </BreadcrumbSeparator>
+            <BreadcrumbItem>
+              <BreadcrumbLink asChild>
+                <Link href={parentHref} className="hover:text-primary transition-colors">
+                  {parentLabel}
+                </Link>
+              </BreadcrumbLink>
+            </BreadcrumbItem>
+          </>
+        )}
+        {segments.map((segment, index) => (
           <React.Fragment key={index}>
             <BreadcrumbSeparator>
               <ChevronRight className="w-4 h-4" />
             </BreadcrumbSeparator>
             <BreadcrumbItem>
-              {index === pathSegments.length - 1 ? (
+              {index === segments.length - 1 ? (
                 <BreadcrumbPage className="text-foreground font-medium">
                   {formatLabel(segment)}
                 </BreadcrumbPage>
               ) : (
                 <BreadcrumbLink asChild>
                   <Link 
-                    href={buildHref(index)}
+                    href={parentHref && parentLabel ? parentHref + '/' + segments.slice(0, index + 1).join('/') : buildHref(index)}
                     className="hover:text-primary transition-colors"
                   >
                     {formatLabel(segment)}

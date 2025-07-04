@@ -42,6 +42,8 @@ const PerformanceMarketing: React.FC = () => {
       ctaDescription="Let's create performance marketing campaigns that deliver measurable growth and maximize your advertising investment."
       backLink="/core-growth-solutions"
       backLinkText="View All Core Growth Solutions"
+      parentLabel="Growth Solutions"
+      parentHref="/growth-solutions"
     />
   );
 };

@@ -42,6 +42,8 @@ const ComplianceGovernance: React.FC = () => {
       ctaDescription="Let&apos;s implement systems that simplify regulatory workflows and reduce compliance risk."
       backLink="/strategic-solutions"
       backLinkText="View All Strategic Solutions"
+      parentLabel="Strategic Solutions"
+      parentHref="/solutions-by-function"
     />
   );    
 };

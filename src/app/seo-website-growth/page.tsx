@@ -42,6 +42,8 @@ const SEO: React.FC = () => {
       ctaDescription="Let&apos;s optimize your online presence to drive organic traffic and establish your brand as an industry authority."
       backLink="/core-growth-solutions"
       backLinkText="View All Core Growth Solutions"
+      parentLabel="Growth Solutions"
+      parentHref="/growth-solutions"
     />
   );
 };

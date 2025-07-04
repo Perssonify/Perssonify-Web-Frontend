@@ -42,6 +42,8 @@ const CreativeSolutions: React.FC = () => {
       ctaDescription="Let&apos;s bring your brand to life with creative solutions that captivate your audience and drive results."
       backLink="/core-growth-solutions"
       backLinkText="View All Core Growth Solutions"
+      parentLabel="Growth Solutions"
+      parentHref="/growth-solutions"
     />
   );
 };

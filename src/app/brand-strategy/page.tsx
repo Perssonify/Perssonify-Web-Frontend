@@ -42,6 +42,8 @@ const BrandStrategy: React.FC = () => {
       ctaDescription="Let&apos;s develop a brand strategy that positions you for long-term success and sustainable growth."
       backLink="/specialized-growth-solutions"
       backLinkText="View All Specialized Growth Solutions"
+      parentLabel="Growth Solutions"
+      parentHref="/growth-solutions"
     />
   );
 };

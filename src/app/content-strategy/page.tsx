@@ -42,6 +42,8 @@ const ContentStrategy: React.FC = () => {
       ctaDescription="Let&apos;s create a content strategy that consistently delivers value to your audience and drives business results."
       backLink="/specialized-growth-solutions"
       backLinkText="View All Specialized Growth Solutions"
+      parentLabel="Growth Solutions"
+      parentHref="/growth-solutions"
     />
   );    
 };

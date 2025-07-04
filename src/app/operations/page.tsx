@@ -42,6 +42,8 @@ const Operations: React.FC = () => {
       ctaDescription="Let&apos;s eliminate delays and optimize your operational execution."
       backLink="/strategic-solutions"
       backLinkText="View All Strategic Solutions"
+      parentLabel="Strategic Solutions"
+      parentHref="/strategic-solutions"
     />
   );
 };

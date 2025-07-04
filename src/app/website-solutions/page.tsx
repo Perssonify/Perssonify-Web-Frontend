@@ -42,6 +42,8 @@ const WebsiteSolutions: React.FC = () => {
       ctaDescription="Let&apos;s create a website that not only looks amazing but also drives conversions and grows your business."
       backLink="/core-growth-solutions"
       backLinkText="View All Core Growth Solutions"
+      parentLabel="Growth Solutions"
+      parentHref="/growth-solutions"
     />
   );
 };

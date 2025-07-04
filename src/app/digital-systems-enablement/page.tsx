@@ -42,6 +42,8 @@ const DigitalSystemsEnablement: React.FC = () => {
       ctaDescription="Let&apos;s optimize your platforms and empower your teams with intelligent systems."
       backLink="/strategic-solutions"
       backLinkText="View All Strategic Solutions"
+      parentLabel="Strategic Solutions"
+      parentHref="/strategic-solutions"
     />
   );
 };
