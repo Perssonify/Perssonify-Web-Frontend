@@ -3,7 +3,7 @@
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 
-export default function CardFive() {
+export default function CardNine() {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-6">
       {[
@@ -26,7 +26,7 @@ export default function CardFive() {
             href={item.link}
             className="flex items-center gap-4 p-4 rounded-lg border bg-primary/10 dark:bg-primary/20 mb-3"
           >
-            <div className="w-12 h-12 flex-shrink-0 flex items-center justify-center bg-primary/20 border border-primary rounded-lg">
+            <div className="w-12 h-12 flex-shrink-0 flex items-center justify-center">
               <img
                 src={item.icon}
                 alt={item.title}
