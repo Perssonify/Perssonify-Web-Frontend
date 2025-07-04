@@ -24,7 +24,7 @@ const TermsOfService: React.FC = () => {
             <section className="mb-8">
               <h2 className="text-2xl font-semibold text-foreground mb-4">1. Agreement to Terms</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                By accessing and using Perssonify's services, you accept and agree to be bound by the terms and provision of this agreement. These Terms of Service ("Terms") govern your use of our website, services, and any related content or materials provided by Perssonify.
+                By accessing and using Perssonify&apos;s services, you accept and agree to be bound by the terms and provision of this agreement. These Terms of Service (&quot;Terms&quot;) govern your use of our website, services, and any related content or materials provided by Perssonify.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 If you do not agree to abide by the above, please do not use this service. We reserve the right to modify these terms at any time, and such modifications will be effective immediately upon posting.
@@ -100,14 +100,14 @@ const TermsOfService: React.FC = () => {
                 Perssonify maintains strict confidentiality regarding client information and business operations. We will not disclose confidential information to third parties without explicit written consent, except as required by law.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Clients similarly agree to maintain confidentiality regarding Perssonify's proprietary methods, processes, and business information shared during engagements.
+                Clients similarly agree to maintain confidentiality regarding Perssonify&apos;s proprietary methods, processes, and business information shared during engagements.
               </p>
             </section>
 
             <section className="mb-8">
               <h2 className="text-2xl font-semibold text-foreground mb-4">7. Limitation of Liability</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Perssonify's liability for any claims arising from our services is limited to the total amount paid by the client for the specific services giving rise to the claim. We are not liable for indirect, incidental, special, or consequential damages.
+                Perssonify&apos;s liability for any claims arising from our services is limited to the total amount paid by the client for the specific services giving rise to the claim. We are not liable for indirect, incidental, special, or consequential damages.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 While we strive for excellence in all deliverables, marketing and business results cannot be guaranteed due to factors beyond our control including market conditions, competition, and client implementation of recommendations.

@@ -26,7 +26,7 @@ const PrivacyPolicy: React.FC = () => {
             <section className="mb-12">
               <h2 className="text-2xl font-semibold text-foreground mb-6">1. Introduction</h2>
               <p className="text-muted-foreground leading-loose mb-6">
-                At Perssonify ("we," "our," or "us"), we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website, use our services, or interact with us in any capacity.
+                At Perssonify (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;), we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website, use our services, or interact with us in any capacity.
               </p>
               <p className="text-muted-foreground leading-loose">
                 By accessing or using our services, you acknowledge that you have read, understood, and agree to be bound by this Privacy Policy. If you do not agree with this policy, please do not use our services.
@@ -83,7 +83,7 @@ const PrivacyPolicy: React.FC = () => {
               <ul className="list-disc pl-6 text-muted-foreground mb-8 space-y-3 leading-loose">
                 <li><strong>Consent:</strong> When you have given clear consent for specific processing activities</li>
                 <li><strong>Contract Performance:</strong> When processing is necessary for performing our services</li>
-                <li><strong>Legitimate Interests:</strong> When we have legitimate business interests that don't override your rights</li>
+                <li><strong>Legitimate Interests:</strong> When we have legitimate business interests that don&apos;t override your rights</li>
                 <li><strong>Legal Compliance:</strong> When required by law or regulation</li>
               </ul>
             </section>
