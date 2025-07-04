@@ -5,8 +5,6 @@ import { Button } from "@/components/ui/button";
 import {
   Workflow,
   Settings,
-  SquareArrowOutUpRight,
-  ArrowRight,
   ChevronRight,
 } from "lucide-react";
 
