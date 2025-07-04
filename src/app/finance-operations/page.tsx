@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import SolutionTemplate from '@/common/SolutionTemplate';
-import { DollarSign, FileText, RefreshCw, FileCheck, Database } from 'lucide-react';
+import { FileText, RefreshCw, FileCheck, Database } from 'lucide-react';
 
 const FinanceOperations: React.FC = () => {
   const services = [
@@ -33,10 +33,8 @@ const FinanceOperations: React.FC = () => {
 
   return (
     <SolutionTemplate
-      category="Strategic Solutions"
       title="Finance Operations"
       description="Unlocking efficiency in financial processes through automation, integration, and strategic optimization."
-      categoryIcon={DollarSign}
       services={services}
       ctaTitle="Ready to Optimize Your Finance Operations?"
       ctaDescription="Let&apos;s streamline your financial processes and unlock efficiency."

@@ -14,10 +14,8 @@ interface Service {
 }
 
 interface SolutionTemplateProps {
-  category: string;
   title: string;
   description: string;
-  categoryIcon: LucideIcon;
   services: Service[];
   ctaTitle: string;
   ctaDescription: string;
