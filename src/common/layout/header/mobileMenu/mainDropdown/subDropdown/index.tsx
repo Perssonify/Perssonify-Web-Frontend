@@ -2,8 +2,8 @@
 
 import React from "react";
 import Link from "next/link";
-import { ChevronDown } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
+import { ChevronDown } from "lucide-react";
 
 interface HeaderProps {
   section: {
@@ -18,7 +18,7 @@ export const SubDropdown: React.FC<HeaderProps> = ({
   section,
   handleMenuClose,
 }) => {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [isMenuOpen, setIsMenuOpen] = React.useState(true);
 
   return (
     <div key={section.title} className="space-y-1 mt-1">
@@ -26,17 +26,10 @@ export const SubDropdown: React.FC<HeaderProps> = ({
         <Link
           href={section.href}
           onClick={handleMenuClose}
-          className="px-3 py-2 text-xs font-medium text-foreground/80 hover:text-primary transition-colors border-l-2 border-primary/20 "
+          className=" py-2 text-xs font-medium text-foreground/80 hover:text-primary transition-colors"
         >
           {section.title}
         </Link>
-        <ChevronDown
-          className="w-4 h-4 text-primary transition-transform duration-200"
-          onClick={() => {
-            setIsMenuOpen((open) => !open);
-          }}
-          style={{ transform: isMenuOpen ? "rotate(180deg)" : "rotate(0deg)" }}
-        />
       </div>
       <AnimatePresence initial={false}>
         {isMenuOpen && (
@@ -53,7 +46,7 @@ export const SubDropdown: React.FC<HeaderProps> = ({
                 key={subItem.name}
                 href={subItem.href}
                 onClick={handleMenuClose}
-                className="block px-4 py-1.5 text-xs text-muted-foreground hover:text-primary transition-colors hover:bg-muted/30 rounded"
+                className="block py-1.5 text-xs text-muted-foreground hover:text-primary transition-colors hover:bg-muted/30 rounded"
               >
                 {subItem.name}
               </Link>

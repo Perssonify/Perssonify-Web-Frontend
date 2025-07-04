@@ -20,6 +20,8 @@ export const MobileMenu: React.FC<HeaderProps> = ({
   setIsMenuOpen,
   navigation,
 }) => {
+  const [activeMenu, setActiveMenu] = React.useState<string | null>(null);
+
   const handleMenuClose = () => {
     setIsMenuOpen(false);
   };
@@ -55,7 +57,12 @@ export const MobileMenu: React.FC<HeaderProps> = ({
           (item: { name: string; href: string; hasDropdown?: boolean }) => (
             <div key={item.name} className="flex flex-col">
               {item.hasDropdown ? (
-                <MainDropdown item={item} handleMenuClose={handleMenuClose} />
+                <MainDropdown
+                  item={item}
+                  handleMenuClose={handleMenuClose}
+                  activeMenu={activeMenu}
+                  setActiveMenu={setActiveMenu}
+                />
               ) : (
                 <Link
                   href={item.href}

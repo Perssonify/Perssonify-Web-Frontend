@@ -8,6 +8,7 @@ import { SubDropdown } from "./subDropdown";
 
 interface HeaderProps {
   item: {
+    key?: string;
     name: string;
     href: string;
     sections?: {
@@ -17,13 +18,18 @@ interface HeaderProps {
     }[];
   };
   handleMenuClose: () => void;
+  activeMenu: string | null;
+  setActiveMenu: (menu: string | null) => void;
 }
 
 export const MainDropdown: React.FC<HeaderProps> = ({
   item,
   handleMenuClose,
+  activeMenu,
+  setActiveMenu,
 }) => {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  // Check if the current item is the active menu
+  const isMenuOpen = activeMenu === item.key;
 
   return (
     <div className="space-y-2 px-4 py-3 text-sm font-semibold transition-colors hover:text-primary text-foreground bg-muted/30 rounded-lg mx-2">
@@ -36,7 +42,7 @@ export const MainDropdown: React.FC<HeaderProps> = ({
           style={{ transform: isMenuOpen ? "rotate(180deg)" : "rotate(0deg)" }}
           onClick={(e) => {
             e.preventDefault();
-            setIsMenuOpen((open) => !open);
+            setActiveMenu(activeMenu === item.key ? null : item.key || null)
           }}
         />
       </div>

@@ -27,6 +27,7 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, toggleDarkMode }) => {
     { name: "About", href: "/about" },
     { name: "Insights", href: "/insights" },
     {
+      key: "growth-solutions",
       name: "Growth Solutions",
       href: "/growth-solutions",
       hasDropdown: true,
@@ -102,6 +103,7 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, toggleDarkMode }) => {
       ],
     },
     {
+      key: "strategic-solutions",
       name: "Strategic Solutions",
       href: "/strategic-solutions",
       hasDropdown: true,
