@@ -28,10 +28,8 @@ interface SolutionTemplateProps {
 }
 
 const SolutionTemplate: React.FC<SolutionTemplateProps> = ({
-  category,
   title,
   description,
-  categoryIcon: CategoryIcon,
   services,
   ctaTitle,
   ctaDescription,
