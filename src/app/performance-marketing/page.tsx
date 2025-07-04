@@ -1,7 +1,7 @@
 'use client'; 
 import React from 'react';
 import SolutionTemplate from '@/common/SolutionTemplate';
-import { TrendingUp, Target, BarChart3, Zap, Users } from 'lucide-react';
+import { Target, BarChart3, Zap, Users } from 'lucide-react';
 
 const PerformanceMarketing: React.FC = () => {
   const services = [
@@ -33,18 +33,15 @@ const PerformanceMarketing: React.FC = () => {
 
   return (
     <SolutionTemplate
-      category="Core Growth Solutions"
       title="Performance Marketing & Paid Media"
       description="High-ROI advertising campaigns that drive measurable results and accelerate customer acquisition through strategic paid media optimization."
-      categoryIcon={TrendingUp}
       services={services}
       ctaTitle="Ready to Scale Your Advertising ROI?"
       ctaDescription="Let's create performance marketing campaigns that deliver measurable growth and maximize your advertising investment."
       backLink="/core-growth-solutions"
       backLinkText="View All Core Growth Solutions"
       parentLabel="Growth Solutions"
-      parentHref="/growth-solutions"
-    />
+      parentHref="/growth-solutions"   />
   );
 };
 

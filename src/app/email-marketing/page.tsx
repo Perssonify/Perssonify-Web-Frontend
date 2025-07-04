@@ -33,10 +33,8 @@ const EmailMarketing: React.FC = () => {
 
   return (
     <SolutionTemplate
-      category="Growth Solutions"
       title="Email Marketing & Marketing Automation"
       description="Build lasting relationships with your audience through strategic email marketing campaigns and intelligent automation workflows that convert prospects into loyal customers."
-      categoryIcon={Mail}
       services={services}
       ctaTitle="Ready to Boost Your Email ROI?"
       ctaDescription="Let&apos;s create email campaigns that your audience actually wants to read and engage with."

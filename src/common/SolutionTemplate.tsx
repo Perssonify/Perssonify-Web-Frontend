@@ -14,10 +14,8 @@ interface Service {
 }
 
 interface SolutionTemplateProps {
-  category: string;
   title: string;
   description: string;
-  categoryIcon: LucideIcon;
   services: Service[];
   ctaTitle: string;
   ctaDescription: string;
@@ -28,10 +26,8 @@ interface SolutionTemplateProps {
 }
 
 const SolutionTemplate: React.FC<SolutionTemplateProps> = ({
-  category,
   title,
   description,
-  categoryIcon: CategoryIcon,
   services,
   ctaTitle,
   ctaDescription,
