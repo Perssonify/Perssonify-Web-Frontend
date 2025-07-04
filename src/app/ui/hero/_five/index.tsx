@@ -1,26 +1,21 @@
-'use client';
+"use client";
 
 // Hero Section
-import React from 'react';
-import { Zap } from 'lucide-react';
-import { motion } from 'motion/react';
-import { RotatingText } from '@/components/ui/rotating-text'; 
-import OrbitingCirclesDemo from '@/common/OrbitingCircles';
-import { cn } from '@/lib/utils';
-import { AnimatedGridPattern } from '@/components/magicui/animated-grid-pattern';
+import React from "react";
+import { Zap } from "lucide-react";
+import { motion } from "motion/react";
+import { RotatingText } from "@/components/ui/rotating-text";
+import OrbitingCirclesDemo from "@/common/OrbitingCircles";
+import { cn } from "@/lib/utils"; // Make sure this import is correct
+import { DotPattern } from "@/components/magicui/dot-pattern";
 
-const HeroThree: React.FC = () => {
+const HeroFive: React.FC = () => {
   return (
-    <section className="relative overflow-hidden bg-background w-full">
-      {/* Animated Grid Pattern as full section background */}
-      <AnimatedGridPattern
-        numSquares={30}
-        maxOpacity={0.1}
-        duration={3}
-        repeatDelay={1}
+    <section className="relative overflow-hidden bg-background">
+      {/* DotPattern background */}
+      <DotPattern
         className={cn(
-          "absolute inset-0 w-full h-full skew-y-12 z-0",
-          "[mask-image:radial-gradient(500px_circle_at_center,white,transparent)]"
+          "[mask-image:radial-gradient(300px_circle_at_center,white,transparent)]"
         )}
       />
       <div className="max-w-6xl mx-auto relative z-10">
@@ -42,11 +37,11 @@ const HeroThree: React.FC = () => {
               transition={{ duration: 0.8, delay: 0.3 }}
               className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-bold text-foreground mb-4 leading-tight text-left "
             >
-              We bring{' '}
-              <span className="text-primary relative inline-block">Growth</span>
-              {' '}and{' '}
-              <span className="text-primary relative inline-block">Scale</span>
-              {' '}to life.
+              We bring{" "}
+              <span className="text-primary relative inline-block">Growth</span>{" "}
+              and{" "}
+              <span className="text-primary relative inline-block">Scale</span>{" "}
+              to life.
             </motion.h1>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -54,10 +49,15 @@ const HeroThree: React.FC = () => {
               transition={{ duration: 0.8, delay: 0.5 }}
               className="text-base sm:text-lg md:text-xl text-foreground/90 dark:text-foreground/80 leading-relaxed"
             >
-              <div className="mb-2">We help businesses grow fast and scale smart.</div>
-              <div className="inline-flex items-center py-0.5 rounded-lg bg-primary border border-primary min-w-[180px] max-w-[220px] justify-center text-center">
+              <div className="mb-2">
+                We help businesses grow fast and scale smart.
+              </div>
+              <div className="inline-flex items-center  py-0.5 rounded-lg bg-primary border border-primary min-w-[180px] max-w-[220px] justify-center text-center">
                 <RotatingText
-                  texts={["The right solution.", "The right time.", "Delivered."]}
+                  texts={[
+                    "The right solution.",
+                    "Delivered.",
+                  ]}
                   rotationInterval={2000}
                   mainClassName="inline font-semibold text-black dark:text-white"
                   splitBy="words"
@@ -75,4 +75,4 @@ const HeroThree: React.FC = () => {
   );
 };
 
-export default HeroThree;
+export default HeroFive;
