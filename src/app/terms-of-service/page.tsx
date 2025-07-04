@@ -11,9 +11,9 @@ const TermsOfService: React.FC = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="max-w-4xl mx-auto"
+          className="max-w-6xl mx-auto px-4"
         >
-          <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center text-primary">
+          <h1 className="text-4xl md:text-5xl font-bold mb-8 text-primary">
             Terms of Service
           </h1>
           <p className="text-muted-foreground mb-8">
