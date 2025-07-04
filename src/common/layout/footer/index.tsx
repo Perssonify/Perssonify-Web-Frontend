@@ -107,7 +107,7 @@ const Footer: React.FC = () => {
     <footer className="border-t bg-background text-foreground">
       <div className="py-6">
         {/* Main Footer Content */}
-        <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-5 max-w-6xl mx-auto px-0 sm:px-4">
+        <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-5 max-w-6xl mx-auto px-4">
           {/* Brand & Newsletter - Single column on large screens */}
           <div className="space-y-3">
             <button
