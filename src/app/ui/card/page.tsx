@@ -6,6 +6,7 @@ import CardThree from "./_three";
 import CardFour from "./_four";
 import StaticOne from "./_staticOne";
 import CardFive from "./_five";
+import CardSix from "./_six";
 
 export default function Home() {
   return (
@@ -23,6 +24,8 @@ export default function Home() {
       <CardFour />
       <h2 className="text-2xl font-bold text-center my-12">Card Five</h2>
       <CardFive />
+      <h2 className="text-2xl font-bold text-center my-12">Card Six</h2>
+      <CardSix />
       <h1 className="text-3xl font-bold text-center my-12">
         Non Interactive Cards
       </h1>
