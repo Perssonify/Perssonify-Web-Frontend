@@ -263,7 +263,7 @@ const Footer: React.FC = () => {
           </div>
           <p className="text-xs text-muted-foreground">
             &copy; {currentYear} Perssonify. All rights reserved.
-          </p>
+          </p>    
         </div>
       </div>
     </footer>
