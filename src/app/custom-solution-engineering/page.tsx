@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import SolutionTemplate from '@/common/SolutionTemplate';
-import { Cog, Target, Settings, Users, Zap } from 'lucide-react';
+import { Target, Settings, Users, Zap } from 'lucide-react';
 
 const CustomSolutionEngineering: React.FC = () => {
   const services = [
@@ -33,10 +33,8 @@ const CustomSolutionEngineering: React.FC = () => {
 
   return (
     <SolutionTemplate
-      "Strategic Solutions"
       title="Custom Solution Engineering"
       description="Solving High-Stakes, Complex Business Challenges with Precision-Built Solutions"
-      {Cog}
       services={services}
       ctaTitle="Ready for Custom Solutions?"
       ctaDescription="Let&apos;s engineer precision-built solutions for your unique challenges."

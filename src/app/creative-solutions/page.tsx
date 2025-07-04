@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import SolutionTemplate from '@/common/SolutionTemplate';
-import { Palette, Camera, Video, Brush, Sparkles } from 'lucide-react';
+import { Camera, Video, Brush, Sparkles } from 'lucide-react';
 
 const CreativeSolutions: React.FC = () => {
   const services = [
@@ -33,10 +33,8 @@ const CreativeSolutions: React.FC = () => {
 
   return (
     <SolutionTemplate
-      "Core Growth Solutions"
       title="Creative Solutions"
       description="Visually stunning creative assets that capture attention, communicate your brand message, and drive conversions across all marketing channels."
-      {Palette}
       services={services}
       ctaTitle="Ready to Create Something Amazing?"
       ctaDescription="Let&apos;s bring your brand to life with creative solutions that captivate your audience and drive results."

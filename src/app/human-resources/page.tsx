@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import SolutionTemplate from '@/common/SolutionTemplate';
-import { Users, UserPlus, ShieldCheck, BookOpen, BarChart3 } from 'lucide-react';
+import { UserPlus, ShieldCheck, BookOpen, BarChart3 } from 'lucide-react';
 
 const HumanResources: React.FC = () => {
   const services = [
@@ -33,10 +33,8 @@ const HumanResources: React.FC = () => {
 
   return (
     <SolutionTemplate
-      "Strategic Solutions"
       title="Human Resources"
       description="Streamlining HR processes to reduce friction, improve compliance, and elevate the employee experience."
-      {Users}
       services={services}
       ctaTitle="Ready to Transform Your HR Operations?"
       ctaDescription="Let&apos;s streamline your human resources processes and improve employee experience."

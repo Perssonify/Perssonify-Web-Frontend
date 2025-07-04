@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import SolutionTemplate from '@/common/SolutionTemplate';
-import { Users, Target, BarChart3, Shuffle, Settings } from 'lucide-react';
+import { Target, BarChart3, Shuffle, Settings } from 'lucide-react';
 
 const CrossFunctionalLeadership: React.FC = () => {
   const services = [
@@ -33,10 +33,9 @@ const CrossFunctionalLeadership: React.FC = () => {
 
   return (
     <SolutionTemplate
-      "Strategic Solutions"
       title="Cross-Functional Leadership"
       description="Enabling alignment and execution across departments, systems, and strategic initiatives."
-      {Users}
+      
       services={services}
       ctaTitle="Ready to Align Your Organization?"
       ctaDescription="Let&apos;s bridge silos and drive execution across your teams and strategic initiatives."

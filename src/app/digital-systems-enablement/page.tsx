@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import SolutionTemplate from '@/common/SolutionTemplate';
-import { Database, BarChart, Users, Zap, Settings } from 'lucide-react';
+import { BarChart, Users, Zap, Settings } from 'lucide-react';
 
 const DigitalSystemsEnablement: React.FC = () => {
   const services = [
@@ -33,10 +33,8 @@ const DigitalSystemsEnablement: React.FC = () => {
 
   return (
     <SolutionTemplate
-      "Strategic Solutions"
       title="Digital Systems Enablement"
       description="Enhancing Platform Strategy & Workforce Effectiveness with Intelligent Systems"
-      {Database}
       services={services}
       ctaTitle="Ready to Enable Your Digital Systems?"
       ctaDescription="Let&apos;s optimize your platforms and empower your teams with intelligent systems."
