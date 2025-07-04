@@ -161,7 +161,6 @@ const GrowthSolutions: React.FC = () => {
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: index * 0.1 }}
-                  className="px-2"
                 >
                   <Link href={service.link}>
                     <Card className="h-full flex flex-col group cursor-pointer relative">
@@ -192,8 +191,8 @@ const GrowthSolutions: React.FC = () => {
         </section>
 
         {/* Benefits Section */}
-        <section className="py-16 sm:py-20 md:py-24 bg-muted/30">
-          <div className="container mx-auto px-4  lg:px-8 max-w-6xl">
+        <section className="py-16 sm:py-20 md:py-24">
+          <div className="container mx-auto  max-w-6xl">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
               <motion.div
                 initial={{
@@ -207,7 +206,6 @@ const GrowthSolutions: React.FC = () => {
                 transition={{
                   duration: 0.8,
                 }}
-                className="px-2"
               >
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 sm:mb-6">
                   Why Choose Our Growth Solutions?
@@ -243,7 +241,6 @@ const GrowthSolutions: React.FC = () => {
                   duration: 0.8,
                   delay: 0.2,
                 }}
-                className="px-2"
               >
                 <Card>
                   <CardHeader className="text-center">
@@ -272,7 +269,7 @@ const GrowthSolutions: React.FC = () => {
 
         {/* CTA Section */}
         <section className="py-20 px-4 sm:px-6 lg:px-8 dark:bg-muted/40 bg-muted/70 mb-20 rounded-2xl">
-          <div className="container mx-auto max-w-4xl">
+          <div className="container mx-auto max-w-4xl text-center">
             <motion.div
               initial={{
                 opacity: 0,

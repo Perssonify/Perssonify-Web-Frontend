@@ -110,7 +110,7 @@ const Insights: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-background pt-20 w-full px-4 max-w-6xl mx-auto">
-      <div className="container">
+      <div>
         {/* Hero Section */}
         <motion.section 
           initial={{ opacity: 0 }}
