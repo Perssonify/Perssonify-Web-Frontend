@@ -3,10 +3,10 @@ const params = {
   blogPosts: [
     {
       id: 1,
-      title: "From Roadblocks to Runways: How AI Turns Everyday Problems into Launchpads",
+      title:
+        "From Roadblocks to Runways: How AI Turns Everyday Problems into Launchpads",
       slug: "future-ai-business-2024",
-      excerpt:
-        "How AI turns everyday problems into launchpads",
+      excerpt: "How AI turns everyday problems into launchpads",
       content: `
 <p>Just after sunrise a product lead in Mumbai drags yesterday’s support tickets into ChatGPT, hoping to clear the queue before her chai cools. By the time traffic thickens outside, the model has clustered root causes, drafted fixes, and written release-note copy. Half a world away, a Chicago accountant scans a shoebox of receipts, clicks once, and receives a reconciled ledger before the coffeemaker sputters its last breath. Scenes like these have left the demo stage. They signal that generative AI has sprinted from promise to practice, drawing nearly \$14 billion in enterprise spend during 2024. <strong>Six times</strong> the 2023 total (<a href="https://menlovc.com/2024-the-state-of-generative-ai-in-the-enterprise/">Menlo Ventures</a>).</p>
 <p><img src="https://via.placeholder.com/1200x500?text=AI+in+Action" alt="placeholder: aerial illustration of AI-powered teamwork"></p>
@@ -220,6 +220,74 @@ const params = {
       category: "Security",
     },
   ],
+  // growth solutions
+  growthSolutions: {
+    key: "growth-solutions",
+    title: "Growth Solutions",
+    description:
+      "High-performance marketing strategy and execution that amplifies brand value and accelerates customer acquisition.",
+    image: "/Icons/Growth Solutions.png",
+    link: "/growth-solutions",
+    coreGrowthSolutions: {
+      key: "core-growth-solutions",
+      title: "Core Growth Solutions",
+      description:
+        "Our core growth solutions are designed to help businesses scale effectively and sustainably.",
+      image: "/Icons/Core Growth Solutions.png",
+      link: "/core-growth-solutions",
+      solutions: [
+        {
+          key: "performance-marketing",
+          link: "/performance-marketing",
+          icon: "/Growth Solutions Icons/PerformanceMarketing&PaidMedia.png",
+          title: "Performance Marketing & Paid Media",
+          desc: "High-ROI ads that convert.",
+        },
+        {
+          key: "social-media-marketing",
+          link: "/social-media-marketing",
+          icon: "/Growth Solutions Icons/Social Media Marketing & Brand Engagement.png",
+          title: "Social Media Marketing & Brand Engagement",
+          desc: "Build audience, spark action.",
+        },
+        {
+          key: "email-marketing",
+          link: "/email-marketing",
+          icon: "/Growth Solutions Icons/Email Marketing & Marketing Automation.png",
+          title: "Email Marketing & Marketing Automation",
+          desc: "Automate nurture, drive loyalty.",
+        },
+        {
+          key: "content-marketing",
+          link: "/creative-solutions",
+          icon: "/Growth Solutions Icons/Creative Solutions.png",
+          title: "Creative Solutions",
+          desc: "Visuals that get results.",
+        },
+        {
+          key: "inbound-marketing",
+          link: "/conversion-optimization",
+          icon: "/Growth Solutions Icons/Conversion Rate Optimization.png",
+          title: "Conversion Rate Optimization (CRO)",
+          desc: "Test. Refine. Convert more.",
+        },
+        {
+          key: "search-engine-optimization",
+          link: "/seo-website-growth",
+          icon: "/Growth Solutions Icons/Search Engine Optimization (SEO) & Website Growth.png",
+          title: "Search Engine Optimization (SEO) & Website Growth",
+          desc: "Rank higher. Grow faster.",
+        },
+        {
+          key: "website-solutions",
+          link: "/website-solutions",
+          icon: "/Growth Solutions Icons/Website Solutions.png",
+          title: "Website Solutions",
+          desc: "Seamless, scalable, conversion-ready.",
+        },
+      ],
+    },
+  },
 };
 
 export default params;

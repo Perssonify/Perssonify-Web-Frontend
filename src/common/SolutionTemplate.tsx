@@ -42,7 +42,7 @@ const SolutionTemplate: React.FC<SolutionTemplateProps> = ({
 }) => {
   return (
     <div className="min-h-screen bg-background pt-20 w-full px-4 max-w-6xl mx-auto">
-      <div className="container">
+      <div>
         <ThemeBreadcrumb parentLabel={parentLabel} parentHref={parentHref} />
         
         {/* Hero Section */}
@@ -59,11 +59,11 @@ const SolutionTemplate: React.FC<SolutionTemplateProps> = ({
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-center"
             >
-              <div className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 rounded-full bg-primary/10 text-primary text-xs sm:text-sm font-medium mb-6 sm:mb-8">
+              {/* <div className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 rounded-full bg-primary/10 text-primary text-xs sm:text-sm font-medium mb-6 sm:mb-8">
                 <CategoryIcon className="w-3 h-3 sm:w-4 sm:h-4 mr-2" />
                 {category}
-              </div>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 sm:mb-6 px-2">
+              </div> */}
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground my-4 sm:my-6 px-2">
                 {title}
               </h1>
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8 leading-relaxed px-2">

@@ -37,15 +37,15 @@ const ThemeBreadcrumb: React.FC<{
 
   return (
     <Breadcrumb className="mb-6">
-      <BreadcrumbList>
+      <BreadcrumbList className="gap-1 sm:gap-1">
         <BreadcrumbItem>
           <BreadcrumbLink asChild>
-            <div className="inline-flex items-center px-3 sm:px-4 py-2 sm:py-2 rounded-full bg-primary/10 text-primary text-xs sm:text-sm font-medium">
+            <div className="inline-flex items-center px-2 sm:px-3 py-1 sm:py-1 rounded-full bg-primary/10 text-primary text-xs sm:text-xs font-medium">
               <Link
                 href="/"
                 className="flex items-center gap-1 hover:text-primary transition-colors"
               >
-                <Home className="w-4 h-4" />
+                <Home className="w-3 h-3" />
                 Home
               </Link>
             </div>
@@ -54,11 +54,11 @@ const ThemeBreadcrumb: React.FC<{
         {parentLabel && parentHref && (
           <>
             <BreadcrumbSeparator>
-              <ChevronRight className="w-4 h-4" />
+              <ChevronRight className="w-2 h-2" />
             </BreadcrumbSeparator>
             <BreadcrumbItem>
               <BreadcrumbLink asChild>
-                <div className="inline-flex items-center px-3 sm:px-4 py-2 sm:py-2 rounded-full bg-primary/10 text-primary text-xs sm:text-sm font-medium">
+                <div className="inline-flex items-center px-2 sm:px-3 py-1 sm:py-1 rounded-full bg-primary/10 text-primary text-xs sm:text-xs font-medium">
                   <Link
                     href={parentHref}
                     className="hover:text-primary transition-colors"
@@ -73,18 +73,18 @@ const ThemeBreadcrumb: React.FC<{
         {segments.map((segment, index) => (
           <React.Fragment key={index}>
             <BreadcrumbSeparator>
-              <ChevronRight className="w-4 h-4" />
+              <ChevronRight className="w-2 h-2" />
             </BreadcrumbSeparator>
             <BreadcrumbItem>
               {index === segments.length - 1 ? (
                 <BreadcrumbPage className="text-foreground font-medium">
-                  <div className="inline-flex items-center px-3 sm:px-4 py-2 sm:py-2 rounded-full bg-primary/10 text-primary text-xs sm:text-sm font-medium">
+                  <div className="inline-flex items-center px-2 sm:px-3 py-1 sm:py-1 rounded-full bg-primary/10 text-primary text-xs sm:text-xs font-medium">
                     {formatLabel(segment)}
                   </div>
                 </BreadcrumbPage>
               ) : (
                 <BreadcrumbLink asChild>
-                  <div className="inline-flex items-center px-3 sm:px-4 py-2 sm:py-3 rounded-full bg-primary/10 text-primary text-xs sm:text-sm font-medium">
+                  <div className="inline-flex items-center px-3 sm:px-3 py-2 sm:py-1 rounded-full bg-primary/10 text-primary text-xs sm:text-xs font-medium">
                     <Link
                       href={
                         parentHref && parentLabel
