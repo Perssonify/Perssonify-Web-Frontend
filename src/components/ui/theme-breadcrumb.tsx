@@ -1,27 +1,34 @@
 "use client";
 
-import React from 'react';
-import { usePathname } from 'next/navigation';
-import { Home, ChevronRight } from 'lucide-react';
-import Link from 'next/link';
-import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from '@/components/ui/breadcrumb';
+import React from "react";
+import { usePathname } from "next/navigation";
+import { Home, ChevronRight } from "lucide-react";
+import Link from "next/link";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
 
 const ThemeBreadcrumb: React.FC<{
   parentLabel?: string;
   parentHref?: string;
 }> = ({ parentLabel, parentHref }) => {
   const pathname = usePathname();
-  const pathSegments = pathname.split('/').filter(Boolean);
+  const pathSegments = pathname.split("/").filter(Boolean);
 
   const formatLabel = (segment: string) => {
     return segment
-      .split('-')
-      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-      .join(' ');
+      .split("-")
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(" ");
   };
 
   const buildHref = (index: number) => {
-    return '/' + pathSegments.slice(0, index + 1).join('/');
+    return "/" + pathSegments.slice(0, index + 1).join("/");
   };
 
   const segments = [...pathSegments];
@@ -33,10 +40,15 @@ const ThemeBreadcrumb: React.FC<{
       <BreadcrumbList>
         <BreadcrumbItem>
           <BreadcrumbLink asChild>
-            <Link href="/" className="flex items-center gap-1 hover:text-primary transition-colors">
-              <Home className="w-4 h-4" />
-              Home
-            </Link>
+            <div className="inline-flex items-center px-3 sm:px-4 py-2 sm:py-2 rounded-full bg-primary/10 text-primary text-xs sm:text-sm font-medium">
+              <Link
+                href="/"
+                className="flex items-center gap-1 hover:text-primary transition-colors"
+              >
+                <Home className="w-4 h-4" />
+                Home
+              </Link>
+            </div>
           </BreadcrumbLink>
         </BreadcrumbItem>
         {parentLabel && parentHref && (
@@ -46,9 +58,14 @@ const ThemeBreadcrumb: React.FC<{
             </BreadcrumbSeparator>
             <BreadcrumbItem>
               <BreadcrumbLink asChild>
-                <Link href={parentHref} className="hover:text-primary transition-colors">
-                  {parentLabel}
-                </Link>
+                <div className="inline-flex items-center px-3 sm:px-4 py-2 sm:py-2 rounded-full bg-primary/10 text-primary text-xs sm:text-sm font-medium">
+                  <Link
+                    href={parentHref}
+                    className="hover:text-primary transition-colors"
+                  >
+                    {parentLabel}
+                  </Link>
+                </div>
               </BreadcrumbLink>
             </BreadcrumbItem>
           </>
@@ -61,16 +78,26 @@ const ThemeBreadcrumb: React.FC<{
             <BreadcrumbItem>
               {index === segments.length - 1 ? (
                 <BreadcrumbPage className="text-foreground font-medium">
-                  {formatLabel(segment)}
+                  <div className="inline-flex items-center px-3 sm:px-4 py-2 sm:py-2 rounded-full bg-primary/10 text-primary text-xs sm:text-sm font-medium">
+                    {formatLabel(segment)}
+                  </div>
                 </BreadcrumbPage>
               ) : (
                 <BreadcrumbLink asChild>
-                  <Link 
-                    href={parentHref && parentLabel ? parentHref + '/' + segments.slice(0, index + 1).join('/') : buildHref(index)}
-                    className="hover:text-primary transition-colors"
-                  >
-                    {formatLabel(segment)}
-                  </Link>
+                  <div className="inline-flex items-center px-3 sm:px-4 py-2 sm:py-3 rounded-full bg-primary/10 text-primary text-xs sm:text-sm font-medium">
+                    <Link
+                      href={
+                        parentHref && parentLabel
+                          ? parentHref +
+                            "/" +
+                            segments.slice(0, index + 1).join("/")
+                          : buildHref(index)
+                      }
+                      className="hover:text-primary transition-colors"
+                    >
+                      {formatLabel(segment)}
+                    </Link>
+                  </div>
                 </BreadcrumbLink>
               )}
             </BreadcrumbItem>
