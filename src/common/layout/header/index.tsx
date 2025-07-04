@@ -217,8 +217,8 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, toggleDarkMode }) => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-[500] bg-background/95 backdrop-blur-sm border-b border-border transition-all duration-300">
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-14 sm:h-16 relative px-0 sm:px-4 w-full max-w-6xl mx-auto">
+      <div className="px-4 w-full max-w-6xl mx-auto">
+        <div className="flex items-center justify-between h-14 sm:h-16 relative">
           {/* Left: Logo */}
           <Link
             href="/"
@@ -229,7 +229,7 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, toggleDarkMode }) => {
             <img
               src="/Logo-Teal.png"
               alt="Perssonify Logo"
-              className="object-contain h-6 w-16 sm:h-8 sm:w-24"
+              className="object-contain h-6 w-16 sm:h-6 sm:w-20"
               style={{ width: "auto" }}
             />
           </Link>
