@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import SolutionTemplate from '@/common/SolutionTemplate';
-import { Users, MessageCircle, Camera, TrendingUp, Heart } from 'lucide-react';
+import { MessageCircle, Camera, TrendingUp, Heart } from 'lucide-react';
 
 const SocialMedia: React.FC = () => {
   const services = [
@@ -33,10 +33,8 @@ const SocialMedia: React.FC = () => {
 
   return (
     <SolutionTemplate
-      "Core Growth Solutions"
       title="Social Media Marketing & Brand Engagement"
       description="Build meaningful connections and drive engagement through strategic social media marketing that amplifies your brand across all platforms."
-      {Users}
       services={services}
       ctaTitle="Ready to Build Your Social Community?"
       ctaDescription="Let&apos;s create a social media presence that engages your audience and drives meaningful business results."
