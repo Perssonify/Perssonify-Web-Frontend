@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import SolutionTemplate from '@/common/SolutionTemplate';
-import { Funnel, Users, Target, Zap } from 'lucide-react';
+import { Users, Target, Zap, Funnel } from 'lucide-react';
 
 const LeadGeneration: React.FC = () => {
   const services = [
@@ -33,10 +33,8 @@ const LeadGeneration: React.FC = () => {
 
   return (
     <SolutionTemplate
-      "Specialized Growth Solutions"
       title="Lead Generation & Funnel Strategy"
       description="Strategic lead generation systems that attract qualified prospects and convert them into customers through optimized funnel experiences."
-      {Funnel}
       services={services}
       ctaTitle="Ready to Generate Quality Leads?"
       ctaDescription="Let&apos;s build lead generation systems that consistently deliver qualified prospects for your sales team."

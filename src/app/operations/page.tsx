@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import SolutionTemplate from '@/common/SolutionTemplate';
-import { Settings, Shuffle, Timer, Users, BarChart3 } from 'lucide-react';
+import { Shuffle, Timer, Users, BarChart3 } from 'lucide-react';
 
 const Operations: React.FC = () => {
   const services = [
@@ -33,10 +33,8 @@ const Operations: React.FC = () => {
 
   return (
     <SolutionTemplate
-      "Strategic Solutions"
       title="Operations"
       description="Eliminating delays, inefficiencies, and handoff gaps in operational execution."
-      {Settings}
       services={services}
       ctaTitle="Ready to Streamline Your Operations?"
       ctaDescription="Let&apos;s eliminate delays and optimize your operational execution."

@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import SolutionTemplate from '@/common/SolutionTemplate';
-import { Search, TrendingUp, FileText, BarChart3 } from 'lucide-react';
+import { TrendingUp, FileText, BarChart3, Search } from 'lucide-react';
 
 const SEO: React.FC = () => {
   const services = [
@@ -33,10 +33,8 @@ const SEO: React.FC = () => {
 
   return (
     <SolutionTemplate
-      "Core Growth Solutions"
       title="Search Engine Optimization (SEO) & Website Growth"
       description="Comprehensive SEO strategies that improve search visibility, drive organic traffic, and establish your brand as an authority in your industry."
-      {Search}
       services={services}
       ctaTitle="Ready to Dominate Search Results?"
       ctaDescription="Let&apos;s optimize your online presence to drive organic traffic and establish your brand as an industry authority."
