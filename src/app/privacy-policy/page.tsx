@@ -189,7 +189,7 @@ const PrivacyPolicy: React.FC = () => {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-semibold text-foreground mb-6">11. Children's Privacy</h2>
+              <h2 className="text-2xl font-semibold text-foreground mb-6">11. Children&apos;s Privacy</h2>
               <p className="text-muted-foreground leading-loose">
                 Our services are not intended for children under the age of 16. We do not knowingly collect personal information from children under 16. If you believe we have inadvertently collected such information, please contact us immediately, and we will take steps to delete it.
               </p>
