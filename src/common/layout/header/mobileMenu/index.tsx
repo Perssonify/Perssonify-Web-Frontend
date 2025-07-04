@@ -15,7 +15,7 @@ interface HeaderProps {
     hasDropdown?: boolean;
   }[];
 }
-
+// main fixed
 export const MobileMenu: React.FC<HeaderProps> = ({
   setIsMenuOpen,
   navigation,

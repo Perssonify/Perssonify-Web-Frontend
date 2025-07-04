@@ -136,7 +136,7 @@ export default function ContactSection() {
                       htmlFor="firstName"
                       className="text-sm font-medium text-foreground"
                     >
-                      First Name *
+                      First Name <span className="text-red-600">*</span>
                     </Label>
                     <Input
                       id="firstName"
@@ -151,7 +151,7 @@ export default function ContactSection() {
                       htmlFor="lastName"
                       className="text-sm font-medium text-foreground"
                     >
-                      Last Name *
+                      Last Name <span className="text-red-600">*</span>
                     </Label>
                     <Input
                       id="lastName"
@@ -168,7 +168,7 @@ export default function ContactSection() {
                     htmlFor="email"
                     className="text-sm font-medium text-foreground"
                   >
-                    Work Email *
+                    Work Email <span className="text-red-600">*</span>
                   </Label>
                   <Input
                     id="email"
@@ -176,6 +176,22 @@ export default function ContactSection() {
                     type="email"
                     required
                     className="w-full"
+                  />
+                </div>
+
+                <div className="space-y-2">
+                  <Label
+                  htmlFor="phone"
+                  className="text-sm font-medium text-foreground"
+                  >
+                  Phone Number <span className="text-red-600">*</span>
+                  </Label>
+                  <Input
+                  id="phone"
+                  placeholder="Phone Number"
+                  type="tel"
+                  required
+                  className="w-full"
                   />
                 </div>
 
@@ -196,7 +212,7 @@ export default function ContactSection() {
 
                 <div className="space-y-2">
                   <Label className="text-sm font-medium text-foreground">
-                    Service Interest
+                    Our Solution
                   </Label>
                   <Select>
                     <SelectTrigger className="w-full">
@@ -237,7 +253,7 @@ export default function ContactSection() {
                     htmlFor="message"
                     className="text-sm font-medium text-foreground"
                   >
-                    Message *
+                    Message <span className="text-red-600">*</span>
                   </Label>
                   <Textarea
                     id="message"

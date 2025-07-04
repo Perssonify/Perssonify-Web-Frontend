@@ -32,6 +32,7 @@ const ThemeBreadcrumb: React.FC = () => {
           </BreadcrumbLink>
         </BreadcrumbItem>
         
+
         {pathSegments.map((segment, index) => (
           <React.Fragment key={index}>
             <BreadcrumbSeparator>
