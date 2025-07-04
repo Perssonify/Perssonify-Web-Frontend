@@ -2,11 +2,9 @@
 
 // Hero Section
 import React from 'react';
-import { Zap, ArrowUpRight } from 'lucide-react';
+import { Zap } from 'lucide-react';
 import { motion } from 'motion/react';
 import { RotatingText } from '@/components/ui/rotating-text'; 
-import InteractiveHoverCard from '@/components/ui/interactive-hover-card';
-import Link from 'next/link';
 import OrbitingCirclesDemo from '@/common/OrbitingCircles';
 
 const HeroTwo: React.FC = () => {

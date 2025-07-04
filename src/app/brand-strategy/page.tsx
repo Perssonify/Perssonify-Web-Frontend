@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import SolutionTemplate from '@/common/SolutionTemplate';
-import { Building, Target, Users, Sparkles, TrendingUp } from 'lucide-react';
+import { Target, Users, Sparkles, TrendingUp } from 'lucide-react';
 
 const BrandStrategy: React.FC = () => {
   const services = [
