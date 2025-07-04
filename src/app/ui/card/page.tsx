@@ -44,6 +44,7 @@ export default function Home() {
       <StaticTwo />
       <h2 className="text-2xl font-bold text-center my-12">Card Three</h2>
       <StaticThree />
+      <h2 className="text-2xl font-bold text-center my-12">Card Three</h2>
     </div>
   );
 }
