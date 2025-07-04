@@ -4,8 +4,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowLeft, Target, Search, Users, Zap, CheckCircle, BarChart3, AlertTriangle, TrendingUp, Settings, Clock, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import Link from 'next/link';
+import { Card, CardHeader, CardContent, CardTitle } from '@/components/ui/card';
 
 const AboutExecution: React.FC = () => {
   // Move all data arrays inside the component

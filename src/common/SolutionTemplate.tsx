@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { ArrowRight, LucideIcon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import ThemeBreadcrumb from '@/components/ui/theme-breadcrumb';
+import { Card, CardHeader, CardContent, CardTitle } from '@/components/ui/card';
 
 interface Service {
   icon: LucideIcon;
