@@ -110,7 +110,7 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, toggleDarkMode }) => {
       sections: [
         {
           title: "Core Strategic Solutions",
-          href: "/strategic-solutions",
+          href: "/core-strategic-solutions",
           items: [
             {
               name: "Process & Workflow Automation",
