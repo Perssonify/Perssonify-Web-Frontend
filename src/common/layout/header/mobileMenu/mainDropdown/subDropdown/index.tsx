@@ -60,7 +60,6 @@ export const SubDropdown: React.FC<HeaderProps> = ({
             ))}
           </motion.div>
         )}
-        <div></div>
       </AnimatePresence>
     </div>
   );
