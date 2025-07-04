@@ -33,10 +33,10 @@ const LeadGeneration: React.FC = () => {
 
   return (
     <SolutionTemplate
-      category="Specialized Growth Solutions"
+      "Specialized Growth Solutions"
       title="Lead Generation & Funnel Strategy"
       description="Strategic lead generation systems that attract qualified prospects and convert them into customers through optimized funnel experiences."
-      categoryIcon={Funnel}
+      {Funnel}
       services={services}
       ctaTitle="Ready to Generate Quality Leads?"
       ctaDescription="Let&apos;s build lead generation systems that consistently deliver qualified prospects for your sales team."

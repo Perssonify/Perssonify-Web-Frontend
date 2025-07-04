@@ -33,10 +33,8 @@ const AuditInsights: React.FC = () => {
 
   return (
     <SolutionTemplate
-      category="Specialized Growth Solutions"
       title="Deep Dive Audit & Strategic Insights"
       description="Comprehensive marketing and business audits that uncover hidden opportunities and provide actionable strategic recommendations for accelerated growth."
-      categoryIcon={SearchCheck}
       services={services}
       ctaTitle="Ready for Strategic Clarity?"
       ctaDescription="Let&apos;s audit your current approach and uncover the strategic insights that will drive your next phase of growth."

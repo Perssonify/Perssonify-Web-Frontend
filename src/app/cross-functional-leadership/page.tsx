@@ -33,10 +33,10 @@ const CrossFunctionalLeadership: React.FC = () => {
 
   return (
     <SolutionTemplate
-      category="Strategic Solutions"
+      "Strategic Solutions"
       title="Cross-Functional Leadership"
       description="Enabling alignment and execution across departments, systems, and strategic initiatives."
-      categoryIcon={Users}
+      {Users}
       services={services}
       ctaTitle="Ready to Align Your Organization?"
       ctaDescription="Let&apos;s bridge silos and drive execution across your teams and strategic initiatives."

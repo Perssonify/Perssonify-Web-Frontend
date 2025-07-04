@@ -45,10 +45,8 @@ export default function EnterpriseEvolutionStrategicTransformation() {
   return (
     <>
       <SolutionTemplate
-        category="Strategic Solutions"
         title="Enterprise Evolution & Strategic Transformation"
         description="Redefining Models, Reshaping Operations, and Scaling for Long-Term Success. As businesses grow, their operating models, structures, and strategies can become bottlenecks. Legacy systems, outdated workflows, or siloed teams can stall progress and limit adaptability. This isn't about technology for technology's sake—it's about enhancing business operations to adapt, evolve, and thrive."
-        categoryIcon={Cog}
         services={services}
         ctaTitle="Ready to Transform?"
         ctaDescription="Perssonify helps reduce the risk of transformation by combining big-picture thinking with execution-focused support. We ensure organizations don't just plan to change—they actually move forward with confidence and clarity."

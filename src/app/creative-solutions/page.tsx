@@ -33,10 +33,10 @@ const CreativeSolutions: React.FC = () => {
 
   return (
     <SolutionTemplate
-      category="Core Growth Solutions"
+      "Core Growth Solutions"
       title="Creative Solutions"
       description="Visually stunning creative assets that capture attention, communicate your brand message, and drive conversions across all marketing channels."
-      categoryIcon={Palette}
+      {Palette}
       services={services}
       ctaTitle="Ready to Create Something Amazing?"
       ctaDescription="Let&apos;s bring your brand to life with creative solutions that captivate your audience and drive results."

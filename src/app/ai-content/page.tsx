@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import { Cpu, Zap, Settings, TrendingUp, FileText } from 'lucide-react';
+import { Zap, Settings, TrendingUp, FileText } from 'lucide-react';
 import SolutionTemplate from '@/common/SolutionTemplate';
 
 const AIContent: React.FC = () => {
@@ -33,10 +33,8 @@ const AIContent: React.FC = () => {
 
   return (
     <SolutionTemplate
-      category="Specialized Growth Solutions"
       title="AI-Accelerated Content Production Pipelines"
       description="Advanced AI-powered content systems that scale your content creation capabilities while maintaining quality and driving results."
-      categoryIcon={Cpu}
       services={services}
       ctaTitle="Ready to Scale Content with AI?"
         ctaDescription="Let&apos;s implement AI systems that accelerate your content production without compromising quality or brand integrity."

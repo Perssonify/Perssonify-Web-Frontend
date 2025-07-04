@@ -33,10 +33,10 @@ const SocialMedia: React.FC = () => {
 
   return (
     <SolutionTemplate
-      category="Core Growth Solutions"
+      "Core Growth Solutions"
       title="Social Media Marketing & Brand Engagement"
       description="Build meaningful connections and drive engagement through strategic social media marketing that amplifies your brand across all platforms."
-      categoryIcon={Users}
+      {Users}
       services={services}
       ctaTitle="Ready to Build Your Social Community?"
       ctaDescription="Let&apos;s create a social media presence that engages your audience and drives meaningful business results."

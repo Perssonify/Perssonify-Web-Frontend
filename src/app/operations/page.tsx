@@ -33,10 +33,10 @@ const Operations: React.FC = () => {
 
   return (
     <SolutionTemplate
-      category="Strategic Solutions"
+      "Strategic Solutions"
       title="Operations"
       description="Eliminating delays, inefficiencies, and handoff gaps in operational execution."
-      categoryIcon={Settings}
+      {Settings}
       services={services}
       ctaTitle="Ready to Streamline Your Operations?"
       ctaDescription="Let&apos;s eliminate delays and optimize your operational execution."

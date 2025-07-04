@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import SolutionTemplate from '@/common/SolutionTemplate';
-import { BarChart3, Target, Zap, Database, TrendingUp } from 'lucide-react';
+import { Target, Zap, Database, TrendingUp } from 'lucide-react';
 
 const AnalyticsTracking: React.FC = () => {
   const services = [
@@ -33,10 +33,8 @@ const AnalyticsTracking: React.FC = () => {
 
   return (
     <SolutionTemplate
-      category="Specialized Growth Solutions"
       title="Analytics and Event Tracking Setup"
       description="Advanced analytics implementation that provides deep insights into user behavior and marketing performance through precise tracking and measurement."
-      categoryIcon={BarChart3}
       services={services}
       ctaTitle="Ready to Track What Matters?"
       ctaDescription="Let&apos;s implement analytics that provide the insights you need to make data-driven marketing decisions."

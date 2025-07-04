@@ -156,10 +156,10 @@ const SolutionsByFunction: React.FC = () => {
         </motion.section>
 
         <SolutionTemplate
-          category="Strategic Solutions"
+          "Strategic Solutions"
           title="Solutions By Function"
           description="Business function focused solutions that meet the needs of specific business units."
-          categoryIcon={Target}
+          {Target}
           services={[]}
           ctaTitle="Ready to turn high-effort functions into high-impact ones?"
           ctaDescription="Let's make it happen. Not everything fits neatly into a box. If the work matters and the process is heavy, we'll help you streamline it."

@@ -33,10 +33,8 @@ const BrandStrategy: React.FC = () => {
 
   return (
     <SolutionTemplate
-      category="Specialized Growth Solutions"
       title="Brand Architecture & Strategy"
       description="Comprehensive brand strategy development that defines your market position, differentiates your offering, and creates lasting competitive advantage."
-      categoryIcon={Building}
       services={services}
       ctaTitle="Ready to Define Your Brand?"
       ctaDescription="Let&apos;s develop a brand strategy that positions you for long-term success and sustainable growth."

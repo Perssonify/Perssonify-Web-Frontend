@@ -33,10 +33,10 @@ const SEO: React.FC = () => {
 
   return (
     <SolutionTemplate
-      category="Core Growth Solutions"
+      "Core Growth Solutions"
       title="Search Engine Optimization (SEO) & Website Growth"
       description="Comprehensive SEO strategies that improve search visibility, drive organic traffic, and establish your brand as an authority in your industry."
-      categoryIcon={Search}
+      {Search}
       services={services}
       ctaTitle="Ready to Dominate Search Results?"
       ctaDescription="Let&apos;s optimize your online presence to drive organic traffic and establish your brand as an industry authority."

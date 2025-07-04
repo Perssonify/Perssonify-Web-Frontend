@@ -33,10 +33,8 @@ const ConversionOptimization: React.FC = () => {
 
   return (
     <SolutionTemplate
-      category="Core Growth Solutions"
       title="Conversion Rate Optimization (CRO)"
       description="Data-driven optimization strategies that systematically improve your conversion rates and maximize the value of your existing traffic."
-      categoryIcon={Target}
       services={services}
       ctaTitle="Ready to Convert More Visitors?"
       ctaDescription="Let&apos;s optimize your conversion funnel to turn more visitors into customers and maximize your marketing ROI."

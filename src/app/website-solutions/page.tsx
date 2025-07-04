@@ -33,10 +33,10 @@ const WebsiteSolutions: React.FC = () => {
 
   return (
     <SolutionTemplate
-      category="Core Growth Solutions"
+      "Core Growth Solutions"
       title="Website Solutions"
       description="Professional website development and optimization that creates seamless user experiences and drives business growth."
-      categoryIcon={Globe}
+      {Globe}
       services={services}
       ctaTitle="Ready to Transform Your Website?"   
       ctaDescription="Let&apos;s create a website that not only looks amazing but also drives conversions and grows your business."

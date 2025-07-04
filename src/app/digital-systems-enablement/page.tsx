@@ -33,10 +33,10 @@ const DigitalSystemsEnablement: React.FC = () => {
 
   return (
     <SolutionTemplate
-      category="Strategic Solutions"
+      "Strategic Solutions"
       title="Digital Systems Enablement"
       description="Enhancing Platform Strategy & Workforce Effectiveness with Intelligent Systems"
-      categoryIcon={Database}
+      {Database}
       services={services}
       ctaTitle="Ready to Enable Your Digital Systems?"
       ctaDescription="Let&apos;s optimize your platforms and empower your teams with intelligent systems."

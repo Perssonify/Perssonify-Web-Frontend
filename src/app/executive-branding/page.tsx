@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import SolutionTemplate from '@/common/SolutionTemplate';
-import { UserCheck, Users, TrendingUp, MessageCircle, Target } from 'lucide-react';
+import { Users, TrendingUp, MessageCircle, Target } from 'lucide-react';
 
 const ExecutiveBranding: React.FC = () => {
   const services = [
@@ -33,10 +33,8 @@ const ExecutiveBranding: React.FC = () => {
 
   return (
     <SolutionTemplate
-      category="Specialized Growth Solutions"
       title="Executive Personal Branding & LinkedIn Marketing"
       description="Strategic personal branding that positions executives as thought leaders and drives business growth through enhanced professional presence."
-      categoryIcon={UserCheck}
       services={services}
       ctaTitle="Ready to Elevate Your Executive Presence?"
       ctaDescription="Let&apos;s build a personal brand that positions you as a thought leader and drives business opportunities."

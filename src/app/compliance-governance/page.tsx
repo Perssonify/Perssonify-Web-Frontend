@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import SolutionTemplate from '@/common/SolutionTemplate';
-import { Shield, FileCheck, Search, AlertTriangle, Database } from 'lucide-react';
+import { FileCheck, Search, AlertTriangle, Database } from 'lucide-react';
 
 const ComplianceGovernance: React.FC = () => {
   const services = [
@@ -33,10 +33,8 @@ const ComplianceGovernance: React.FC = () => {
 
   return (
     <SolutionTemplate
-      category="Strategic Solutions"
       title="Compliance & Governance"
       description="Reducing regulatory burden and risk exposure with streamlined, traceable processes."
-      categoryIcon={Shield}
       services={services}
       ctaTitle="Ready to Streamline Your Compliance?"
       ctaDescription="Let&apos;s implement systems that simplify regulatory workflows and reduce compliance risk."

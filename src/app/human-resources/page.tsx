@@ -33,10 +33,10 @@ const HumanResources: React.FC = () => {
 
   return (
     <SolutionTemplate
-      category="Strategic Solutions"
+      "Strategic Solutions"
       title="Human Resources"
       description="Streamlining HR processes to reduce friction, improve compliance, and elevate the employee experience."
-      categoryIcon={Users}
+      {Users}
       services={services}
       ctaTitle="Ready to Transform Your HR Operations?"
       ctaDescription="Let&apos;s streamline your human resources processes and improve employee experience."

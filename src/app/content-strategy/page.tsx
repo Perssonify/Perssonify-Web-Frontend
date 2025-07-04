@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import SolutionTemplate from '@/common/SolutionTemplate';
-import { FileText, Calendar, Target, TrendingUp, Users } from 'lucide-react';
+import { Calendar, Target, TrendingUp, Users } from 'lucide-react';
 
 const ContentStrategy: React.FC = () => {
   const services = [
@@ -33,10 +33,8 @@ const ContentStrategy: React.FC = () => {
 
   return (
     <SolutionTemplate
-      category="Specialized Growth Solutions"
       title="Content Strategy & Planning"
       description="Strategic content frameworks that engage audiences, support business objectives, and create consistent value for your target market."
-      categoryIcon={FileText}
       services={services}
       ctaTitle="Ready to Scale Your Content?"
       ctaDescription="Let&apos;s create a content strategy that consistently delivers value to your audience and drives business results."

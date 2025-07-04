@@ -33,10 +33,10 @@ const CustomSolutionEngineering: React.FC = () => {
 
   return (
     <SolutionTemplate
-      category="Strategic Solutions"
+      "Strategic Solutions"
       title="Custom Solution Engineering"
       description="Solving High-Stakes, Complex Business Challenges with Precision-Built Solutions"
-      categoryIcon={Cog}
+      {Cog}
       services={services}
       ctaTitle="Ready for Custom Solutions?"
       ctaDescription="Let&apos;s engineer precision-built solutions for your unique challenges."
